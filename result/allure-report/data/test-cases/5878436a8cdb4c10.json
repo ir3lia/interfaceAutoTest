@@ -1,0 +1,159 @@
+{
+  "uid" : "5878436a8cdb4c10",
+  "name" : "软件名称为空",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.addSoftwareInfo.test_addsoftwareinfo.Test_class#test_all",
+  "historyId" : "b8448238781e95745b4922028056e6c7",
+  "time" : {
+    "start" : 1601373345255,
+    "stop" : 1601373345397,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "10663914643cc9a8",
+      "name" : "测试人员",
+      "source" : "10663914643cc9a8.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "9d3590fb7a957a77",
+      "name" : "接口入参",
+      "source" : "9d3590fb7a957a77.attach",
+      "type" : "text/plain",
+      "size" : 303
+    }, {
+      "uid" : "ba6d622f4f678cc3",
+      "name" : "接口出参",
+      "source" : "ba6d622f4f678cc3.attach",
+      "type" : "text/plain",
+      "size" : 117
+    }, {
+      "uid" : "6139bd0a7b0cdd7b",
+      "name" : "stdout",
+      "source" : "6139bd0a7b0cdd7b.txt",
+      "type" : "text/plain",
+      "size" : 287
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "story",
+    "value" : "添加软件信息-测试用例"
+  }, {
+    "name" : "feature",
+    "value" : "添加软件信息"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.addSoftwareInfo"
+  }, {
+    "name" : "suite",
+    "value" : "test_addsoftwareinfo"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.addSoftwareInfo.test_addsoftwareinfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'软件名称为空'"
+  }, {
+    "name" : "description",
+    "value" : "'软件名称为空无法添加'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': '', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '实体名称不能为空'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 90,
+        "unknown" : 0,
+        "total" : 90
+      },
+      "items" : [ {
+        "uid" : "85c3a1c3dcf437e4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280498424,
+          "stop" : 1601280498574,
+          "duration" : 150
+        }
+      }, {
+        "uid" : "3523b84c4f9e0a36",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249237885,
+          "stop" : 1600249238014,
+          "duration" : 129
+        }
+      }, {
+        "uid" : "622b156176f16066",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236170756,
+          "stop" : 1600236170898,
+          "duration" : 142
+        }
+      }, {
+        "uid" : "9d85af43997a4e9d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821957630,
+          "stop" : 1599821957790,
+          "duration" : 160
+        }
+      }, {
+        "uid" : "c471359178dd14f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820133445,
+          "stop" : 1599820133591,
+          "duration" : 146
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5878436a8cdb4c10.json",
+  "parameterValues" : [ "'软件名称为空'", "'软件名称为空无法添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': '', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '实体名称不能为空'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

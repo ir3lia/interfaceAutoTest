@@ -1,0 +1,172 @@
+{
+  "uid" : "ff17a914256d71f1",
+  "name" : "添加策略规则-规则名称为空",
+  "fullName" : "testCase.SMP.authentication.RedirectPoliciesController.addRule.test_addRule.Test_class#test_all",
+  "historyId" : "beb2b7c50195349866e015b079dfcd83",
+  "time" : {
+    "start" : 1601373343097,
+    "stop" : 1601373343179,
+    "duration" : 82
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: ['code'] 值错误！\nassert [412] == [200]\n  At index 0 diff: 412 != 200\n  Use -v to get the full diff",
+  "statusTrace" : "self = <test_addRule.Test_class object at 0x0000008685CB29C8>\ncase = '添加策略规则-规则名称为空', description = '添加策略规则-规则名称为空'\nhttpParameters = {'caseNum': 'case_03', 'checkDBType': 'exist', 'httpType': 'POST', 'isCheckDB': False, ...}\n\n    @allure.story(interfaceChName + \"-测试用例\")\n    @allure.title(\"{case}\")\n    @pytest.mark.dependency(name=interfaceEnName + \"_all\", depends=[interfaceEnName + \"_main\"])\n    @pytest.mark.parametrize(\"case,description,httpParameters\", list(parameters_all))\n    def test_all(self, case, description, httpParameters):\n        allure.attach('{0}'.format(testerName), \"测试人员\")\n        allure.attach(json.dumps(httpParameters[\"query\"], ensure_ascii=False), \"接口入参\")  # 测试用例的入参\n        if 'caseNum' in httpParameters:\n            print(\"\\n ==清理数据库 & 插入数据==\")\n            mongoDataOpr.oprDatasToDB(dbJsonPath, dbName, \"all\", httpParameters[\"caseNum\"])\n        if httpParameters[\"paramType\"] == \"string\":\n            stringParams = jsonAnalysis.getStringParams(httpParameters[\"query\"])\n            urlPath2 = urlPath + stringParams\n            postJ = httpApi.httpRequests(urlIP, urlPath2, httpParameters[\"httpType\"])\n        elif httpParameters[\"paramType\"] == \"json\":\n            urlPath3 = urlPath + \"/5f3a3710893a2500068349a4/addRule\"\n            postJ = httpApi.httpRequests(urlIP, urlPath3, httpParameters[\"httpType\"], parame=httpParameters[\"query\"])\n        else:\n            assert 0, '参数类型「' + httpParameters[\"paramType\"] + '」无法处理！'\n        allure.attach(\"{0}\".format(postJ), \"接口出参\")  # 测试用例的出参\n        keyPaths = jsonAnalysis.getKeyPaths(httpParameters['response'])\n        for path in keyPaths:\n            res1 = jsonAnalysis.getKeyValues(httpParameters[\"response\"], path)\n            res2 = jsonAnalysis.getKeyValues(postJ, path)\n            assert len(res2) > 0, path + \"不存在\"\n>           assert res1 == res2, path + \" 值错误！\"\nE           AssertionError: ['code'] 值错误！\nE           assert [412] == [200]\nE             At index 0 diff: 412 != 200\nE             Use -v to get the full diff\n\ntestCase\\SMP\\authentication\\RedirectPoliciesController\\addRule\\test_addRule.py:278: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: ['code'] 值错误！\nassert [412] == [200]\n  At index 0 diff: 412 != 200\n  Use -v to get the full diff",
+    "statusTrace" : "self = <test_addRule.Test_class object at 0x0000008685CB29C8>\ncase = '添加策略规则-规则名称为空', description = '添加策略规则-规则名称为空'\nhttpParameters = {'caseNum': 'case_03', 'checkDBType': 'exist', 'httpType': 'POST', 'isCheckDB': False, ...}\n\n    @allure.story(interfaceChName + \"-测试用例\")\n    @allure.title(\"{case}\")\n    @pytest.mark.dependency(name=interfaceEnName + \"_all\", depends=[interfaceEnName + \"_main\"])\n    @pytest.mark.parametrize(\"case,description,httpParameters\", list(parameters_all))\n    def test_all(self, case, description, httpParameters):\n        allure.attach('{0}'.format(testerName), \"测试人员\")\n        allure.attach(json.dumps(httpParameters[\"query\"], ensure_ascii=False), \"接口入参\")  # 测试用例的入参\n        if 'caseNum' in httpParameters:\n            print(\"\\n ==清理数据库 & 插入数据==\")\n            mongoDataOpr.oprDatasToDB(dbJsonPath, dbName, \"all\", httpParameters[\"caseNum\"])\n        if httpParameters[\"paramType\"] == \"string\":\n            stringParams = jsonAnalysis.getStringParams(httpParameters[\"query\"])\n            urlPath2 = urlPath + stringParams\n            postJ = httpApi.httpRequests(urlIP, urlPath2, httpParameters[\"httpType\"])\n        elif httpParameters[\"paramType\"] == \"json\":\n            urlPath3 = urlPath + \"/5f3a3710893a2500068349a4/addRule\"\n            postJ = httpApi.httpRequests(urlIP, urlPath3, httpParameters[\"httpType\"], parame=httpParameters[\"query\"])\n        else:\n            assert 0, '参数类型「' + httpParameters[\"paramType\"] + '」无法处理！'\n        allure.attach(\"{0}\".format(postJ), \"接口出参\")  # 测试用例的出参\n        keyPaths = jsonAnalysis.getKeyPaths(httpParameters['response'])\n        for path in keyPaths:\n            res1 = jsonAnalysis.getKeyValues(httpParameters[\"response\"], path)\n            res2 = jsonAnalysis.getKeyValues(postJ, path)\n            assert len(res2) > 0, path + \"不存在\"\n>           assert res1 == res2, path + \" 值错误！\"\nE           AssertionError: ['code'] 值错误！\nE           assert [412] == [200]\nE             At index 0 diff: 412 != 200\nE             Use -v to get the full diff\n\ntestCase\\SMP\\authentication\\RedirectPoliciesController\\addRule\\test_addRule.py:278: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d168026b05d665c2",
+      "name" : "测试人员",
+      "source" : "d168026b05d665c2.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "9c269852fc4179bb",
+      "name" : "接口入参",
+      "source" : "9c269852fc4179bb.attach",
+      "type" : "text/plain",
+      "size" : 148
+    }, {
+      "uid" : "bc2b4572eeede7ba",
+      "name" : "接口出参",
+      "source" : "bc2b4572eeede7ba.attach",
+      "type" : "text/plain",
+      "size" : 44
+    }, {
+      "uid" : "a111c669715ae91",
+      "name" : "stdout",
+      "source" : "a111c669715ae91.txt",
+      "type" : "text/plain",
+      "size" : 270
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Web重定向策略管理"
+  }, {
+    "name" : "story",
+    "value" : "Web重定向策略管理-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "RedirectPoliciesController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addRule"
+  }, {
+    "name" : "suite",
+    "value" : "test_addRule"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addRule.test_addRule"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加策略规则-规则名称为空'"
+  }, {
+    "name" : "description",
+    "value" : "'添加策略规则-规则名称为空'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': '', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 41,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 41
+      },
+      "items" : [ {
+        "uid" : "68b21f99fd69e071",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: ['code'] 值错误！\nassert [412] == [200]\n  At index 0 diff: 412 != 200\n  Use -v to get the full diff",
+        "time" : {
+          "start" : 1601280496103,
+          "stop" : 1601280496199,
+          "duration" : 96
+        }
+      }, {
+        "uid" : "8c59429efc43f35a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: ['code'] 值错误！\nassert [412] == [200]\n  At index 0 diff: 412 != 200\n  Use -v to get the full diff",
+        "time" : {
+          "start" : 1600249235682,
+          "stop" : 1600249235781,
+          "duration" : 99
+        }
+      }, {
+        "uid" : "cd75eba3bca88d1d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: ['code'] 值错误！\nassert [412] == [200]\n  At index 0 diff: 412 != 200\n  Use -v to get the full diff",
+        "time" : {
+          "start" : 1600236168438,
+          "stop" : 1600236168554,
+          "duration" : 116
+        }
+      }, {
+        "uid" : "5ecf3a2f37e14676",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: ['code'] 值错误！\nassert [412] == [200]\n  At index 0 diff: 412 != 200\n  Use -v to get the full diff",
+        "time" : {
+          "start" : 1599821955324,
+          "stop" : 1599821955428,
+          "duration" : 104
+        }
+      }, {
+        "uid" : "554d68b8c665bb74",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: ['code'] 值错误！\nassert [412] == [200]\n  At index 0 diff: 412 != 200\n  Use -v to get the full diff",
+        "time" : {
+          "start" : 1599820131346,
+          "stop" : 1599820131418,
+          "duration" : 72
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ff17a914256d71f1.json",
+  "parameterValues" : [ "'添加策略规则-规则名称为空'", "'添加策略规则-规则名称为空'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': '', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

@@ -1,0 +1,60 @@
+{
+    "mainCaseData":[
+        {
+            "title": "查询所有SSO对接配置-主流程",
+            "otherInfo":{
+                "description": "查询所有SSO对接配置，两条配置"
+            },
+            "httpData": {
+                "query": {},
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "GET",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "查询所有SSO对接配置-1条配置",
+            "otherInfo":{
+                "description": "查询所有SSO对接配置，两条配置"
+            },
+            "httpData": {
+                "query": {},
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "GET",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "查询所有SSO对接配置-无配置",
+            "otherInfo":{
+                "description": "查询所有SSO对接配置，无配置"
+            },
+            "httpData": {
+                "query": {},
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "GET",
+                "paramType": "json"
+            }
+        }
+    ]
+}

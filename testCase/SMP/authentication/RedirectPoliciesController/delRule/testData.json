@@ -1,0 +1,23 @@
+{
+    "mainCaseData":[
+        {
+            "title": "删除策略规则-策略id存在，规则id不存在",
+            "otherInfo":{
+                "description": "添加策略规则-策略id存在，规则id不存在"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f3a3710893a2500068349a4"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        }
+    ]
+}

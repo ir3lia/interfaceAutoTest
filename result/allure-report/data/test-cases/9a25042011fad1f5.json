@@ -1,0 +1,219 @@
+{
+  "uid" : "9a25042011fad1f5",
+  "name" : "删除软件安装信息",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.delSoftwareInstallInfo.test_delSoftwareInstallInfo.Test_class#test_main",
+  "historyId" : "d81437afdfe17306997cdaaf1fca76ed",
+  "time" : {
+    "start" : 1601373349760,
+    "stop" : 1601373349830,
+    "duration" : 70
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1601373349676,
+      "stop" : 1601373349758,
+      "duration" : 82
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Module__pytest_setup_module",
+    "time" : {
+      "start" : 1601373349660,
+      "stop" : 1601373349676,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "893b465b449a33fa",
+      "name" : "测试人员",
+      "source" : "893b465b449a33fa.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "4cdd5a6dda54cbbd",
+      "name" : "接口入参",
+      "source" : "4cdd5a6dda54cbbd.json",
+      "type" : "application/json",
+      "size" : 34
+    }, {
+      "uid" : "1362a74162ae6f6b",
+      "name" : "接口出参",
+      "source" : "1362a74162ae6f6b.json",
+      "type" : "application/json",
+      "size" : 44
+    }, {
+      "uid" : "e1f215f95eb8a0e8",
+      "name" : "stdout",
+      "source" : "e1f215f95eb8a0e8.txt",
+      "type" : "text/plain",
+      "size" : 550
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1601373349833,
+      "stop" : 1601373349869,
+      "duration" : 36
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Module__pytest_setup_module::0",
+    "time" : {
+      "start" : 1601373350060,
+      "stop" : 1601373350060,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "删除软件信息"
+  }, {
+    "name" : "story",
+    "value" : "删除软件信息-主流程"
+  }, {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.delSoftwareInstallInfo"
+  }, {
+    "name" : "suite",
+    "value" : "test_delSoftwareInstallInfo"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.delSoftwareInstallInfo.test_delSoftwareInstallInfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'删除软件安装信息'"
+  }, {
+    "name" : "description",
+    "value" : "'Id存在，软件安装信息删除成功！'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'id': '11cd2ec56fc345000793c4d1'}, 'response': {'code': 200, 'message': 'OK'}, 'isCheckDB': True, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 50,
+        "unknown" : 0,
+        "total" : 50
+      },
+      "items" : [ {
+        "uid" : "929cf55aac8d9d0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280503173,
+          "stop" : 1601280503240,
+          "duration" : 67
+        }
+      }, {
+        "uid" : "a9a57877612719de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249242284,
+          "stop" : 1600249242368,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "e41138175d9aefe3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236175520,
+          "stop" : 1600236175585,
+          "duration" : 65
+        }
+      }, {
+        "uid" : "b688096aa0caa82",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821962252,
+          "stop" : 1599821962323,
+          "duration" : 71
+        }
+      }, {
+        "uid" : "4448fd32c22939b9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820137844,
+          "stop" : 1599820137914,
+          "duration" : 70
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9a25042011fad1f5.json",
+  "parameterValues" : [ "'删除软件安装信息'", "'Id存在，软件安装信息删除成功！'", "{'query': {'id': '11cd2ec56fc345000793c4d1'}, 'response': {'code': 200, 'message': 'OK'}, 'isCheckDB': True, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+}

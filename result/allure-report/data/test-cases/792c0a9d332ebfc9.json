@@ -1,0 +1,159 @@
+{
+  "uid" : "792c0a9d332ebfc9",
+  "name" : "添加关联管理员-管理员id存在，添加成功",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAdministrator.test_addPolicyAdministrator.Test_class#test_main",
+  "historyId" : "cd9924ab2052ec94cc3f792e89b98c4e",
+  "time" : {
+    "start" : 1601373326790,
+    "stop" : 1601373326929,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "550bbb5075ab9f9e",
+      "name" : "测试人员",
+      "source" : "550bbb5075ab9f9e.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "b55c08c4af957f14",
+      "name" : "接口入参",
+      "source" : "b55c08c4af957f14.attach",
+      "type" : "text/plain",
+      "size" : 18
+    }, {
+      "uid" : "75d5b523bee442f4",
+      "name" : "接口出参",
+      "source" : "75d5b523bee442f4.attach",
+      "type" : "text/plain",
+      "size" : 44
+    }, {
+      "uid" : "241a91ca4f33fd7f",
+      "name" : "stdout",
+      "source" : "241a91ca4f33fd7f.txt",
+      "type" : "text/plain",
+      "size" : 441
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-主流程"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAdministrator"
+  }, {
+    "name" : "suite",
+    "value" : "test_addPolicyAdministrator"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAdministrator.test_addPolicyAdministrator"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加关联管理员-管理员id存在，添加成功'"
+  }, {
+    "name" : "description",
+    "value" : "'添加关联管理员-管理员id存在，添加成功'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "544ae1b036357c93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280478456,
+          "stop" : 1601280478623,
+          "duration" : 167
+        }
+      }, {
+        "uid" : "75694e7b30111da3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249219437,
+          "stop" : 1600249219595,
+          "duration" : 158
+        }
+      }, {
+        "uid" : "3bf9396c4f55eeb7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249139758,
+          "stop" : 1600249139901,
+          "duration" : 143
+        }
+      }, {
+        "uid" : "6de7108b09f27735",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236150879,
+          "stop" : 1600236151066,
+          "duration" : 187
+        }
+      }, {
+        "uid" : "36c21521785fb07d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156575412,
+          "stop" : 1600156575588,
+          "duration" : 176
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "792c0a9d332ebfc9.json",
+  "parameterValues" : [ "'添加关联管理员-管理员id存在，添加成功'", "'添加关联管理员-管理员id存在，添加成功'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

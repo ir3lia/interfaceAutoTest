@@ -1,0 +1,90 @@
+{
+    "mainCaseData":[
+        {
+            "title": "使黑名单失效-Id存在,更新人admin",
+            "otherInfo":{
+                "description": "使黑名单失效-Id存在,更新人admin"
+            },
+            "httpData": {
+                "query": {
+                    "blackListId": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "使黑名单失效-Id存在,更新人用户",
+            "otherInfo":{
+                "description": "使黑名单失效-Id存在,更新人用户"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        },
+        {
+            "title": "使黑名单失效-Id存在,更新人不存在",
+            "otherInfo":{
+                "description": "使黑名单失效-Id存在,更新人不存在"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        },
+        {
+            "title": "使黑名单失效-Id不存在",
+            "otherInfo":{
+                "description": "使黑名单失效-Id不存在"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006800000"
+                },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data": {
+                        "errorCode": 0,
+                        "errorMessage": "黑名单[5f1fd825bf7a2d0006800000]不存在！"
+                    }
+                },
+                "caseNum": "case_03",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        }
+    ]
+}

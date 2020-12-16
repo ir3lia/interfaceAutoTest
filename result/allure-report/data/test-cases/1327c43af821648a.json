@@ -1,0 +1,159 @@
+{
+  "uid" : "1327c43af821648a",
+  "name" : "添加策略规则-规则脚本不合法",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationRule.test_addauthenticationRule.Test_class#test_all",
+  "historyId" : "86eab9b241e4c4130a82a34d2ea32a3c",
+  "time" : {
+    "start" : 1601373332550,
+    "stop" : 1601373332774,
+    "duration" : 224
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "88bb26981957772c",
+      "name" : "测试人员",
+      "source" : "88bb26981957772c.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "9ef0fabedbc03cd1",
+      "name" : "接口入参",
+      "source" : "9ef0fabedbc03cd1.attach",
+      "type" : "text/plain",
+      "size" : 154
+    }, {
+      "uid" : "7a6304027d00c6bf",
+      "name" : "接口出参",
+      "source" : "7a6304027d00c6bf.attach",
+      "type" : "text/plain",
+      "size" : 120
+    }, {
+      "uid" : "2487a3c61d472a12",
+      "name" : "stdout",
+      "source" : "2487a3c61d472a12.txt",
+      "type" : "text/plain",
+      "size" : 560
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationRule"
+  }, {
+    "name" : "suite",
+    "value" : "test_addauthenticationRule"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationRule.test_addauthenticationRule"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加策略规则-规则脚本不合法'"
+  }, {
+    "name" : "description",
+    "value" : "'添加策略规则-规则脚本不合法'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': 'ruke', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 9990016, 'errorMessage': '策略配置异常！'}}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 38,
+        "unknown" : 0,
+        "total" : 40
+      },
+      "items" : [ {
+        "uid" : "8261caceacfd30e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280484540,
+          "stop" : 1601280484802,
+          "duration" : 262
+        }
+      }, {
+        "uid" : "1c1aa380ef366ed4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249225234,
+          "stop" : 1600249225474,
+          "duration" : 240
+        }
+      }, {
+        "uid" : "686a295512f194c7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249145228,
+          "stop" : 1600249145435,
+          "duration" : 207
+        }
+      }, {
+        "uid" : "a2c84a0f1213614d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236156683,
+          "stop" : 1600236156918,
+          "duration" : 235
+        }
+      }, {
+        "uid" : "75f007c5b23e40fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156580310,
+          "stop" : 1600156580520,
+          "duration" : 210
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1327c43af821648a.json",
+  "parameterValues" : [ "'添加策略规则-规则脚本不合法'", "'添加策略规则-规则脚本不合法'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': 'ruke', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 9990016, 'errorMessage': '策略配置异常！'}}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

@@ -1,0 +1,159 @@
+{
+  "uid" : "f24f2c47ea0ce94f",
+  "name" : "添加策略规则-已存在规则-添加新规则",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationRule.test_addauthenticationRule.Test_class#test_all",
+  "historyId" : "9af94a1dae65e1026ca494298f77ee64",
+  "time" : {
+    "start" : 1601373331967,
+    "stop" : 1601373332164,
+    "duration" : 197
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "20c73e33c511534f",
+      "name" : "测试人员",
+      "source" : "20c73e33c511534f.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "ec62a3ec3726f86d",
+      "name" : "接口入参",
+      "source" : "ec62a3ec3726f86d.attach",
+      "type" : "text/plain",
+      "size" : 150
+    }, {
+      "uid" : "711af324945aa78a",
+      "name" : "接口出参",
+      "source" : "711af324945aa78a.attach",
+      "type" : "text/plain",
+      "size" : 44
+    }, {
+      "uid" : "2f2caacf2f9404bd",
+      "name" : "stdout",
+      "source" : "2f2caacf2f9404bd.txt",
+      "type" : "text/plain",
+      "size" : 560
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationRule"
+  }, {
+    "name" : "suite",
+    "value" : "test_addauthenticationRule"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationRule.test_addauthenticationRule"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加策略规则-已存在规则-添加新规则'"
+  }, {
+    "name" : "description",
+    "value" : "'添加策略规则-已存在规则-添加新规则'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 45,
+        "unknown" : 0,
+        "total" : 47
+      },
+      "items" : [ {
+        "uid" : "d09ae4711ae6615f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280483964,
+          "stop" : 1601280484169,
+          "duration" : 205
+        }
+      }, {
+        "uid" : "39d5fda12679fec7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249224677,
+          "stop" : 1600249224862,
+          "duration" : 185
+        }
+      }, {
+        "uid" : "e2025dae8edc1025",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249144720,
+          "stop" : 1600249144877,
+          "duration" : 157
+        }
+      }, {
+        "uid" : "35758c38904e4205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236156026,
+          "stop" : 1600236156234,
+          "duration" : 208
+        }
+      }, {
+        "uid" : "5b3ba603910ca493",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156579784,
+          "stop" : 1600156579977,
+          "duration" : 193
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f24f2c47ea0ce94f.json",
+  "parameterValues" : [ "'添加策略规则-已存在规则-添加新规则'", "'添加策略规则-已存在规则-添加新规则'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

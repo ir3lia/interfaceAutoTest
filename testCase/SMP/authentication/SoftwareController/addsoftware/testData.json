@@ -1,0 +1,68 @@
+{
+    "mainCaseData":[
+        {
+            "title": "添加软件成功",
+            "otherInfo":{
+                "description": "主流程用例-添加软件成功！"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "软件名称版本唯一性校验",
+            "otherInfo":{
+                "description": "软件名称版本唯一性校验"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                    },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data": {
+                        "errorCode": 0,
+                        "errorMessage": "名称已存在,请更改"
+                        }
+                    },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

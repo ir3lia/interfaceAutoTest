@@ -1,0 +1,247 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":{
+            "mainCase": [
+                {
+                    "collection": "authenticationPolicies",
+                    "findDatas": [
+                         {
+                            "isDeleted" : true,
+                            "name" : "测试"
+                         }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "测试"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5f475da0893a250006859b74",
+                            "name" : "测试",
+                            "desc" : "测试",
+                            "ruleList" : [],
+                            "policyTag" : [
+                                "string"
+                            ],
+                            "supportAuthType" : [
+                                "portalQrCodeAuth","macAfterAuth"
+                            ],
+                            "priority" : 0,
+                            "displayCategory" : "ADMINISTRATOR",
+                            "policyState" : "INITIAL",
+                            "isTerminateInferior" : false,
+                            "policyAdmins" : [],
+                            "_version_" : "0",
+                            "createTime" : "2020-08-27 07:15:44.743",
+                            "lastModifiedTime" : "2020-08-27 07:15:44.743",
+                             "_class" : "com.ruijie.authentication.session.domain.authentication.AuthenticationPolicy"
+                        }
+                    ]
+                }
+            ],
+            "case_01": [
+                {
+                    "collection": "authenticationPolicies",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "测试"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "测试"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5f475da0893a250006859b74",
+                            "name" : "测试",
+                            "desc" : "测试",
+                            "ruleList" : [],
+                            "policyTag" : [
+                                "string"
+                            ],
+                            "supportAuthType" : [
+                                "portalQrCodeAuth","macAfterAuth"
+                            ],
+                            "priority" : 0,
+                            "displayCategory" : "ADMINISTRATOR",
+                            "policyState" : "INITIAL",
+                            "isTerminateInferior" : true,
+                            "policyAdmins" : [],
+                            "_version_" : "0",
+                            "createTime" : "2020-08-27 07:15:44.743",
+                            "lastModifiedTime" : "2020-08-27 07:15:44.743",
+                             "_class" : "com.ruijie.authentication.session.domain.authentication.AuthenticationPolicy"
+                        }
+                    ]
+                }
+            ],
+            "case_02": [
+                {
+                    "collection": "authenticationPolicies",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "测试"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "测试"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5f475da0893a250006859b74",
+                            "name" : "测试",
+                            "desc" : "测试",
+                            "ruleList" : [],
+                            "policyTag" : [
+                                "string"
+                            ],
+                            "supportAuthType" : [
+                                "portalQrCodeAuth","macAfterAuth"
+                            ],
+                            "priority" : 0,
+                            "displayCategory" : "ADMINISTRATOR",
+                            "policyState" : "INITIAL",
+                            "isTerminateInferior" : true,
+                            "policyAdmins" : [],
+                            "_version_" : "0",
+                            "createTime" : "2020-08-27 07:15:44.743",
+                            "lastModifiedTime" : "2020-08-27 07:15:44.743",
+                             "_class" : "com.ruijie.authentication.session.domain.authentication.AuthenticationPolicy"
+                        }
+                    ]
+                }
+            ],
+            "case_03": [
+                {
+                    "collection": "authenticationPolicies",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "测试"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "测试"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5f475da0893a250006859b74",
+                            "name" : "测试",
+                            "desc" : "测试",
+                            "ruleList" : [],
+                            "policyTag" : [
+                                "string"
+                            ],
+                            "supportAuthType" : [
+                                "portalQrCodeAuth","macAfterAuth"
+                            ],
+                            "priority" : 0,
+                            "displayCategory" : "ADMINISTRATOR",
+                            "policyState" : "INITIAL",
+                            "isTerminateInferior" : true,
+                            "policyAdmins" : [],
+                            "_version_" : "0",
+                            "createTime" : "2020-08-27 07:15:44.743",
+                            "lastModifiedTime" : "2020-08-27 07:15:44.743",
+                             "_class" : "com.ruijie.authentication.session.domain.authentication.AuthenticationPolicy"
+                        }
+                    ]
+                }
+            ],
+            "case_04": [
+                {
+                    "collection": "authenticationPolicies",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "测试"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "测试"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5f475da0893a250006859b74",
+                            "name" : "测试",
+                            "desc" : "测试",
+                            "ruleList" : [],
+                            "policyTag" : [
+                                "string"
+                            ],
+                            "supportAuthType" : [
+                                "portalQrCodeAuth","macAfterAuth"
+                            ],
+                            "priority" : 0,
+                            "displayCategory" : "ADMINISTRATOR",
+                            "policyState" : "INITIAL",
+                            "isTerminateInferior" : true,
+                            "policyAdmins" : [],
+                            "_version_" : "0",
+                            "createTime" : "2020-08-27 07:15:44.743",
+                            "lastModifiedTime" : "2020-08-27 07:15:44.743",
+                             "_class" : "com.ruijie.authentication.session.domain.authentication.AuthenticationPolicy"
+                        }
+                    ]
+                }
+            ],
+            "case_05": [
+                {
+                    "collection": "authenticationPolicies",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "测试"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "测试"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5f475da0893a250006859b74",
+                            "name" : "测试",
+                            "desc" : "测试",
+                            "ruleList" : [],
+                            "policyTag" : [
+                                "string"
+                            ],
+                            "supportAuthType" : [
+                                "portalQrCodeAuth","macAfterAuth"
+                            ],
+                            "priority" : 0,
+                            "displayCategory" : "ADMINISTRATOR",
+                            "policyState" : "INITIAL",
+                            "isTerminateInferior" : true,
+                            "policyAdmins" : [],
+                            "_version_" : "0",
+                            "createTime" : "2020-08-27 07:15:44.743",
+                            "lastModifiedTime" : "2020-08-27 07:15:44.743",
+                             "_class" : "com.ruijie.authentication.session.domain.authentication.AuthenticationPolicy"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

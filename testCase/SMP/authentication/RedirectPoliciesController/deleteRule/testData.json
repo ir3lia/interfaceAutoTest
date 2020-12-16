@@ -1,0 +1,44 @@
+{
+    "mainCaseData":[
+        {
+            "title": "删除策略规则-规则id存在",
+            "otherInfo":{
+                "description": "添加策略规则-规则id存在"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f3a3710893a2500068349a4"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "删除策略规则-规则id不存在",
+            "otherInfo":{
+                "description": "删除策略规则-规则id不存在"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f3e3dc2893a25000681111"
+                },
+                "response": {
+                    "code" : 0,
+                    "message": "application.session.webRedirectPolicy.not_exist"
+                    },
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        }
+    ]
+}

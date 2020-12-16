@@ -1,0 +1,159 @@
+{
+  "uid" : "430d68b6c89e2b89",
+  "name" : "添加认证方式-认证方式已存在，添加不在范围内的",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAuthType.test_addPolicyAuthType.Test_class#test_all",
+  "historyId" : "6e659c0b6e4a57780f80198c4e34488d",
+  "time" : {
+    "start" : 1601373329262,
+    "stop" : 1601373329418,
+    "duration" : 156
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5c0454267df55ce5",
+      "name" : "测试人员",
+      "source" : "5c0454267df55ce5.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "eb6696f0c558b0c1",
+      "name" : "接口入参",
+      "source" : "eb6696f0c558b0c1.attach",
+      "type" : "text/plain",
+      "size" : 18
+    }, {
+      "uid" : "787913624b7c45e6",
+      "name" : "接口出参",
+      "source" : "787913624b7c45e6.attach",
+      "type" : "text/plain",
+      "size" : 44
+    }, {
+      "uid" : "520bc7dd469c8ba9",
+      "name" : "stdout",
+      "source" : "520bc7dd469c8ba9.txt",
+      "type" : "text/plain",
+      "size" : 441
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAuthType"
+  }, {
+    "name" : "suite",
+    "value" : "test_addPolicyAuthType"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAuthType.test_addPolicyAuthType"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加认证方式-认证方式已存在，添加不在范围内的'"
+  }, {
+    "name" : "description",
+    "value" : "'添加认证方式-已存在，添加不在范围内的'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_08', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 18,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "f0b39cb7bb1248d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280481198,
+          "stop" : 1601280481354,
+          "duration" : 156
+        }
+      }, {
+        "uid" : "d72f6e53a9df981",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249222042,
+          "stop" : 1600249222174,
+          "duration" : 132
+        }
+      }, {
+        "uid" : "d1b65d5a66878a10",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249142267,
+          "stop" : 1600249142393,
+          "duration" : 126
+        }
+      }, {
+        "uid" : "7fbf3aa32abbf0bf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236153299,
+          "stop" : 1600236153452,
+          "duration" : 153
+        }
+      }, {
+        "uid" : "79da5113f2c1d864",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156577106,
+          "stop" : 1600156577268,
+          "duration" : 162
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "430d68b6c89e2b89.json",
+  "parameterValues" : [ "'添加认证方式-认证方式已存在，添加不在范围内的'", "'添加认证方式-已存在，添加不在范围内的'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_08', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

@@ -1,0 +1,159 @@
+{
+  "uid" : "6f211b4be178c922",
+  "name" : "批量添加关联管理员-添加多个，全部为新",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAdministrators.test_addPolicyAdministrators.Test_class#test_main",
+  "historyId" : "7a7ae21376ba56069efc34670402f1f1",
+  "time" : {
+    "start" : 1601373327154,
+    "stop" : 1601373327276,
+    "duration" : 122
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6e958f751acd5639",
+      "name" : "测试人员",
+      "source" : "6e958f751acd5639.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "edebe1c66ad2b007",
+      "name" : "接口入参",
+      "source" : "edebe1c66ad2b007.attach",
+      "type" : "text/plain",
+      "size" : 56
+    }, {
+      "uid" : "c6203d7589ba637b",
+      "name" : "接口出参",
+      "source" : "c6203d7589ba637b.attach",
+      "type" : "text/plain",
+      "size" : 44
+    }, {
+      "uid" : "58260f92d83570a6",
+      "name" : "stdout",
+      "source" : "58260f92d83570a6.txt",
+      "type" : "text/plain",
+      "size" : 441
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-主流程"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAdministrators"
+  }, {
+    "name" : "suite",
+    "value" : "test_addPolicyAdministrators"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAdministrators.test_addPolicyAdministrators"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'批量添加关联管理员-添加多个，全部为新'"
+  }, {
+    "name" : "description",
+    "value" : "'批量添加关联管理员-添加多个，全部为新'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': ['5f5f4230f2c9e5000681e882', '5f5f4230f2c9e5000681e883'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "6fb033363f208ad7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280478829,
+          "stop" : 1601280478994,
+          "duration" : 165
+        }
+      }, {
+        "uid" : "21073d765121dbb9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249219776,
+          "stop" : 1600249219930,
+          "duration" : 154
+        }
+      }, {
+        "uid" : "4b7f2acc174731c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249140121,
+          "stop" : 1600249140241,
+          "duration" : 120
+        }
+      }, {
+        "uid" : "e2ab3d3e3513faba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249114817,
+          "stop" : 1600249114961,
+          "duration" : 144
+        }
+      }, {
+        "uid" : "9b932a479a6041a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600248900362,
+          "stop" : 1600248900538,
+          "duration" : 176
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6f211b4be178c922.json",
+  "parameterValues" : [ "'批量添加关联管理员-添加多个，全部为新'", "'批量添加关联管理员-添加多个，全部为新'", "{'query': ['5f5f4230f2c9e5000681e882', '5f5f4230f2c9e5000681e883'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

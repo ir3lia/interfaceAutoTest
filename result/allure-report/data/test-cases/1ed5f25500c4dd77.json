@@ -1,0 +1,159 @@
+{
+  "uid" : "1ed5f25500c4dd77",
+  "name" : "清空单个软件的分类信息",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.clearClassify.test_clearClassify.Test_class#test_all",
+  "historyId" : "0956c6a8cde22df19bbbddf5f1035aa2",
+  "time" : {
+    "start" : 1601373348983,
+    "stop" : 1601373349087,
+    "duration" : 104
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e7e77c894da30f6",
+      "name" : "测试人员",
+      "source" : "e7e77c894da30f6.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "20170b5b4bd4f997",
+      "name" : "接口入参",
+      "source" : "20170b5b4bd4f997.attach",
+      "type" : "text/plain",
+      "size" : 34
+    }, {
+      "uid" : "4f09180b7d2456ba",
+      "name" : "接口出参",
+      "source" : "4f09180b7d2456ba.attach",
+      "type" : "text/plain",
+      "size" : 308
+    }, {
+      "uid" : "fe972b23e431edf5",
+      "name" : "stdout",
+      "source" : "fe972b23e431edf5.txt",
+      "type" : "text/plain",
+      "size" : 260
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "清空单个软件的分类信息-测试用例"
+  }, {
+    "name" : "feature",
+    "value" : "清空单个软件的分类信息"
+  }, {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.clearClassify"
+  }, {
+    "name" : "suite",
+    "value" : "test_clearClassify"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.clearClassify.test_clearClassify"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'清空单个软件的分类信息'"
+  }, {
+    "name" : "description",
+    "value" : "'Id存在，分类不存在，分类信息删除成功！'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'id': '5efc655ebf7a2d00064aec22'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 15,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 58,
+        "unknown" : 0,
+        "total" : 76
+      },
+      "items" : [ {
+        "uid" : "c36a181551355126",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280502321,
+          "stop" : 1601280502445,
+          "duration" : 124
+        }
+      }, {
+        "uid" : "c0bfea4ff2fc281e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249241548,
+          "stop" : 1600249241671,
+          "duration" : 123
+        }
+      }, {
+        "uid" : "a285b78db681dd21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236174690,
+          "stop" : 1600236174820,
+          "duration" : 130
+        }
+      }, {
+        "uid" : "2413dee057bb555e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821961502,
+          "stop" : 1599821961613,
+          "duration" : 111
+        }
+      }, {
+        "uid" : "f7fc99d4024e2515",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820137164,
+          "stop" : 1599820137255,
+          "duration" : 91
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1ed5f25500c4dd77.json",
+  "parameterValues" : [ "'清空单个软件的分类信息'", "'Id存在，分类不存在，分类信息删除成功！'", "{'query': {'id': '5efc655ebf7a2d00064aec22'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+}

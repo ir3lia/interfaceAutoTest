@@ -1,0 +1,159 @@
+{
+  "uid" : "eb5a86f6a60ce1ae",
+  "name" : "添加软件成功",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.addsoftware.test_addsoftware.Test_class#test_main",
+  "historyId" : "005a382149b7c4262d1edfc8119bf99c",
+  "time" : {
+    "start" : 1601373346682,
+    "stop" : 1601373346784,
+    "duration" : 102
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f6766700f56b6542",
+      "name" : "测试人员",
+      "source" : "f6766700f56b6542.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "78052eb48fd10a31",
+      "name" : "接口入参",
+      "source" : "78052eb48fd10a31.attach",
+      "type" : "text/plain",
+      "size" : 305
+    }, {
+      "uid" : "c4c8f83004dbae42",
+      "name" : "接口出参",
+      "source" : "c4c8f83004dbae42.attach",
+      "type" : "text/plain",
+      "size" : 383
+    }, {
+      "uid" : "62b01079df7ce2b3",
+      "name" : "stdout",
+      "source" : "62b01079df7ce2b3.txt",
+      "type" : "text/plain",
+      "size" : 287
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "添加软件信息-主流程"
+  }, {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "feature",
+    "value" : "添加软件信息"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.addsoftware"
+  }, {
+    "name" : "suite",
+    "value" : "test_addsoftware"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.addsoftware.test_addsoftware"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加软件成功'"
+  }, {
+    "name" : "description",
+    "value" : "'主流程用例-添加软件成功！'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 86,
+        "unknown" : 0,
+        "total" : 86
+      },
+      "items" : [ {
+        "uid" : "84f3bcd162658b4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280499892,
+          "stop" : 1601280500015,
+          "duration" : 123
+        }
+      }, {
+        "uid" : "5e912a3aa0ba73ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249239254,
+          "stop" : 1600249239366,
+          "duration" : 112
+        }
+      }, {
+        "uid" : "d4007676097f913c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236172351,
+          "stop" : 1600236172464,
+          "duration" : 113
+        }
+      }, {
+        "uid" : "f27c8a22a7829e23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821959219,
+          "stop" : 1599821959344,
+          "duration" : 125
+        }
+      }, {
+        "uid" : "85f672e30a2e0920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820134943,
+          "stop" : 1599820135052,
+          "duration" : 109
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "eb5a86f6a60ce1ae.json",
+  "parameterValues" : [ "'添加软件成功'", "'主流程用例-添加软件成功！'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

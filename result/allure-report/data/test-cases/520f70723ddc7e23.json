@@ -1,0 +1,159 @@
+{
+  "uid" : "520f70723ddc7e23",
+  "name" : "添加策略规则-规则标签为3个值",
+  "fullName" : "testCase.SMP.authentication.RedirectPoliciesController.addRule.test_addRule.Test_class#test_main",
+  "historyId" : "5c59f5b3332eb8a2583e505f6414789a",
+  "time" : {
+    "start" : 1601373342654,
+    "stop" : 1601373342820,
+    "duration" : 166
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1d48cc02bf2e5535",
+      "name" : "测试人员",
+      "source" : "1d48cc02bf2e5535.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "a8f13a17060265cb",
+      "name" : "接口入参",
+      "source" : "a8f13a17060265cb.attach",
+      "type" : "text/plain",
+      "size" : 174
+    }, {
+      "uid" : "5bd33e60eba987a5",
+      "name" : "接口出参",
+      "source" : "5bd33e60eba987a5.attach",
+      "type" : "text/plain",
+      "size" : 44
+    }, {
+      "uid" : "a6f889ed65bd350a",
+      "name" : "stdout",
+      "source" : "a6f889ed65bd350a.txt",
+      "type" : "text/plain",
+      "size" : 411
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Web重定向策略管理-主流程"
+  }, {
+    "name" : "feature",
+    "value" : "Web重定向策略管理"
+  }, {
+    "name" : "epic",
+    "value" : "RedirectPoliciesController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addRule"
+  }, {
+    "name" : "suite",
+    "value" : "test_addRule"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addRule.test_addRule"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加策略规则-规则标签为3个值'"
+  }, {
+    "name" : "description",
+    "value" : "'添加策略规则-规则标签为3个值'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['test01', 'test02', 'test03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 60,
+        "unknown" : 0,
+        "total" : 60
+      },
+      "items" : [ {
+        "uid" : "9f4781b043595c43",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280495722,
+          "stop" : 1601280495869,
+          "duration" : 147
+        }
+      }, {
+        "uid" : "22e95b08449da727",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249235283,
+          "stop" : 1600249235443,
+          "duration" : 160
+        }
+      }, {
+        "uid" : "1dcc721ff894c486",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236168009,
+          "stop" : 1600236168185,
+          "duration" : 176
+        }
+      }, {
+        "uid" : "7cf83ad0a8f79153",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821954891,
+          "stop" : 1599821955078,
+          "duration" : 187
+        }
+      }, {
+        "uid" : "5318e83f07574c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820130997,
+          "stop" : 1599820131119,
+          "duration" : 122
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "520f70723ddc7e23.json",
+  "parameterValues" : [ "'添加策略规则-规则标签为3个值'", "'添加策略规则-规则标签为3个值'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['test01', 'test02', 'test03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

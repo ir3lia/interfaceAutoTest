@@ -1,0 +1,712 @@
+{
+    "linkid":{
+        "desc": "教职工用户为学校管理员、校长、班主任、任课老师",
+        "dbName": "linkid-dev",
+        "collectionData":{
+            "mainCase": [
+                {
+                    "collection": "IDENTITY_USER",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "name":"懒洋洋"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5ecc6fa1c57a4300064e0000",
+                            "roleIds" : [],
+                            "labelIds" : [],
+                            "teacherId" : "10017625",
+                            "password" : "Ex32+UBitndhWIuEkwsrJg==",
+                            "name" : "懒洋洋",
+                            "idCard" : "363636199900111122",
+                            "szdw" : [ 
+                                "5ed7468da7f2650006500005"
+                            ],
+                            "sex" : "男性",
+                            "userPropertys" : {
+                                "5c4fd4518c21aa41dca73724" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73724",
+                                    "value" : "Ex32+UBitndhWIuEkwsrJg==",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73736" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73736",
+                                    "value" : "居民身份证",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73769" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73769",
+                                    "value" : [ 
+                                        "5ed7468da7f2650006500005"
+                                    ],
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73725" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73725",
+                                    "value" : true,
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd841c8048a2f376b5c6024" : {
+                                    "objectId" : "5bd841c8048a2f376b5c6024",
+                                    "value" : "男性",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73733" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73733",
+                                    "value" : "汉族",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5e0466381569ae000193b7ab" : {
+                                    "objectId" : "5e0466381569ae000193b7ab",
+                                    "value" : "lyy001",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c09dde87be07b74cd74cb4a" : {
+                                    "objectId" : "5c09dde87be07b74cd74cb4a",
+                                    "value" : "363636199900111122",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5df750057e8171000153ebb7" : {
+                                    "objectId" : "5df750057e8171000153ebb7",
+                                    "value" : "lyy1234567890",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd442fc048a2f376b2e6cba" : {
+                                    "objectId" : "5bd442fc048a2f376b2e6cba",
+                                    "value" : "10017625",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd44318048a2f376b2e6dab" : {
+                                    "objectId" : "5bd44318048a2f376b2e6dab",
+                                    "value" : "懒洋洋",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca7373c" : {
+                                    "objectId" : "5c4fd4518c21aa41dca7373c",
+                                    "value" : "中国共产党预备党员",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca7375d" : {
+                                    "objectId" : "5c4fd4518c21aa41dca7375d",
+                                    "value" : "lyy@ruijie.com.cn",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd55971048a2f376b34d32d" : {
+                                    "objectId" : "5bd55971048a2f376b34d32d",
+                                    "value" : "01",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73726" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73726",
+                                    "value" : "2020-05-25T16:00:00.000+0000",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4508c21aa41dca734b4" : {
+                                    "objectId" : "5c4fd4508c21aa41dca734b4",
+                                    "value" : "硕士研究生毕业",
+                                    "source" : "RG_SourceID"
+                                }
+                            },
+                            "szdwAndGwmcs" : [ 
+                                {
+                                    "szdw" : "5ed7468da7f2650006500005"
+                                }
+                            ],
+                            "createdTime" : "2020-05-26 01:23:45.289",
+                            "updatedTime" : "2020-05-26 01:30:34.973",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ZT_SCHOOL",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "name" : "嘻嘻幼儿园"
+                        }
+                    ],
+                    "isObjectId": false,
+                    "insertDatas":[
+                        {
+                            "_id" : "R5ed7468da7f2650006500000",
+                            "name" : "嘻嘻幼儿园",
+                            "headMasterId" : "5ecc6fa1c57a4300064e0000",
+                            "segmentList" : [ 
+                                {
+                                    "segmentNo" : "0",
+                                    "segmentLength" : 1
+                                }
+                            ],
+                            "address" : "",
+                            "code" : "xixi123",
+                            "xxbb" : "22",
+                            "xxbxlx" : "111",
+                            "xzqhm" : "120101",
+                            "createdTime" : "2020-06-03 06:43:25.161",
+                            "updatedTime" : "2020-06-03 06:45:08.707",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ZT_SCHOOL_GRADE",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "schoolId" : "R5ed7468da7f2650006500000"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5ed746f4a7f2650006500001",
+                            "schoolId" : "R5ed7468da7f2650006500000",
+                            "eduGrade" : {
+                                "segmentNo" : "0",
+                                "beginYear" : 2019
+                            },
+                            "segmentLength" : 1,
+                            "status" : 1,
+                            "createdTime" : "2020-06-03 06:45:08.711",
+                            "updatedTime" : "2020-06-03 06:45:08.711",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ZT_CAMPUS",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "schoolId" : "R5ed7468da7f2650006500000"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5ed7468da7f2650006500002",
+                            "schoolId" : "R5ed7468da7f2650006500000",
+                            "name" : "默认校区",
+                            "createdTime" : "2020-06-03 06:43:25.167",
+                            "updatedTime" : "2020-06-03 06:43:25.167",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ZT_CLAXX",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "schoolId" : "R5ed7468da7f2650006500000"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5ed7468da7f2650006500003",
+                            "name" : "1班",
+                            "claxxNo" : 1,
+                            "schoolId" : "R5ed7468da7f2650006500000",
+                            "campusId" : "5ed7468da7f2650006500002",
+                            "segmentNo" : "0",
+                            "beginYear" : 2019,
+                            "gradeId" : "5ed746f4a7f2650006500001",
+                            "headTeacherId" : "5ecc6fa1c57a4300064e0000",
+                            "claxxType" : "01",
+                            "teachers" : [ 
+                                {
+                                    "userId" : "5ecc6fa1c57a4300064e0000",
+                                    "courseIds" : [ 
+                                        "14"
+                                    ]
+                                }
+                            ],
+                            "isOptional" : false,
+                            "createdTime" : "2020-06-03 06:45:08.716",
+                            "updatedTime" : "2020-06-03 06:45:32.187",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ZT_MANAGER",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "userId" : "5ecc6fa1c57a4300064e0000"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5ed7468da7f2650006500004",
+                            "userId" : "5ecc6fa1c57a4300064e0000",
+                            "level" : 2,
+                            "managerRoleIds" : [ 
+                                "5e09b776696ce353919bee88"
+                            ],
+                            "createdTime" : "2020-06-03 06:45:45.289",
+                            "updatedTime" : "2020-06-03 06:45:45.315",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ZT_ORGANIZATION",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "schoolId" : "R5ed7468da7f2650006500000"
+                        }
+                    ],
+                    "isObjectId": false,
+                    "insertDatas":[
+                        {
+                            "_id" : "R5ed7468da7f2650006500000",
+                            "name" : "嘻嘻幼儿园",
+                            "ztOrgType" : 2,
+                            "schoolId" : "R5ed7468da7f2650006500000",
+                            "managerIds" : [ 
+                                "5ed7468da7f2650006500004"
+                            ],
+                            "address" : "",
+                            "logo" : "",
+                            "xzqhm" : "120101",
+                            "createdTime" : "2020-06-03 06:43:25.087",
+                            "updatedTime" : "2020-06-03 06:45:45.311",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ORGANIZATION",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "_id" : "R5ed7468da7f2650006500000"
+                        },
+                        {
+                            "_id" : "5ed7468da7f2650006500005"
+                        }
+                    ],
+                    "isObjectId": false,
+                    "insertDatas":[
+                        {
+                            "_id" : "R5ed7468da7f2650006500000",
+                            "code" : "100257",
+                            "name" : "嘻嘻幼儿园",
+                            "roleIds" : [],
+                            "organizationOrder" : [ 
+                                "5ed7468da7f2650006500005"
+                            ],
+                            "postOrder" : [],
+                            "workRoleOrder" : [],
+                            "createdTime" : "2020-06-03 06:43:25.092",
+                            "updatedTime" : "2020-06-03 06:45:45.304",
+                            "isDeleted" : false
+                        },
+                        {
+                            "_id" : "5ed7468da7f2650006500005",
+                            "code" : "100258",
+                            "name" : "部门1",
+                            "parent" : "R5ed7468da7f2650006500000",
+                            "roleIds" : [],
+                            "organizationOrder" : [],
+                            "postOrder" : [],
+                            "workRoleOrder" : [],
+                            "createdTime" : "2020-06-03 06:43:38.936",
+                            "updatedTime" : "2020-06-03 06:43:39.028",
+                            "isDeleted" : false,
+                            "ztOrgId" : "R5ed7468da7f2650006500000",
+                            "ztType" : 3
+                        }
+                    ]
+                }
+            ],
+            "case_01": [
+                {
+                    "collection": "IDENTITY_USER",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "name":"懒洋洋"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5ecc6fa1c57a4300064e0000",
+                            "roleIds" : [],
+                            "labelIds" : [],
+                            "teacherId" : "10017625",
+                            "password" : "Ex32+UBitndhWIuEkwsrJg==",
+                            "name" : "懒洋洋",
+                            "idCard" : "363636199900111122",
+                            "szdw" : [ 
+                                "5ed7468da7f2650006500005"
+                            ],
+                            "sex" : "男性",
+                            "userPropertys" : {
+                                "5c4fd4518c21aa41dca73724" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73724",
+                                    "value" : "Ex32+UBitndhWIuEkwsrJg==",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73736" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73736",
+                                    "value" : "居民身份证",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73769" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73769",
+                                    "value" : [ 
+                                        "5ed7468da7f2650006500005"
+                                    ],
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73725" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73725",
+                                    "value" : true,
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd841c8048a2f376b5c6024" : {
+                                    "objectId" : "5bd841c8048a2f376b5c6024",
+                                    "value" : "男性",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73733" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73733",
+                                    "value" : "汉族",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5e0466381569ae000193b7ab" : {
+                                    "objectId" : "5e0466381569ae000193b7ab",
+                                    "value" : "lyy001",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c09dde87be07b74cd74cb4a" : {
+                                    "objectId" : "5c09dde87be07b74cd74cb4a",
+                                    "value" : "363636199900111122",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5df750057e8171000153ebb7" : {
+                                    "objectId" : "5df750057e8171000153ebb7",
+                                    "value" : "lyy1234567890",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd442fc048a2f376b2e6cba" : {
+                                    "objectId" : "5bd442fc048a2f376b2e6cba",
+                                    "value" : "10017625",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd44318048a2f376b2e6dab" : {
+                                    "objectId" : "5bd44318048a2f376b2e6dab",
+                                    "value" : "懒洋洋",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca7373c" : {
+                                    "objectId" : "5c4fd4518c21aa41dca7373c",
+                                    "value" : "中国共产党预备党员",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca7375d" : {
+                                    "objectId" : "5c4fd4518c21aa41dca7375d",
+                                    "value" : "lyy@ruijie.com.cn",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd55971048a2f376b34d32d" : {
+                                    "objectId" : "5bd55971048a2f376b34d32d",
+                                    "value" : "01",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73726" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73726",
+                                    "value" : "2020-05-25T16:00:00.000+0000",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4508c21aa41dca734b4" : {
+                                    "objectId" : "5c4fd4508c21aa41dca734b4",
+                                    "value" : "硕士研究生毕业",
+                                    "source" : "RG_SourceID"
+                                }
+                            },
+                            "szdwAndGwmcs" : [ 
+                                {
+                                    "szdw" : "5ed7468da7f2650006500005"
+                                }
+                            ],
+                            "createdTime" : "2020-05-26 01:23:45.289",
+                            "updatedTime" : "2020-05-26 01:30:34.973",
+                            "isDeleted" : false
+                        }
+                    ]
+                }
+            ],
+            "case_02": [
+                {
+                    "collection": "IDENTITY_USER",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "name":"懒洋洋"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5ecc6fa1c57a4300064e0000",
+                            "roleIds" : [],
+                            "labelIds" : [],
+                            "teacherId" : "10017625",
+                            "password" : "Ex32+UBitndhWIuEkwsrJg==",
+                            "name" : "懒洋洋",
+                            "idCard" : "363636199900111122",
+                            "szdw" : [ 
+                                "5ed7468da7f2650006500005"
+                            ],
+                            "sex" : "男性",
+                            "userPropertys" : {
+                                "5c4fd4518c21aa41dca73724" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73724",
+                                    "value" : "Ex32+UBitndhWIuEkwsrJg==",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73736" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73736",
+                                    "value" : "居民身份证",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73769" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73769",
+                                    "value" : [ 
+                                        "5ed7468da7f2650006500005"
+                                    ],
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73725" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73725",
+                                    "value" : true,
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd841c8048a2f376b5c6024" : {
+                                    "objectId" : "5bd841c8048a2f376b5c6024",
+                                    "value" : "男性",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73733" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73733",
+                                    "value" : "汉族",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5e0466381569ae000193b7ab" : {
+                                    "objectId" : "5e0466381569ae000193b7ab",
+                                    "value" : "lyy001",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c09dde87be07b74cd74cb4a" : {
+                                    "objectId" : "5c09dde87be07b74cd74cb4a",
+                                    "value" : "363636199900111122",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5df750057e8171000153ebb7" : {
+                                    "objectId" : "5df750057e8171000153ebb7",
+                                    "value" : "lyy1234567890",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd442fc048a2f376b2e6cba" : {
+                                    "objectId" : "5bd442fc048a2f376b2e6cba",
+                                    "value" : "10017625",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd44318048a2f376b2e6dab" : {
+                                    "objectId" : "5bd44318048a2f376b2e6dab",
+                                    "value" : "懒洋洋",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca7373c" : {
+                                    "objectId" : "5c4fd4518c21aa41dca7373c",
+                                    "value" : "中国共产党预备党员",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca7375d" : {
+                                    "objectId" : "5c4fd4518c21aa41dca7375d",
+                                    "value" : "lyy@ruijie.com.cn",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5bd55971048a2f376b34d32d" : {
+                                    "objectId" : "5bd55971048a2f376b34d32d",
+                                    "value" : "01",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4518c21aa41dca73726" : {
+                                    "objectId" : "5c4fd4518c21aa41dca73726",
+                                    "value" : "2020-05-25T16:00:00.000+0000",
+                                    "source" : "RG_SourceID"
+                                },
+                                "5c4fd4508c21aa41dca734b4" : {
+                                    "objectId" : "5c4fd4508c21aa41dca734b4",
+                                    "value" : "硕士研究生毕业",
+                                    "source" : "RG_SourceID"
+                                }
+                            },
+                            "szdwAndGwmcs" : [ 
+                                {
+                                    "szdw" : "5ed7468da7f2650006500005"
+                                }
+                            ],
+                            "createdTime" : "2020-05-26 01:23:45.289",
+                            "updatedTime" : "2020-05-26 01:30:34.973",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ZT_SCHOOL",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "name" : "嘻嘻幼儿园"
+                        }
+                    ],
+                    "isObjectId": false,
+                    "insertDatas":[
+                        {
+                            "_id" : "R5ed7468da7f2650006500000",
+                            "name" : "嘻嘻幼儿园",
+                            "headMasterId" : "",
+                            "segmentList" : [],
+                            "address" : "",
+                            "code" : "xixi123",
+                            "xxbb" : "22",
+                            "xxbxlx" : "111",
+                            "xzqhm" : "120101",
+                            "createdTime" : "2020-06-03 06:43:25.161",
+                            "updatedTime" : "2020-06-03 06:45:08.707",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ZT_CAMPUS",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "schoolId" : "R5ed7468da7f2650006500000"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5ed7468da7f2650006500002",
+                            "schoolId" : "R5ed7468da7f2650006500000",
+                            "name" : "默认校区",
+                            "createdTime" : "2020-06-03 06:43:25.167",
+                            "updatedTime" : "2020-06-03 06:43:25.167",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ZT_MANAGER",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "userId" : "5ecc6fa1c57a4300064e0000"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5ed7468da7f2650006500004",
+                            "userId" : "5ecc6fa1c57a4300064e0000",
+                            "level" : 2,
+                            "managerRoleIds" : [ 
+                                "5e09b776696ce353919bee88"
+                            ],
+                            "createdTime" : "2020-06-03 06:45:45.289",
+                            "updatedTime" : "2020-06-03 06:45:45.315",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ZT_ORGANIZATION",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "schoolId" : "R5ed7468da7f2650006500000"
+                        }
+                    ],
+                    "isObjectId": false,
+                    "insertDatas":[
+                        {
+                            "_id" : "R5ed7468da7f2650006500000",
+                            "name" : "嘻嘻幼儿园",
+                            "ztOrgType" : 2,
+                            "schoolId" : "R5ed7468da7f2650006500000",
+                            "managerIds" : [ 
+                                "5ed7468da7f2650006500004"
+                            ],
+                            "address" : "",
+                            "logo" : "",
+                            "xzqhm" : "120101",
+                            "createdTime" : "2020-06-03 06:43:25.087",
+                            "updatedTime" : "2020-06-03 06:45:45.311",
+                            "isDeleted" : false
+                        }
+                    ]
+                },
+                {
+                    "collection": "ORGANIZATION",
+                    "findDatas": [],
+                    "deleteDatas":[
+                        {
+                            "_id" : "R5ed7468da7f2650006500000"
+                        },
+                        {
+                            "_id" : "5ed7468da7f2650006500005"
+                        }
+                    ],
+                    "isObjectId": false,
+                    "insertDatas":[
+                        {
+                            "_id" : "R5ed7468da7f2650006500000",
+                            "code" : "100257",
+                            "name" : "嘻嘻幼儿园",
+                            "roleIds" : [],
+                            "organizationOrder" : [ 
+                                "5ed7468da7f2650006500005"
+                            ],
+                            "postOrder" : [],
+                            "workRoleOrder" : [],
+                            "createdTime" : "2020-06-03 06:43:25.092",
+                            "updatedTime" : "2020-06-03 06:45:45.304",
+                            "isDeleted" : false
+                        },
+                        {
+                            "_id" : "5ed7468da7f2650006500005",
+                            "code" : "100258",
+                            "name" : "部门1",
+                            "parent" : "R5ed7468da7f2650006500000",
+                            "roleIds" : [],
+                            "organizationOrder" : [],
+                            "postOrder" : [],
+                            "workRoleOrder" : [],
+                            "createdTime" : "2020-06-03 06:43:38.936",
+                            "updatedTime" : "2020-06-03 06:43:39.028",
+                            "isDeleted" : false,
+                            "ztOrgId" : "R5ed7468da7f2650006500000",
+                            "ztType" : 3
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+
+}

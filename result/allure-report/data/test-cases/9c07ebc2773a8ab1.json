@@ -1,0 +1,219 @@
+{
+  "uid" : "9c07ebc2773a8ab1",
+  "name" : "删除策略规则-策略id不存在",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.delauthenticationRule.test_delauthenticationRule.Test_class#test_all",
+  "historyId" : "a7f1b3931e5db3b4828dc8334aa2072b",
+  "time" : {
+    "start" : 1601373334368,
+    "stop" : 1601373334436,
+    "duration" : 68
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Module__pytest_setup_module",
+    "time" : {
+      "start" : 1601373334171,
+      "stop" : 1601373334187,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1601373334316,
+      "stop" : 1601373334367,
+      "duration" : 51
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "eb958346ac8d606b",
+      "name" : "测试人员",
+      "source" : "eb958346ac8d606b.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "15e5c98be6276b4e",
+      "name" : "接口入参",
+      "source" : "15e5c98be6276b4e.json",
+      "type" : "application/json",
+      "size" : 34
+    }, {
+      "uid" : "efb525a29cb238d8",
+      "name" : "接口出参",
+      "source" : "efb525a29cb238d8.json",
+      "type" : "application/json",
+      "size" : 163
+    }, {
+      "uid" : "ea7dd65a1ce5f829",
+      "name" : "stdout",
+      "source" : "ea7dd65a1ce5f829.txt",
+      "type" : "text/plain",
+      "size" : 280
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Module__pytest_setup_module::0",
+    "time" : {
+      "start" : 1601373334440,
+      "stop" : 1601373334440,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1601373334439,
+      "stop" : 1601373334439,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.delauthenticationRule"
+  }, {
+    "name" : "suite",
+    "value" : "test_delauthenticationRule"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.delauthenticationRule.test_delauthenticationRule"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'删除策略规则-策略id不存在'"
+  }, {
+    "name" : "description",
+    "value" : "'删除策略规则-策略id不存在'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'id': '5f475da0893a250006859b00'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006859b00]的认证策略'}}, 'caseNum': 'case01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 31,
+        "unknown" : 0,
+        "total" : 32
+      },
+      "items" : [ {
+        "uid" : "2bfd810d94120e9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280486484,
+          "stop" : 1601280486557,
+          "duration" : 73
+        }
+      }, {
+        "uid" : "9315e6541b7216fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249227025,
+          "stop" : 1600249227089,
+          "duration" : 64
+        }
+      }, {
+        "uid" : "eba5126f01d29520",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249146986,
+          "stop" : 1600249147047,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "441b9b8d820fdb32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236158718,
+          "stop" : 1600236158795,
+          "duration" : 77
+        }
+      }, {
+        "uid" : "a12d75a8d8145f42",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156582189,
+          "stop" : 1600156582269,
+          "duration" : 80
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9c07ebc2773a8ab1.json",
+  "parameterValues" : [ "'删除策略规则-策略id不存在'", "'删除策略规则-策略id不存在'", "{'query': {'id': '5f475da0893a250006859b00'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006859b00]的认证策略'}}, 'caseNum': 'case01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+}

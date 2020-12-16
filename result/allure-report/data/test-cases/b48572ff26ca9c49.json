@@ -1,0 +1,159 @@
+{
+  "uid" : "b48572ff26ca9c49",
+  "name" : "添加SSO对接配置成功",
+  "fullName" : "testCase.SMP.authentication.OAuthController.addSSO.test_addsso.Test_class#test_main",
+  "historyId" : "84731fdc6c5e7c3eacdc5a13748bb6ad",
+  "time" : {
+    "start" : 1601373340283,
+    "stop" : 1601373340388,
+    "duration" : 105
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7862dcd8f8a183cd",
+      "name" : "测试人员",
+      "source" : "7862dcd8f8a183cd.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "8dbb50f8faeb3f9a",
+      "name" : "接口入参",
+      "source" : "8dbb50f8faeb3f9a.attach",
+      "type" : "text/plain",
+      "size" : 289
+    }, {
+      "uid" : "5121cbca3e50f6f2",
+      "name" : "接口出参",
+      "source" : "5121cbca3e50f6f2.attach",
+      "type" : "text/plain",
+      "size" : 347
+    }, {
+      "uid" : "45032dedd256b85d",
+      "name" : "stdout",
+      "source" : "45032dedd256b85d.txt",
+      "type" : "text/plain",
+      "size" : 273
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "添加SSO对接配置-主流程"
+  }, {
+    "name" : "feature",
+    "value" : "添加SSO对接配置"
+  }, {
+    "name" : "epic",
+    "value" : "OAuthController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.OAuthController.addSSO"
+  }, {
+    "name" : "suite",
+    "value" : "test_addsso"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.OAuthController.addSSO.test_addsso"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加SSO对接配置成功'"
+  }, {
+    "name" : "description",
+    "value" : "'SSO对接配置信息完整，保存成功！'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn/', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': 'string', 'source': 'zto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 44,
+        "unknown" : 0,
+        "total" : 44
+      },
+      "items" : [ {
+        "uid" : "d963196279ca4280",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280493094,
+          "stop" : 1601280493197,
+          "duration" : 103
+        }
+      }, {
+        "uid" : "7c3a26b1e4c96ea0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249232905,
+          "stop" : 1600249233003,
+          "duration" : 98
+        }
+      }, {
+        "uid" : "742b063bc4581855",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236165245,
+          "stop" : 1600236165392,
+          "duration" : 147
+        }
+      }, {
+        "uid" : "a7fd3c2d94141d88",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821952366,
+          "stop" : 1599821952497,
+          "duration" : 131
+        }
+      }, {
+        "uid" : "5e9df45b48993543",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820128565,
+          "stop" : 1599820128664,
+          "duration" : 99
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b48572ff26ca9c49.json",
+  "parameterValues" : [ "'添加SSO对接配置成功'", "'SSO对接配置信息完整，保存成功！'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn/', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': 'string', 'source': 'zto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

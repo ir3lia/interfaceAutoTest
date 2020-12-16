@@ -1,0 +1,195 @@
+{
+    "mainCaseData":[
+        {
+            "title": "添加黑名单",
+            "otherInfo":{
+                "description": "添加用户名+MAC形式，指定失效时间的黑名单"
+            },
+            "httpData": {
+                "query": {
+                    "blackListCategory": "USER_MAC_SPECIFIC",
+                    "createCategory": "2",
+                    "createUser": "admin",
+                    "effectiveEndTime": "2019-10-28T10:33:59Z",
+                    "infoMessage": "黑名单",
+                    "isPermanent": false,
+                    "nodeMac": "64-00-6A-7A-34-BF",
+                    "userObjectId": "5f17e3486227f3000629a7a5"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "添加黑名单",
+            "otherInfo":{
+                "description": "添加用户名形式，永久生效的黑名单"
+            },
+            "httpData": {
+                "query": {
+                    "blackListCategory": "USER_SPECIFIC",
+                    "createCategory": "2",
+                    "createUser": "admin",
+                    "effectiveEndTime": "2019-10-28T10:33:59Z",
+                    "infoMessage": "黑名单",
+                    "isPermanent": true,
+                    "nodeMac": "",
+                    "userObjectId": "5f17e3486227f3000629a7a5"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加黑名单",
+            "otherInfo":{
+                "description": "添加MAC形式，指定时间失效的黑名单"
+            },
+            "httpData": {
+                "query": {
+                    "blackListCategory": "MAC_SPECIFIC",
+                    "createCategory": "2",
+                    "createUser": "admin",
+                    "effectiveEndTime": "2019-10-28T10:33:59Z",
+                    "infoMessage": "黑名单",
+                    "isPermanent": false,
+                    "nodeMac": "64-00-6A-7A-34-BF",
+                    "userObjectId": ""
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加黑名单",
+            "otherInfo":{
+                "description": "添加用户+MAC形式，永久有效的黑名单"
+            },
+            "httpData": {
+                "query": {
+                    "blackListCategory": "USER_MAC_SPECIFIC",
+                    "createCategory": "2",
+                    "createUser": "admin",
+                    "effectiveEndTime": "2019-10-28T10:33:59Z",
+                    "infoMessage": "黑名单",
+                    "isPermanent": true,
+                    "nodeMac": "64-00-6A-7A-34-BF",
+                    "userObjectId": "5f17e3486227f3000629a7a5"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_03",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加黑名单",
+            "otherInfo":{
+                "description": "添加用户名形式，指定时间失效的黑名单"
+            },
+            "httpData": {
+                "query": {
+                    "blackListCategory": "USER_SPECIFIC",
+                    "createCategory": "2",
+                    "createUser": "admin",
+                    "effectiveEndTime": "2019-10-28T10:33:59Z",
+                    "infoMessage": "黑名单",
+                    "isPermanent": false,
+                    "nodeMac": "",
+                    "userObjectId": "5f17e3486227f3000629a7a5"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_04",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加黑名单",
+            "otherInfo":{
+                "description": "添加MAC形式，永久生效的黑名单"
+            },
+            "httpData": {
+                "query": {
+                    "blackListCategory": "MAC_SPECIFIC",
+                    "createCategory": "2",
+                    "createUser": "admin",
+                    "effectiveEndTime": "2019-10-28T10:33:59Z",
+                    "infoMessage": "黑名单",
+                    "isPermanent": true,
+                    "nodeMac": "64-00-6A-7A-34-BF",
+                    "userObjectId": ""
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_05",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加黑名单",
+            "otherInfo":{
+                "description": "添加黑名单,infoMessage为空"
+            },
+            "httpData": {
+                "query": {
+                    "blackListCategory": "MAC_SPECIFIC",
+                    "createCategory": "2",
+                    "createUser": "admin",
+                    "effectiveEndTime": "2019-10-28T10:33:59Z",
+                    "infoMessage": "",
+                    "isPermanent": true,
+                    "nodeMac": "64-00-6A-7A-34-BF",
+                    "userObjectId": ""
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_06",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

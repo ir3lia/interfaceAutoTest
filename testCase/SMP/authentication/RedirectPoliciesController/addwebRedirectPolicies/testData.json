@@ -1,0 +1,68 @@
+{
+    "mainCaseData":[
+        {
+            "title": "新增web重定向策略",
+            "otherInfo":{
+                "description": "新增web重定向策略-isTerminateInferior为false，策略标签有3个值，所有信息齐全"
+            },
+            "httpData": {
+                "query": [
+                    "test01",
+                    "test02",
+                    "test03"
+                ],
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "新增web重定向策略-test01",
+            "otherInfo":{
+                "description": "新增web重定向策略-isTerminateInferior为true，策略标签有1个值，所有信息齐全"
+            },
+            "httpData": {
+                "query": [
+                    "test01"
+                ],
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "新增web重定向策略-test02",
+            "otherInfo":{
+                "description": "policyName和policyTags非空，其他字段都为空"
+            },
+            "httpData": {
+                "query": [
+                    "test02"
+                ],
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

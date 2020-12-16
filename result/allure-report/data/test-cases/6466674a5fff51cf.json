@@ -1,0 +1,159 @@
+{
+  "uid" : "6466674a5fff51cf",
+  "name" : "添加策略规则-规则名称已存在",
+  "fullName" : "testCase.SMP.authentication.RedirectPoliciesController.addRule.test_addRule.Test_class#test_all",
+  "historyId" : "0ad5306f3800e65734c8750eb47a0b8c",
+  "time" : {
+    "start" : 1601373343198,
+    "stop" : 1601373343328,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c9125853773badb1",
+      "name" : "测试人员",
+      "source" : "c9125853773badb1.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "ce46738e782df36e",
+      "name" : "接口入参",
+      "source" : "ce46738e782df36e.attach",
+      "type" : "text/plain",
+      "size" : 151
+    }, {
+      "uid" : "710b60b448eb8570",
+      "name" : "接口出参",
+      "source" : "710b60b448eb8570.attach",
+      "type" : "text/plain",
+      "size" : 158
+    }, {
+      "uid" : "295e30fe6f9fb241",
+      "name" : "stdout",
+      "source" : "295e30fe6f9fb241.txt",
+      "type" : "text/plain",
+      "size" : 270
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Web重定向策略管理"
+  }, {
+    "name" : "story",
+    "value" : "Web重定向策略管理-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "RedirectPoliciesController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addRule"
+  }, {
+    "name" : "suite",
+    "value" : "test_addRule"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addRule.test_addRule"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加策略规则-规则名称已存在'"
+  }, {
+    "name" : "description",
+    "value" : "'添加策略规则-规则名称已存在'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': 'ces', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'domain.session.webRedirectPolicy.policy_already_has_the_same_rule'}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 36,
+        "unknown" : 0,
+        "total" : 40
+      },
+      "items" : [ {
+        "uid" : "68eeec41177c9cbb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280496216,
+          "stop" : 1601280496350,
+          "duration" : 134
+        }
+      }, {
+        "uid" : "a83d570d0d64518",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249235797,
+          "stop" : 1600249235922,
+          "duration" : 125
+        }
+      }, {
+        "uid" : "11b1219496eb4057",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236168572,
+          "stop" : 1600236168718,
+          "duration" : 146
+        }
+      }, {
+        "uid" : "7419748bc30aa312",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821955445,
+          "stop" : 1599821955582,
+          "duration" : 137
+        }
+      }, {
+        "uid" : "bc9f186f157ef2f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820131450,
+          "stop" : 1599820131586,
+          "duration" : 136
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6466674a5fff51cf.json",
+  "parameterValues" : [ "'添加策略规则-规则名称已存在'", "'添加策略规则-规则名称已存在'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': 'ces', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'domain.session.webRedirectPolicy.policy_already_has_the_same_rule'}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

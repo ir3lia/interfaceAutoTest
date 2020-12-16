@@ -1,0 +1,159 @@
+{
+  "uid" : "e2eb6ab44746eb44",
+  "name" : "添加策略标签-策略id不存在",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyTags.test_addPolicyTags.Test_class#test_all",
+  "historyId" : "c414257784aab26e6e9ff1a5841b549b",
+  "time" : {
+    "start" : 1601373330523,
+    "stop" : 1601373330729,
+    "duration" : 206
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b473b5d2c2de0607",
+      "name" : "测试人员",
+      "source" : "b473b5d2c2de0607.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "f3f9e280a9275952",
+      "name" : "接口入参",
+      "source" : "f3f9e280a9275952.attach",
+      "type" : "text/plain",
+      "size" : 150
+    }, {
+      "uid" : "b8a0d11e8e134382",
+      "name" : "接口出参",
+      "source" : "b8a0d11e8e134382.attach",
+      "type" : "text/plain",
+      "size" : 163
+    }, {
+      "uid" : "b5e5146732dac0d7",
+      "name" : "stdout",
+      "source" : "b5e5146732dac0d7.txt",
+      "type" : "text/plain",
+      "size" : 560
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyTags"
+  }, {
+    "name" : "suite",
+    "value" : "test_addPolicyTags"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyTags.test_addPolicyTags"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加策略标签-策略id不存在'"
+  }, {
+    "name" : "description",
+    "value" : "'添加策略标签-策略id不存在'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006859111]的认证策略'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 30,
+        "unknown" : 0,
+        "total" : 31
+      },
+      "items" : [ {
+        "uid" : "d291bb547b20eb5a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280482521,
+          "stop" : 1601280482754,
+          "duration" : 233
+        }
+      }, {
+        "uid" : "37fcf0fff86bb3dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249223278,
+          "stop" : 1600249223485,
+          "duration" : 207
+        }
+      }, {
+        "uid" : "7d4b47bd9d062299",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249143373,
+          "stop" : 1600249143584,
+          "duration" : 211
+        }
+      }, {
+        "uid" : "329de210970b02cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236154590,
+          "stop" : 1600236154828,
+          "duration" : 238
+        }
+      }, {
+        "uid" : "e3dbc68f35ef2dd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156578320,
+          "stop" : 1600156578544,
+          "duration" : 224
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e2eb6ab44746eb44.json",
+  "parameterValues" : [ "'添加策略标签-策略id不存在'", "'添加策略标签-策略id不存在'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006859111]的认证策略'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

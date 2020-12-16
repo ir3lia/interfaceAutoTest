@@ -1,0 +1,219 @@
+{
+  "uid" : "758a1221feb21ebe",
+  "name" : "删除SSO对接配置-id不存在",
+  "fullName" : "testCase.SMP.authentication.OAuthController.deleteSSO.test_deleteSSO.Test_class#test_all",
+  "historyId" : "da1de5f56e741f31d608daa1c67875a1",
+  "time" : {
+    "start" : 1601373340961,
+    "stop" : 1601373341040,
+    "duration" : 79
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Module__pytest_setup_module",
+    "time" : {
+      "start" : 1601373340734,
+      "stop" : 1601373340740,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1601373340909,
+      "stop" : 1601373340959,
+      "duration" : 50
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fe99c7613cd5184e",
+      "name" : "测试人员",
+      "source" : "fe99c7613cd5184e.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "db683a8cde0b712",
+      "name" : "接口入参",
+      "source" : "db683a8cde0b712.json",
+      "type" : "application/json",
+      "size" : 34
+    }, {
+      "uid" : "36a5704136c0571c",
+      "name" : "接口出参",
+      "source" : "36a5704136c0571c.json",
+      "type" : "application/json",
+      "size" : 117
+    }, {
+      "uid" : "14426f2af330cfe7",
+      "name" : "stdout",
+      "source" : "14426f2af330cfe7.txt",
+      "type" : "text/plain",
+      "size" : 375
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Module__pytest_setup_module::0",
+    "time" : {
+      "start" : 1601373341079,
+      "stop" : 1601373341079,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1601373341043,
+      "stop" : 1601373341077,
+      "duration" : 34
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "删除软件信息"
+  }, {
+    "name" : "story",
+    "value" : "删除软件信息-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "OAuthController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.OAuthController.deleteSSO"
+  }, {
+    "name" : "suite",
+    "value" : "test_deleteSSO"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.OAuthController.deleteSSO.test_deleteSSO"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'删除SSO对接配置-id不存在'"
+  }, {
+    "name" : "description",
+    "value" : "'Id不存在，SSO对接配置删除失败！'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'id': '5ecc6fa1c57a4300064e0000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'OAuth id has not exists '}}, 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 43,
+        "unknown" : 0,
+        "total" : 46
+      },
+      "items" : [ {
+        "uid" : "2777dd6a00995e4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280493873,
+          "stop" : 1601280493950,
+          "duration" : 77
+        }
+      }, {
+        "uid" : "be19710a78bd5468",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249233613,
+          "stop" : 1600249233676,
+          "duration" : 63
+        }
+      }, {
+        "uid" : "5a9a9a20c67e1b6e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236166075,
+          "stop" : 1600236166142,
+          "duration" : 67
+        }
+      }, {
+        "uid" : "62b258b0f2cb5be1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821953103,
+          "stop" : 1599821953176,
+          "duration" : 73
+        }
+      }, {
+        "uid" : "9884b506cc09410b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820129264,
+          "stop" : 1599820129335,
+          "duration" : 71
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "758a1221feb21ebe.json",
+  "parameterValues" : [ "'删除SSO对接配置-id不存在'", "'Id不存在，SSO对接配置删除失败！'", "{'query': {'id': '5ecc6fa1c57a4300064e0000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'OAuth id has not exists '}}, 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+}

@@ -1,0 +1,64 @@
+{
+    "mainCaseData":[
+        {
+            "title": "添加策略规则-规则标签为3个值",
+            "otherInfo":{
+                "description": "添加策略规则-规则标签为3个值"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试添加",
+                    "priority": 0,
+                    "ruleContent": "",
+                    "ruleName": "测试",
+                    "ruleTags": [
+                        "test01",
+                        "test02",
+                        "test03"
+                    ],
+                    "supportCondition": {},
+                    "templateName": "string"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "添加策略规则-id不存在",
+            "otherInfo":{
+                "description": "添加策略规则-id不存在"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试添加",
+                    "priority": 0,
+                    "ruleContent": "",
+                    "ruleName": "测试",
+                    "ruleTags": [
+                        "test01"
+                    ],
+                    "supportCondition": {},
+                    "templateName": "string"
+                },
+                "response": {
+                    "code" : 0,
+                    "message": "application.session.webRedirectPolicy.not_exist"
+                    },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

@@ -1,0 +1,389 @@
+{
+    "linkid":{
+        "dbName": "linkid-dev",
+        "collectionData":[
+            {
+                "collection": "ZT_SCHOOL",
+                "findDatas": [],
+                "deleteDatas":[
+                    {
+                        "_id" : "R5ebdfefe86aeaa0006d60000"
+                    },
+                    {
+                        "_id" : "R5ebdfefe86aeaa0006d60001"
+                    }
+                ],
+                "isObjectId": false,
+                "insertDatas":[
+                    {
+                        "_id" : "R5ebdfefe86aeaa0006d60000",
+                        "name" : "环游中学",
+                        "headMasterId" : "",
+                        "segmentList" : [ 
+                            {
+                                "segmentNo" : "2",
+                                "segmentLength" : 3
+                            }
+                        ],
+                        "address" : "上海市浦东新区浦东大道834弄-834号-甲",
+                        "code" : "huanyou666",
+                        "xxbb" : "22",
+                        "xxbxlx" : "341",
+                        "xzqhm" : "310104",
+                        "longitude" : "121.53399017797899",
+                        "latitude" : "31.245097713783405",
+                        "logo" : "",
+                        "createdTime" : "2020-05-15 02:31:26.851",
+                        "updatedTime" : "2020-05-19 09:06:19.018",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "R5ebdfefe86aeaa0006d60001",
+                        "name" : "新世界中学",
+                        "headMasterId" : "",
+                        "segmentList" : [ 
+                            {
+                                "segmentNo" : "2",
+                                "segmentLength" : 3
+                            }
+                        ],
+                        "address" : "上海市普陀区石泉路76号",
+                        "code" : "newWorlds666",
+                        "xxbb" : "22",
+                        "xxbxlx" : "341",
+                        "xzqhm" : "110101",
+                        "longitude" : "121.43463758857551",
+                        "latitude" : "31.25917510369411",
+                        "logo" : "",
+                        "createdTime" : "2020-05-15 02:31:26.851",
+                        "updatedTime" : "2020-05-19 09:06:19.018",
+                        "isDeleted" : false
+                    }
+                ]
+            },
+            {
+                "collection": "ZT_CAMPUS",
+                "findDatas": [],
+                "deleteDatas":[
+                    {
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000"
+                    },
+                    {
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001"
+                    }
+                ],
+                "isObjectId": true,
+                "insertDatas":[
+                    {
+                        "_id" : "5ebe140686aeaa0006d70000",
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000",
+                        "name" : "默认校区",
+                        "createdTime" : "2020-05-15 02:31:26.871",
+                        "updatedTime" : "2020-05-15 02:31:26.871",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "5ebe140686aeaa0006d70001",
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001",
+                        "name" : "默认校区",
+                        "createdTime" : "2020-05-15 02:31:26.871",
+                        "updatedTime" : "2020-05-15 02:31:26.871",
+                        "isDeleted" : false
+                    }
+                ]
+            },
+            {
+                "collection": "ZT_SCHOOL_GRADE",
+                "findDatas": [],
+                "deleteDatas":[
+                    {
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000"
+                    },
+                    {
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001"
+                    }
+                ],
+                "isObjectId": true,
+                "insertDatas":[
+                    {
+                        "_id" : "5ebe140686aeaa0006d80000",
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000",
+                        "eduGrade" : {
+                            "segmentNo" : "2",
+                            "beginYear" : 2019
+                        },
+                        "segmentLength" : 3,
+                        "status" : 1,
+                        "createdTime" : "2020-05-15 04:01:10.927",
+                        "updatedTime" : "2020-05-15 04:01:10.927",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "5ebe140686aeaa0006d81000",
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000",
+                        "eduGrade" : {
+                            "segmentNo" : "2",
+                            "beginYear" : 2018
+                        },
+                        "segmentLength" : 3,
+                        "status" : 1,
+                        "createdTime" : "2020-05-15 04:01:10.944",
+                        "updatedTime" : "2020-05-15 04:01:10.944",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "5ebe140686aeaa0006d82000",
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000",
+                        "eduGrade" : {
+                            "segmentNo" : "2",
+                            "beginYear" : 2017
+                        },
+                        "segmentLength" : 3,
+                        "status" : 1,
+                        "createdTime" : "2020-05-15 04:01:10.948",
+                        "updatedTime" : "2020-05-15 04:01:10.948",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "5ebe140686aeaa0006d80001",
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001",
+                        "eduGrade" : {
+                            "segmentNo" : "2",
+                            "beginYear" : 2019
+                        },
+                        "segmentLength" : 3,
+                        "status" : 1,
+                        "createdTime" : "2020-05-15 04:01:10.927",
+                        "updatedTime" : "2020-05-15 04:01:10.927",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "5ebe140686aeaa0006d81001",
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001",
+                        "eduGrade" : {
+                            "segmentNo" : "2",
+                            "beginYear" : 2018
+                        },
+                        "segmentLength" : 3,
+                        "status" : 1,
+                        "createdTime" : "2020-05-15 04:01:10.944",
+                        "updatedTime" : "2020-05-15 04:01:10.944",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "5ebe140686aeaa0006d82001",
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001",
+                        "eduGrade" : {
+                            "segmentNo" : "2",
+                            "beginYear" : 2017
+                        },
+                        "segmentLength" : 3,
+                        "status" : 1,
+                        "createdTime" : "2020-05-15 04:01:10.948",
+                        "updatedTime" : "2020-05-15 04:01:10.948",
+                        "isDeleted" : false
+                    }
+                ]
+            },
+            {
+                "collection": "ZT_CLAXX",
+                "findDatas": [],
+                "deleteDatas":[
+                    {
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000"
+                    },
+                    {
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001"
+                    }
+                ],
+                "isObjectId": true,
+                "insertDatas":[
+                    {
+                        "_id" : "5ebe140686aeaa0006d69000",
+                        "name" : "1班",
+                        "claxxNo" : 1,
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000",
+                        "campusId" : "5ebe140686aeaa0006d70000",
+                        "segmentNo" : "2",
+                        "beginYear" : 2019,
+                        "gradeId" : "5ebe140686aeaa0006d80000",
+                        "headTeacherId" : "",
+                        "monitorId" : "",
+                        "claxxType" : "20",
+                        "ztClaxxTeachers" : [],
+                        "isOptional" : true,
+                        "createdTime" : "2020-05-15 04:01:10.937",
+                        "updatedTime" : "2020-05-22 03:51:40.117",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "5ebe140686aeaa0006d69100",
+                        "name" : "1班",
+                        "claxxNo" : 1,
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000",
+                        "campusId" : "5ebe140686aeaa0006d70000",
+                        "segmentNo" : "2",
+                        "beginYear" : 2018,
+                        "gradeId" : "5ebe140686aeaa0006d81000",
+                        "claxxType" : "20",
+                        "ztClaxxTeachers" : [],
+                        "isOptional" : true,
+                        "createdTime" : "2020-05-15 04:01:10.946",
+                        "updatedTime" : "2020-05-20 06:33:32.805",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "5ebe140686aeaa0006d69200",
+                        "name" : "1班",
+                        "claxxNo" : 1,
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000",
+                        "campusId" : "5ebe140686aeaa0006d70000",
+                        "segmentNo" : "2",
+                        "beginYear" : 2017,
+                        "gradeId" : "5ebe140686aeaa0006d82000",
+                        "claxxType" : "20",
+                        "ztClaxxTeachers" : [],
+                        "isOptional" : true,
+                        "createdTime" : "2020-05-15 04:01:10.949",
+                        "updatedTime" : "2020-05-20 06:36:37.250",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "5ebe140686aeaa0006d69001",
+                        "name" : "1班",
+                        "claxxNo" : 1,
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001",
+                        "campusId" : "5ebe140686aeaa0006d70001",
+                        "segmentNo" : "2",
+                        "beginYear" : 2019,
+                        "gradeId" : "5ebe140686aeaa0006d80001",
+                        "headTeacherId" : "",
+                        "monitorId" : "",
+                        "claxxType" : "20",
+                        "ztClaxxTeachers" : [],
+                        "isOptional" : true,
+                        "createdTime" : "2020-05-15 04:01:10.937",
+                        "updatedTime" : "2020-05-22 03:51:40.117",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "5ebe140686aeaa0006d69101",
+                        "name" : "1班",
+                        "claxxNo" : 1,
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001",
+                        "campusId" : "5ebe140686aeaa0006d70001",
+                        "segmentNo" : "2",
+                        "beginYear" : 2018,
+                        "gradeId" : "5ebe140686aeaa0006d81001",
+                        "claxxType" : "20",
+                        "ztClaxxTeachers" : [],
+                        "isOptional" : true,
+                        "createdTime" : "2020-05-15 04:01:10.946",
+                        "updatedTime" : "2020-05-20 06:33:32.805",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "5ebe140686aeaa0006d69201",
+                        "name" : "1班",
+                        "claxxNo" : 1,
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001",
+                        "campusId" : "5ebe140686aeaa0006d70001",
+                        "segmentNo" : "2",
+                        "beginYear" : 2017,
+                        "gradeId" : "5ebe140686aeaa0006d82001",
+                        "claxxType" : "20",
+                        "ztClaxxTeachers" : [],
+                        "isOptional" : true,
+                        "createdTime" : "2020-05-15 04:01:10.949",
+                        "updatedTime" : "2020-05-20 06:36:37.250",
+                        "isDeleted" : false
+                    }                    
+                ]
+            },
+            {
+                "collection": "ZT_ORGANIZATION",
+                "findDatas": [],
+                "deleteDatas":[
+                    {
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000"
+                    },
+                    {
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001"
+                    }
+                ],
+                "isObjectId": false,
+                "insertDatas":[
+                    {
+                        "_id" : "R5ebdfefe86aeaa0006d60000",
+                        "name" : "环游中学",
+                        "ztOrgType" : 2,
+                        "schoolId" : "R5ebdfefe86aeaa0006d60000",
+                        "managerIds" : [],
+                        "address" : "上海市浦东新区浦东大道834弄-834号-甲",
+                        "longitude" : "121.53399017797899",
+                        "latitude" : "31.245097713783405",
+                        "logo" : "",
+                        "xzqhm" : "310104",
+                        "createdTime" : "2020-05-15 02:31:26.411",
+                        "updatedTime" : "2020-05-22 06:27:57.195",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "R5ebdfefe86aeaa0006d60001",
+                        "name" : "新世界中学",
+                        "ztOrgType" : 2,
+                        "schoolId" : "R5ebdfefe86aeaa0006d60001",
+                        "managerIds" : [],
+                        "address" : "上海市普陀区石泉路76号",
+                        "longitude" : "121.43463758857551",
+                        "latitude" : "31.25917510369411",
+                        "logo" : "",
+                        "xzqhm" : "110101",
+                        "createdTime" : "2020-05-15 02:31:26.411",
+                        "updatedTime" : "2020-05-22 06:27:57.195",
+                        "isDeleted" : false
+                    }
+                ]
+            },
+            {
+                "collection": "ORGANIZATION",
+                "findDatas": [],
+                "deleteDatas":[
+                    {
+                        "_id" : "R5ebdfefe86aeaa0006d60000"
+                    },
+                    {
+                        "_id" : "R5ebdfefe86aeaa0006d60001"
+                    }
+                ],
+                "isObjectId": false,
+                "insertDatas":[
+                    {
+                        "_id" : "R5ebdfefe86aeaa0006d60000",
+                        "code" : "TEST0001",
+                        "name" : "环游中学",
+                        "roleIds" : [],
+                        "organizationOrder" : [],
+                        "postOrder" : [],
+                        "workRoleOrder" : [],
+                        "createdTime" : "2020-05-15T02:31:26.555Z",
+                        "updatedTime" : "2020-05-22T06:27:57.116Z",
+                        "isDeleted" : false
+                    },
+                    {
+                        "_id" : "R5ebdfefe86aeaa0006d60001",
+                        "code" : "TEST0002",
+                        "name" : "新世界中学",
+                        "roleIds" : [],
+                        "organizationOrder" : [],
+                        "postOrder" : [],
+                        "workRoleOrder" : [],
+                        "createdTime" : "2020-05-15T02:31:26.555Z",
+                        "updatedTime" : "2020-05-22T06:27:57.116Z",
+                        "isDeleted" : false
+                    }
+                ]
+            }
+        ]
+    }
+}

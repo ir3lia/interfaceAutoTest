@@ -1,0 +1,1 @@
+{'code': 200, 'message': 'OK', 'data': {'id': '5f73049a6d20440006de6e50', 'name': '测试', 'desc': None, 'freeAuth': None, 'isTerminateInferior': False, 'policyTags': ['test01'], 'ruleList': [], 'supportAuthType': [], 'policyAdmins': [], 'createTime': [2020, 9, 29, 17, 55, 38, 258000000], 'lastModifiedTime': [2020, 9, 29, 17, 55, 38, 258000000]}}

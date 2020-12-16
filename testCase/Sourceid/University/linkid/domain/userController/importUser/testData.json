@@ -1,0 +1,129 @@
+{
+    "mainCaseData":[
+        {
+            "title": "导入用户正常",
+            "otherInfo":{
+                "description": "导入用户管理页面属性值，导入成功！"
+            },
+            "httpData": {
+                "query": [[
+                            {
+                              "cover": false,
+                              "matchForUpdate": true,
+                              "propertyName": "GH",
+                              "propertyValue": "test39"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "XM",
+                              "propertyValue": "test39"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "XB",
+                              "propertyValue": "女性"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "SFZJLXM",
+                              "propertyValue": "居民身份证"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "IDCARD",
+                              "propertyValue": "34535111111111111"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "SFLBDM",
+                              "propertyValue": "01"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "TEL",
+                              "propertyValue": "13852467813"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "EMAIL",
+                              "propertyValue": "13852467813@qq.com"
+                            }
+                          ]],
+                "response": {
+                              "code": 200,
+                              "message": "OK",
+                              "data": true
+                            },
+                "isCheckDB": true,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "导入用户失败-证件号不满足长度",
+            "otherInfo":{
+                "description": "导入用户时，IDCARD属性值长度不满足密码长度要求"
+            },
+            "httpData": {
+                "query": [[
+                            {
+                              "cover": false,
+                              "matchForUpdate": true,
+                              "propertyName": "GH",
+                              "propertyValue": "test40"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "XM",
+                              "propertyValue": "test40"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "XB",
+                              "propertyValue": "女性"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "SFZJLXM",
+                              "propertyValue": "居民身份证"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "IDCARD",
+                              "propertyValue": "334"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "SFLBDM",
+                              "propertyValue": "01"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "TEL",
+                              "propertyValue": "13852467813"
+                            },{
+                              "cover": true,
+                              "matchForUpdate": false,
+                              "propertyName": "EMAIL",
+                              "propertyValue": "13852467813@qq.com"
+                            }
+                          ]],
+                "response": {
+                              "code": 412,
+                              "message": "Precondition Failed",
+                              "data": {
+                                "errorCode": 1030068,
+                                "errorMessage": "证件号截取密码，证件号为空或长度不合法"
+                              }
+                            },
+                "isCheckDB": true,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

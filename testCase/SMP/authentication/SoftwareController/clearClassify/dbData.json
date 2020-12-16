@@ -1,0 +1,123 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":{
+            "mainCase":[
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                    {
+                        "isDeleted" : false,
+                        "name" : "QQ"
+                    }
+
+                ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5efc655ebf7a2d00064aec22",
+                            "classifyResult" : {
+                                "5efc60e6bf7a2d00064aeb56" : [
+                                    "5efc60e6bf7a2d00064aeb56"
+                                ]
+                            },
+                            "typeBasis" : "manual",
+                            "name" : "QQ",
+                            "desc" : "",
+                            "version" : "",
+                            "vendor" : "",
+                            "size" : 0,
+                            "icon" : "",
+                            "source" : "MANUAL",
+                            "_version_" : "1",
+                            "createTime" : "2020-07-01 10:28:46.479",
+                            "lastModifiedTime" : "2020-07-01 10:28:46.482",
+                            "_class" : "com.ruijie.authentication.session.program.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_01":[
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                    {
+                        "isDeleted" : false,
+                        "name" : "QQ"
+                    }
+
+                ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5efc655ebf7a2d00064aec22",
+                            "classifyResult" : {},
+                            "typeBasis" : "manual",
+                            "name" : "QQ",
+                            "desc" : "",
+                            "version" : "",
+                            "vendor" : "",
+                            "size" : 0,
+                            "icon" : "",
+                            "source" : "MANUAL",
+                            "_version_" : "1",
+                            "createTime" : "2020-07-01 10:28:46.479",
+                            "lastModifiedTime" : "2020-07-01 10:28:46.482",
+                            "_class" : "com.ruijie.authentication.session.program.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_02":[
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                    {
+                        "isDeleted" : false,
+                        "name" : "QQ"
+                    }
+
+                ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5efc655ebf7a2d00064aec22",
+                            "classifyResult" : {
+                                "5efc60e6bf7a2d00064aeb56" : [
+                                    "5efc60e6bf7a2d00064aeb56"
+                                ]
+                            },
+                            "typeBasis" : "manual",
+                            "name" : "QQ",
+                            "desc" : "",
+                            "version" : "",
+                            "vendor" : "",
+                            "size" : 0,
+                            "icon" : "",
+                            "source" : "MANUAL",
+                            "_version_" : "1",
+                            "createTime" : "2020-07-01 10:28:46.479",
+                            "lastModifiedTime" : "2020-07-01 10:28:46.482",
+                            "_class" : "com.ruijie.authentication.session.program.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

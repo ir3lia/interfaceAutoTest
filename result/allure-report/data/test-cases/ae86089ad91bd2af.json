@@ -1,0 +1,159 @@
+{
+  "uid" : "ae86089ad91bd2af",
+  "name" : "添加策略规则-规则名称重复",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationRule.test_addauthenticationRule.Test_class#test_all",
+  "historyId" : "171fe144b7e3eed603644a8631e1baee",
+  "time" : {
+    "start" : 1601373332170,
+    "stop" : 1601373332391,
+    "duration" : 221
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f8826601ddf1803a",
+      "name" : "测试人员",
+      "source" : "f8826601ddf1803a.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "e0202de72678e1aa",
+      "name" : "接口入参",
+      "source" : "e0202de72678e1aa.attach",
+      "type" : "text/plain",
+      "size" : 150
+    }, {
+      "uid" : "a9be64e60d0d286a",
+      "name" : "接口出参",
+      "source" : "a9be64e60d0d286a.attach",
+      "type" : "text/plain",
+      "size" : 161
+    }, {
+      "uid" : "b087098aab952132",
+      "name" : "stdout",
+      "source" : "b087098aab952132.txt",
+      "type" : "text/plain",
+      "size" : 560
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationRule"
+  }, {
+    "name" : "suite",
+    "value" : "test_addauthenticationRule"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationRule.test_addauthenticationRule"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加策略规则-规则名称重复'"
+  }, {
+    "name" : "description",
+    "value" : "'添加策略规则-规则名称重复'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '标签', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'domain.session.authenticationPolicy.policy_already_has_the_same_rule'}}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 42,
+        "unknown" : 0,
+        "total" : 43
+      },
+      "items" : [ {
+        "uid" : "e5454d0e6ae5c3b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280484174,
+          "stop" : 1601280484377,
+          "duration" : 203
+        }
+      }, {
+        "uid" : "4fb5a315917f5ce0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249224868,
+          "stop" : 1600249225091,
+          "duration" : 223
+        }
+      }, {
+        "uid" : "46acafd942ddddfb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249144883,
+          "stop" : 1600249145083,
+          "duration" : 200
+        }
+      }, {
+        "uid" : "37f660301024fa98",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236156241,
+          "stop" : 1600236156499,
+          "duration" : 258
+        }
+      }, {
+        "uid" : "7558d24fd84c2522",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156579983,
+          "stop" : 1600156580152,
+          "duration" : 169
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ae86089ad91bd2af.json",
+  "parameterValues" : [ "'添加策略规则-规则名称重复'", "'添加策略规则-规则名称重复'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '标签', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'domain.session.authenticationPolicy.policy_already_has_the_same_rule'}}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

@@ -1,0 +1,399 @@
+{
+    "mainCaseData":[
+        {
+            "title": "修改软件成功",
+            "otherInfo":{
+                "description": "主流程用例-修改软件信息成功！"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ",
+                    "id": "14d1f7056fc3450007db4e98",
+                    "softwareDesc": "修改测试信息",
+                    "softwareName": "QQ",
+                    "softwareSize": 10240,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "TENCENT",
+                    "softwareVersion": "12.0.2",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "软件名称版本唯一性校验",
+            "otherInfo":{
+                "description": "软件名称版本唯一性校验"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "5ef189e573ec7d0006097745",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                    },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data": {
+                        "errorCode": 0,
+                        "errorMessage": "系统中不存在编号为[5ef189e573ec7d0006097745]的实体"
+                        }
+                    },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "修改后记录与已有记录重复",
+            "otherInfo":{
+                "description": "修改后记录与已有记录重复"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "14d1f7056fc3450007db4e99",
+                    "softwareDesc": "测试",
+                    "softwareName": "ces",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "2019",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                    },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data": {
+                        "errorCode": 0,
+                        "errorMessage": "名称已存在,请更改"
+                        }
+                    },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "修改后软件名称为空",
+            "otherInfo":{
+                "description": "修改后软件名称为空"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "14d1f7056fc3450007db4e99",
+                    "softwareDesc": "测试",
+                    "softwareName": "",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                    },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data": {
+                        "errorCode": 0,
+                        "errorMessage": "实体名称不能为空"
+                        }
+                    },
+                "caseNum": "case_03",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "修改后软件名称过长",
+            "otherInfo":{
+                "description": "修改后软件名称过长"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "14d1f7056fc3450007db4e99",
+                    "softwareDesc": "测试",
+                    "softwareName": "打的是多撒大所大声道撒多撒多撒多撒大所大所大所大所大所多撒大所大所大所大所大所多撒多撒多所多撒多撒多所大声道撒大大所大所多撒大所多13(⊙o⊙)…324324324324324324324234大声道撒大所大多撒大所大所大所大所大所大所大萨达所大所多撒多撒多撒多撒多撒多撒大所多撒大所大所多撒大所大所大所多撒多撒多撒多撒多所QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                    },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data": {
+                        "errorCode": 0,
+                        "errorMessage": "实体名称超过了最大允许长度"
+                        }
+                    },
+                "caseNum": "case_04",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "修改软件来源为自动获取",
+            "otherInfo":{
+                "description": "修改软件来源为自动获取"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "14d1f7056fc3450007db4e99",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_05",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "修改软件厂商",
+            "otherInfo":{
+                "description": "修改软件厂商"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "14d1f7056fc3450007db4e99",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "TENCENT",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_06",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "修改软件描述",
+            "otherInfo":{
+                "description": "修改软件描述"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "14d1f7056fc3450007db4e99",
+                    "softwareDesc": "测试测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "MANUAL",
+                    "typeBasis": "manual"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_07",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "修改软件大小",
+            "otherInfo":{
+                "description": "修改软件大小"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "14d1f7056fc3450007db4e99",
+                    "softwareDesc": "测试测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "MANUAL",
+                    "typeBasis": "manual"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_08",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "修改软件名称",
+            "otherInfo":{
+                "description": "修改软件名称"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "14d1f7056fc3450007db4e99",
+                    "softwareDesc": "测试测试",
+                    "softwareName": "wechat",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "MANUAL",
+                    "typeBasis": "manual"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_09",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "修改软件版本",
+            "otherInfo":{
+                "description": "修改软件版本"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "14d1f7056fc3450007db4e99",
+                    "softwareDesc": "测试测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.1.1",
+                    "source": "MANUAL",
+                    "typeBasis": "manual"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_10",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加软件描述和厂商",
+            "otherInfo":{
+                "description": "添加软件描述和厂商"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "14d1f7056fc3450007db4e99",
+                    "softwareDesc": "测试测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.1.1",
+                    "source": "MANUAL",
+                    "typeBasis": "manual"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_11",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "去除软件版本和大小",
+            "otherInfo":{
+                "description": "去除软件版本和大小"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "14d1f7056fc3450007db4e99",
+                    "softwareDesc": "测试测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 0,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "",
+                    "source": "MANUAL",
+                    "typeBasis": "manual"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_12",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

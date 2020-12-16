@@ -1,0 +1,151 @@
+{
+    "mainCaseData":[
+        {
+            "title": "修改黑名单类型对象-USER-USER+MAC",
+            "otherInfo":{
+                "description": "USER_SPECIFIC类型-USER_MAC_SPECIFIC，修改userid和mac"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "修改黑名单类型对象-USER-MAC",
+            "otherInfo":{
+                "description": "USER_SPECIFIC类型-MAC_SPECIFIC"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        },
+        {
+            "title": "修改黑名单类型对象-MAC-USER_MAC",
+            "otherInfo":{
+                "description": "MAC_SPECIFIC类型-USER_MAC_SPECIFIC，修改userid和mac"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        },
+        {
+            "title": "修改黑名单类型对象-USER-修改userID",
+            "otherInfo":{
+                "description": "USER_SPECIFIC类型修改userid"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_03",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        },
+        {
+            "title": "修改黑名单类型对象-MAC_SPECIFIC类型修改mac",
+            "otherInfo":{
+                "description": "MAC_SPECIFIC类型修改mac"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_04",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        },
+        {
+            "title": "修改黑名单类型对象-id不存在",
+            "otherInfo":{
+                "description": "id不存在"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820000"
+                },
+                "response": {
+                    "code" : 412,
+                    "message": "Precondition Failed",
+                    "data":
+                    {
+                        "errorCode": 0,
+                        "errorMessage": "黑名单[5f1fd825bf7a2d0006820000]不存在！"
+                    }
+                },
+                "caseNum": "case_05",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        },
+        {
+            "title": "修改黑名单类型对象-USER+MAC修改userid和mac",
+            "otherInfo":{
+                "description": "USER_MAC_SPECIFIC，修改userid和mac"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_06",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        }
+    ]
+}

@@ -1,0 +1,168 @@
+{
+    "mainCaseData": [
+        {
+            "title": "保存用户-正常",
+            "otherInfo": {
+                "description": "传入正确的用户属性及属性值，保存用户成功！"
+            },
+            "httpData": {
+                "query": [
+                    {
+                        "propertyObjectId": "5bd442fc048a2f376b2e6cba",
+                        "propertyValue": "hahaha001",
+                        "source": "XY"
+                    },
+                    {
+                        "propertyObjectId": "5c09dde87be07b74cd74cb4a",
+                        "propertyValue": "1234567",
+                        "source": "XY"
+                    },
+                    {
+                        "propertyObjectId": "5bd44318048a2f376b2e6dab",
+                        "propertyValue": "哈哈儿001",
+                        "source": "XY"
+                    },
+                    {
+                        "propertyObjectId": "5bd90060048a2f376b6ede99",
+                        "propertyValue": "居民身份证",
+                        "source": "XY"
+                    },
+                    {
+                        "propertyObjectId": "5bd55971048a2f376b34d32d",
+                        "propertyValue": "01",
+                        "source": "XY"
+                    },
+                    {
+                        "propertyObjectId": "5bd841c8048a2f376b5c6024",
+                        "propertyValue": "男性",
+                        "source": "XY"
+                    },
+                    {
+                        "propertyObjectId": "5bed24691001ea0715610d3e",
+                        "propertyValue": "18200110022",
+                        "source": "XY"
+                    },
+                    {
+                        "propertyObjectId": "5c4fd4518c21aa41dca73769",
+                        "propertyValue": [
+                            "R5ed89becb0a1760006eeeeee"
+                        ],
+                        "source": "XY"
+                    },
+                    {
+                        "propertyObjectId": "5c51aaf1cf14fbfcff67ded0",
+                        "propertyValue": [
+                            "R5edefe46723f3400077fffff"
+                        ],
+                        "source": "XY"
+                    }
+                ],
+                "response": {
+                    "code": 200,
+                    "message": "OK",
+                    "data": true
+                },
+                "isCheckDB": true,
+                "checkDBType": "exist",
+                "httpType": "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData": [
+        {
+            "title": "保存用户-失败-教工号重复",
+            "otherInfo": {
+                "description": "学工号唯一性校验"
+            },
+            "httpData": {
+                "query": [
+                    {
+                        "propertyObjectId": "5bd442fc048a2f376b2e6cba",
+                        "propertyValue": "hahaha001"
+                    }
+                ],
+                "response": {
+                    "code": 412,
+                    "message": "Precondition Failed",
+                    "data": {
+                        "errorCode": 1030005,
+                        "errorMessage": "[\"1030056-教育ID-GH-不符合唯一性校验\"]"
+                    }
+                },
+                "isCheckDB": false,
+                "httpType": "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "保存用户-失败-身份证件号为空",
+            "otherInfo": {
+                "description": "身份证件号不可为空，需要用于生成初始密码"
+            },
+            "httpData": {
+                "query": [
+                    {
+                        "propertyObjectId": "5bd442fc048a2f376b2e6cba",
+                        "propertyValue": "hahaha",
+                        "source": "XY"
+                    }
+                ],
+                "response": {
+                    "code": 412,
+                    "message": "Precondition Failed",
+                    "data": {
+                        "errorCode": 1030068,
+                        "errorMessage": "证件号截取密码，证件号为空或长度不合法"
+                    }
+                },
+                "isCheckDB": false,
+                "httpType": "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "保存用户-失败-身份证件号长度不满足密码截取",
+            "otherInfo": {
+                "description": "身份证件号长度不满足初始密码截取条件"
+            },
+            "httpData": {
+                "query": [
+                    {
+                        "propertyObjectId": "5c09dde87be07b74cd74cb4a",
+                        "propertyValue": "123456",
+                        "source": "XY"
+                    }
+                ],
+                "response": {
+                    "code": 412,
+                    "message": "Precondition Failed",
+                    "data": {
+                        "errorCode": 1030068,
+                        "errorMessage": "证件号截取密码，证件号为空或长度不合法"
+                    }
+                },
+                "isCheckDB": false,
+                "httpType": "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "保存用户-失败-数组为空",
+            "otherInfo": {
+                "description": "入参为空"
+            },
+            "httpData": {
+                "query": [],
+                "response": {
+                    "code": 200,
+                    "message": "OK",
+                    "data": false
+                },
+                "isCheckDB": false,
+                "httpType": "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

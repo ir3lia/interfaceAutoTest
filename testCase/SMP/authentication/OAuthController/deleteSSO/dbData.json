@@ -1,0 +1,42 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":[
+            {
+                "collection": "oauth",
+                "findDatas": [
+                    {
+                        "isDeleted" : true,
+                        "source":"zto"
+                    }
+                ],
+                "deleteDatas":[
+                    {
+                        "source":"zto"
+                    }
+                ],
+                "isObjectId": true,
+                "insertDatas":[
+                    {
+                        "_id": "5ecf697f20449b1bd45ba833",
+                        "enable": true,
+                        "source": "zto",
+                        "authConfig": {
+                            "clientId": "ztfwbTmYDEXj6pBhBwsf-0bw",
+                            "clientSecret": "8CuUiuHBUYu7csxfDSmYng",
+                            "redirectUri": "http://id09.rghall.com.cn/",
+                            "alipayPublicKey": "string",
+                            "unionId": true,
+                            "stackOverflowKey": "string",
+                            "agentId": "string"
+                        },
+                        "_version_": "0",
+                        "createTime": "2020-05-28 07:34:23.999",
+                        "lastModifiedTime": "2020-05-28 07:34:23.999",
+                        "_class": "com.ruijie.authentication.session.domain.oauth.OAuth"
+                    }
+                ]
+            }
+        ]
+    }
+}

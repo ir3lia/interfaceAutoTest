@@ -1,0 +1,87 @@
+{
+    "mainCaseData":[
+        {
+            "title": "保存教职工正常",
+            "otherInfo":{
+                "description": "教职工所有属性值均完整，保存成功！"
+            },
+            "httpData": {
+                "query": {
+                    "XM":"懒洋洋",
+                    "ZGXL":"硕士研究生毕业",
+                    "XB":"男性",
+                    "ZZMM":"中国共产党预备党员",
+                    "MZ":"汉族",
+                    "SFZJLX":"居民身份证",
+                    "IDCARD":"363636199900111122",
+                    "JZGGH":"lyy001",
+                    "JSZGZBH":"lyy1234567890",
+                    "DZXX":"lyy@ruijie.com.cn",
+                    "orgInfo":[
+                        {
+                            "SZDW":[
+                                "5ed7468da7f2650006500005"
+                            ]
+                        }
+                    ],
+                    "schoolId":"R5ed7468da7f2650006500000",
+                    "SZDW0":"5ed7468da7f2650006500005"
+                },
+                "pageId": "5d03034dd9900b3b92ab2095",
+                "response": {
+                    "code" : 200,
+                    "message" : "OK",
+                    "data" : true
+                },
+                "isCheckDB": true,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "保存教职工失败——身份证号大于18位",
+            "otherInfo":{
+                "description": "教职工所有属性值均完整，保存成功！"
+            },
+            "httpData": {
+                "query": {
+                    "XM":"懒洋洋",
+                    "ZGXL":"硕士研究生毕业",
+                    "XB":"男性",
+                    "ZZMM":"中国共产党预备党员",
+                    "MZ":"汉族",
+                    "SFZJLX":"居民身份证",
+                    "IDCARD":"363636199900111122YYY",
+                    "JZGGH":"lyy001",
+                    "JSZGZBH":"lyy1234567890",
+                    "DZXX":"lyy@ruijie.com.cn",
+                    "orgInfo":[
+                        {
+                            "SZDW":[
+                                "5ed7468da7f2650006500005"
+                            ]
+                        }
+                    ],
+                    "schoolId":"R5ed7468da7f2650006500000",
+                    "SZDW0":"5ed7468da7f2650006500005"
+                },
+                "pageId": "5d03034dd9900b3b92ab2095",
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data" : {
+                      "errorCode" : 0,
+                      "errorMessage" : "{\"IDCARD\":\"请输入正确的身份证号码\"}"
+                    }
+                },
+                "isCheckDB": true,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

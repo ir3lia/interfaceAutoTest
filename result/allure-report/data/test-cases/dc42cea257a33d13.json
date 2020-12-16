@@ -1,0 +1,159 @@
+{
+  "uid" : "dc42cea257a33d13",
+  "name" : "新增web重定向策略",
+  "fullName" : "testCase.SMP.authentication.RedirectPoliciesController.addwebRedirectPolicies.test_addwebRedirectPolicies.Test_class#test_main",
+  "historyId" : "52a9ddd73b17a38791a88fc07afe5100",
+  "time" : {
+    "start" : 1601373343746,
+    "stop" : 1601373343865,
+    "duration" : 119
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b45bc2ac32882f84",
+      "name" : "测试人员",
+      "source" : "b45bc2ac32882f84.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "6daee91e95e5c45c",
+      "name" : "接口入参",
+      "source" : "6daee91e95e5c45c.attach",
+      "type" : "text/plain",
+      "size" : 30
+    }, {
+      "uid" : "6d94eca5087832ec",
+      "name" : "接口出参",
+      "source" : "6d94eca5087832ec.attach",
+      "type" : "text/plain",
+      "size" : 386
+    }, {
+      "uid" : "1cb415b3d952a9c4",
+      "name" : "stdout",
+      "source" : "1cb415b3d952a9c4.txt",
+      "type" : "text/plain",
+      "size" : 323
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Web重定向策略管理-主流程"
+  }, {
+    "name" : "feature",
+    "value" : "Web重定向策略管理"
+  }, {
+    "name" : "epic",
+    "value" : "RedirectPoliciesController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addwebRedirectPolicies"
+  }, {
+    "name" : "suite",
+    "value" : "test_addwebRedirectPolicies"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addwebRedirectPolicies.test_addwebRedirectPolicies"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'新增web重定向策略'"
+  }, {
+    "name" : "description",
+    "value" : "'新增web重定向策略-isTerminateInferior为false，策略标签有3个值，所有信息齐全'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': ['test01', 'test02', 'test03'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 64,
+        "unknown" : 0,
+        "total" : 64
+      },
+      "items" : [ {
+        "uid" : "d06b12454b5c49d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280496768,
+          "stop" : 1601280496994,
+          "duration" : 226
+        }
+      }, {
+        "uid" : "25eedae11741f2f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249236371,
+          "stop" : 1600249236486,
+          "duration" : 115
+        }
+      }, {
+        "uid" : "404f3c11a36a9334",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236169179,
+          "stop" : 1600236169308,
+          "duration" : 129
+        }
+      }, {
+        "uid" : "9aea8017b43d558c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821956090,
+          "stop" : 1599821956192,
+          "duration" : 102
+        }
+      }, {
+        "uid" : "4ba03d7b34416f30",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820132004,
+          "stop" : 1599820132118,
+          "duration" : 114
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dc42cea257a33d13.json",
+  "parameterValues" : [ "'新增web重定向策略'", "'新增web重定向策略-isTerminateInferior为false，策略标签有3个值，所有信息齐全'", "{'query': ['test01', 'test02', 'test03'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

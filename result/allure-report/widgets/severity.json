@@ -1,0 +1,1871 @@
+[ {
+  "uid" : "cdc0ccedf86f9364",
+  "name" : "修改策略描述-描述信息为原来",
+  "time" : {
+    "start" : 1601373334883,
+    "stop" : 1601373335024,
+    "duration" : 141
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd1d9dd8ed2b268f",
+  "name" : "新增web重定向策略",
+  "time" : {
+    "start" : 1601373344154,
+    "stop" : 1601373344279,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6466674a5fff51cf",
+  "name" : "添加策略规则-规则名称已存在",
+  "time" : {
+    "start" : 1601373343198,
+    "stop" : 1601373343328,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54de0bd547f525e5",
+  "name" : "添加认证方式-认证方式为macDumbNodeAuth",
+  "time" : {
+    "start" : 1601373328524,
+    "stop" : 1601373328688,
+    "duration" : 164
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "622028ee6bd48a21",
+  "name" : "修改策略描述-描述信息为空",
+  "time" : {
+    "start" : 1601373335033,
+    "stop" : 1601373335181,
+    "duration" : 148
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "245d3a46673cb881",
+  "name" : "批量删除软件信息，ID值存在",
+  "time" : {
+    "start" : 1601373347489,
+    "stop" : 1601373347654,
+    "duration" : 165
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c43d613333f91c1",
+  "name" : "添加黑名单",
+  "time" : {
+    "start" : 1601373337142,
+    "stop" : 1601373337264,
+    "duration" : 122
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4be72fb89e03cf3",
+  "name" : "修改SSO对接配置-id不存在",
+  "time" : {
+    "start" : 1601373341955,
+    "stop" : 1601373342095,
+    "duration" : 140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8042e4127e1f75e",
+  "name" : "批量添加关联管理员-添加多个，部分为新",
+  "time" : {
+    "start" : 1601373327599,
+    "stop" : 1601373327750,
+    "duration" : 151
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc29ffb7af49aa2a",
+  "name" : "删除SSO对接配置-Id存在",
+  "time" : {
+    "start" : 1601373340787,
+    "stop" : 1601373340870,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ece05d90002512eb",
+  "name" : "变更分类信息-id不存在",
+  "time" : {
+    "start" : 1601373352451,
+    "stop" : 1601373352572,
+    "duration" : 121
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a525cc612363d9c",
+  "name" : "新增认证策略-所有字段都不为空，策略标签有3个值",
+  "time" : {
+    "start" : 1601373330736,
+    "stop" : 1601373330847,
+    "duration" : 111
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89b9a6a1eb719510",
+  "name" : "修改软件描述",
+  "time" : {
+    "start" : 1601373351309,
+    "stop" : 1601373351507,
+    "duration" : 198
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89c05d7754bd3840",
+  "name" : "添加认证方式-添加全部",
+  "time" : {
+    "start" : 1601373325737,
+    "stop" : 1601373325864,
+    "duration" : 127
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e3fd6ce650377ba7",
+  "name" : "新增web重定向策略-test01",
+  "time" : {
+    "start" : 1601373343871,
+    "stop" : 1601373344014,
+    "duration" : 143
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b21d653f774929a",
+  "name" : "批量添加关联管理员-策略id不存在",
+  "time" : {
+    "start" : 1601373327282,
+    "stop" : 1601373327462,
+    "duration" : 180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81799539d1cc0bd5",
+  "name" : "添加策略规则-规则标签为3个值",
+  "time" : {
+    "start" : 1601373331545,
+    "stop" : 1601373331739,
+    "duration" : 194
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8890b1cecedd4d0d",
+  "name" : "新增web重定向策略-策略规则脚本不合法",
+  "time" : {
+    "start" : 1601373344286,
+    "stop" : 1601373344377,
+    "duration" : 91
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "12a638466d2a01ec",
+  "name" : "新增web重定向策略-策略名称已存在",
+  "time" : {
+    "start" : 1601373342498,
+    "stop" : 1601373342647,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3209efd98222b6c",
+  "name" : "添加黑名单",
+  "time" : {
+    "start" : 1601373336921,
+    "stop" : 1601373337019,
+    "duration" : 98
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b73474618a00736c",
+  "name" : "删除策略规则-规则id存在",
+  "time" : {
+    "start" : 1601373344599,
+    "stop" : 1601373344659,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4cabfbed3396ad5",
+  "name" : "修改终止低优先级策略标识-由true到false",
+  "time" : {
+    "start" : 1601373336127,
+    "stop" : 1601373336285,
+    "duration" : 158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "deaff5427135de6",
+  "name" : "修改黑名单类型对象-USER-MAC",
+  "time" : {
+    "start" : 1601373338195,
+    "stop" : 1601373338298,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ffb013fe85089675",
+  "name" : "批量添加关联管理员-添加多个，全部为新",
+  "time" : {
+    "start" : 1601373327470,
+    "stop" : 1601373327593,
+    "duration" : 123
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "956ee1dcce5444f3",
+  "name" : "添加SSO对接配置成功",
+  "time" : {
+    "start" : 1601373340587,
+    "stop" : 1601373340691,
+    "duration" : 104
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ed5f25500c4dd77",
+  "name" : "清空单个软件的分类信息",
+  "time" : {
+    "start" : 1601373348983,
+    "stop" : 1601373349087,
+    "duration" : 104
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c6110444a4df0a91",
+  "name" : "修改后软件名称为空",
+  "time" : {
+    "start" : 1601373350597,
+    "stop" : 1601373350755,
+    "duration" : 158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd2447811296721a",
+  "name" : "添加关联管理员-已存在管理员，添加重复的",
+  "time" : {
+    "start" : 1601373326630,
+    "stop" : 1601373326773,
+    "duration" : 143
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8c89f4bfb6623b0",
+  "name" : "修改黑名单类型对象-USER-USER+MAC",
+  "time" : {
+    "start" : 1601373338059,
+    "stop" : 1601373338189,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "59e1c41562a46af8",
+  "name" : "添加黑名单",
+  "time" : {
+    "start" : 1601373336822,
+    "stop" : 1601373336915,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ec26cf4fcce1d47",
+  "name" : "批量删除软件安装信息，ID值存在",
+  "time" : {
+    "start" : 1601373348471,
+    "stop" : 1601373348647,
+    "duration" : 176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6acec2c2223cca96",
+  "name" : "新增认证策略-所有字段都不为空，策略标签有1个值",
+  "time" : {
+    "start" : 1601373330852,
+    "stop" : 1601373330956,
+    "duration" : 104
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f24f2c47ea0ce94f",
+  "name" : "添加策略规则-已存在规则-添加新规则",
+  "time" : {
+    "start" : 1601373331967,
+    "stop" : 1601373332164,
+    "duration" : 197
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c61cc4499360120",
+  "name" : "添加认证方式-认证方式为SMSAuth",
+  "time" : {
+    "start" : 1601373328380,
+    "stop" : 1601373328518,
+    "duration" : 138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c81e681cc8578595",
+  "name" : "添加黑名单",
+  "time" : {
+    "start" : 1601373336691,
+    "stop" : 1601373336816,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c34681ed968b454",
+  "name" : "添加策略规则-规则标签为1个值",
+  "time" : {
+    "start" : 1601373342826,
+    "stop" : 1601373342960,
+    "duration" : 134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce571def3ffcac25",
+  "name" : "添加认证方式-认证方式为macAfterAuth",
+  "time" : {
+    "start" : 1601373328208,
+    "stop" : 1601373328373,
+    "duration" : 165
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "446a61d5be56378f",
+  "name" : "修改提示信息，有到无，更新人用户",
+  "time" : {
+    "start" : 1601373339603,
+    "stop" : 1601373339704,
+    "duration" : 101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df66e7d922be956a",
+  "name" : "修改软件名称",
+  "time" : {
+    "start" : 1601373351681,
+    "stop" : 1601373351811,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "772adb7ba4a7c4b",
+  "name" : "软件厂商为空",
+  "time" : {
+    "start" : 1601373345751,
+    "stop" : 1601373345857,
+    "duration" : 106
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca4ac4817456348a",
+  "name" : "删除软件信息失败-id不存在",
+  "time" : {
+    "start" : 1601373349547,
+    "stop" : 1601373349628,
+    "duration" : 81
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49a574528d39755b",
+  "name" : "添加认证方式-添加单个，方式存在",
+  "time" : {
+    "start" : 1601373325869,
+    "stop" : 1601373326027,
+    "duration" : 158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4979e7a669d57757",
+  "name" : "添加认证方式-添加多个，均不存在",
+  "time" : {
+    "start" : 1601373325244,
+    "stop" : 1601373325397,
+    "duration" : 153
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "792c0a9d332ebfc9",
+  "name" : "添加关联管理员-管理员id存在，添加成功",
+  "time" : {
+    "start" : 1601373326790,
+    "stop" : 1601373326929,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef0f9c6c20be8aff",
+  "name" : "查询所有SSO对接配置-无配置",
+  "time" : {
+    "start" : 1601373341371,
+    "stop" : 1601373341485,
+    "duration" : 114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4a4413eb23d8ef2",
+  "name" : "typeBasis为auto",
+  "time" : {
+    "start" : 1601373346321,
+    "stop" : 1601373346423,
+    "duration" : 102
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "76e66825bcb90be0",
+  "name" : "添加策略规则-规则标签为3个值",
+  "time" : {
+    "start" : 1601373332782,
+    "stop" : 1601373332962,
+    "duration" : 180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92c3488336d98427",
+  "name" : "添加策略标签-标签为新",
+  "time" : {
+    "start" : 1601373329772,
+    "stop" : 1601373329945,
+    "duration" : 173
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e449721f4c8e08d",
+  "name" : "批量删除软件安装信息-存在有效与无效ID",
+  "time" : {
+    "start" : 1601373347861,
+    "stop" : 1601373348068,
+    "duration" : 207
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2582a18df578fa6",
+  "name" : "修改软件版本",
+  "time" : {
+    "start" : 1601373351819,
+    "stop" : 1601373351935,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ee935e0fd2907e0",
+  "name" : "添加认证方式-认证方式已存在，添加重复的",
+  "time" : {
+    "start" : 1601373329110,
+    "stop" : 1601373329255,
+    "duration" : 145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c07ebc2773a8ab1",
+  "name" : "删除策略规则-策略id不存在",
+  "time" : {
+    "start" : 1601373334368,
+    "stop" : 1601373334436,
+    "duration" : 68
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "614b9e2744c9935c",
+  "name" : "添加认证方式-策略id不存在",
+  "time" : {
+    "start" : 1601373325118,
+    "stop" : 1601373325237,
+    "duration" : 119
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1cab4ed9d663f3a3",
+  "name" : "修改SSO对接配置-enable-",
+  "time" : {
+    "start" : 1601373341804,
+    "stop" : 1601373341949,
+    "duration" : 145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a086a96653fca07",
+  "name" : "清空单个软件的分类信息",
+  "time" : {
+    "start" : 1601373348891,
+    "stop" : 1601373348977,
+    "duration" : 86
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c319c157ad6b86a",
+  "name" : "添加认证方式-认证方式为portalQrCodeAuth",
+  "time" : {
+    "start" : 1601373328695,
+    "stop" : 1601373328831,
+    "duration" : 136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe731223cda34e0c",
+  "name" : "批量删除软件安装信息，ID为空",
+  "time" : {
+    "start" : 1601373348074,
+    "stop" : 1601373348264,
+    "duration" : 190
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "46f43c37b551dc60",
+  "name" : "新增认证策略-policyName和policyTags不为空",
+  "time" : {
+    "start" : 1601373330963,
+    "stop" : 1601373331060,
+    "duration" : 97
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "348c0f59d5879145",
+  "name" : "添加SSO对接配置-SSO已存在",
+  "time" : {
+    "start" : 1601373340393,
+    "stop" : 1601373340580,
+    "duration" : 187
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c958d9208171af2",
+  "name" : "软件名称版本唯一性校验",
+  "time" : {
+    "start" : 1601373350224,
+    "stop" : 1601373350431,
+    "duration" : 207
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "430d68b6c89e2b89",
+  "name" : "添加认证方式-认证方式已存在，添加不在范围内的",
+  "time" : {
+    "start" : 1601373329262,
+    "stop" : 1601373329418,
+    "duration" : 156
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db3dc6c41fea6b33",
+  "name" : "批量删除认证策略-单条，ID不存在",
+  "time" : {
+    "start" : 1601373333692,
+    "stop" : 1601373333808,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b771847de7c6d06",
+  "name" : "添加策略标签-标签已存在",
+  "time" : {
+    "start" : 1601373329951,
+    "stop" : 1601373330114,
+    "duration" : 163
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4224416fd0fb447",
+  "name" : "修改终止低优先级策略标识-由false到true",
+  "time" : {
+    "start" : 1601373335931,
+    "stop" : 1601373336121,
+    "duration" : 190
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "785369466c51a40c",
+  "name" : "修改黑名单类型对象-MAC_SPECIFIC类型修改mac",
+  "time" : {
+    "start" : 1601373338520,
+    "stop" : 1601373338606,
+    "duration" : 86
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c17f673918504ef",
+  "name" : "添加关联管理员-管理员id不存在，添加成功",
+  "time" : {
+    "start" : 1601373326322,
+    "stop" : 1601373326447,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a08ffa4ed903d8d2",
+  "name" : "修改软件大小",
+  "time" : {
+    "start" : 1601373351516,
+    "stop" : 1601373351674,
+    "duration" : 158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5ccfe6f62610925",
+  "name" : "批量添加关联管理员-添加一个新的",
+  "time" : {
+    "start" : 1601373327756,
+    "stop" : 1601373327881,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "222b861cbf8dab06",
+  "name" : "批量黑名单失效,无效Id",
+  "time" : {
+    "start" : 1601373337603,
+    "stop" : 1601373337693,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10a80eb45b24c014",
+  "name" : "使黑名单失效-Id不存在",
+  "time" : {
+    "start" : 1601373340123,
+    "stop" : 1601373340277,
+    "duration" : 154
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "174ae120baa6a395",
+  "name" : "使黑名单失效-Id存在,更新人admin",
+  "time" : {
+    "start" : 1601373339811,
+    "stop" : 1601373339919,
+    "duration" : 108
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2efb30d4e3e477fb",
+  "name" : "添加认证方式-认证方式为OAuth",
+  "time" : {
+    "start" : 1601373328837,
+    "stop" : 1601373328965,
+    "duration" : 128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5cd50f4d532cf47f",
+  "name" : "批量删除软件信息，ID值不存在",
+  "time" : {
+    "start" : 1601373347301,
+    "stop" : 1601373347483,
+    "duration" : 182
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "afb9801a45c6d6fd",
+  "name" : "新增认证策略-所有字段都不为空，策略标签有3个值",
+  "time" : {
+    "start" : 1601373331260,
+    "stop" : 1601373331384,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e6f0fa8a6cfb9ae",
+  "name" : "批量添加关联管理员-添加一个重复的",
+  "time" : {
+    "start" : 1601373327888,
+    "stop" : 1601373328019,
+    "duration" : 131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a25042011fad1f5",
+  "name" : "删除软件安装信息",
+  "time" : {
+    "start" : 1601373349760,
+    "stop" : 1601373349830,
+    "duration" : 70
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe10dc0159432994",
+  "name" : "添加策略规则-规则标签为1个值",
+  "time" : {
+    "start" : 1601373331746,
+    "stop" : 1601373331959,
+    "duration" : 213
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23e4dcf03ad888d6",
+  "name" : "添加软件成功",
+  "time" : {
+    "start" : 1601373345123,
+    "stop" : 1601373345243,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f211b4be178c922",
+  "name" : "批量添加关联管理员-添加多个，全部为新",
+  "time" : {
+    "start" : 1601373327154,
+    "stop" : 1601373327276,
+    "duration" : 122
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f057819b61129bc",
+  "name" : "添加策略规则-规则标签为3个值",
+  "time" : {
+    "start" : 1601373343437,
+    "stop" : 1601373343563,
+    "duration" : 126
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "324bd2e10e435a11",
+  "name" : "添加关联管理员-已存在管理员，添加新的",
+  "time" : {
+    "start" : 1601373326455,
+    "stop" : 1601373326601,
+    "duration" : 146
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22109ae5caec812e",
+  "name" : "删除策略规则-规则id存在",
+  "time" : {
+    "start" : 1601373334257,
+    "stop" : 1601373334309,
+    "duration" : 52
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ebfc59b5335b1223",
+  "name" : "添加策略标签-标签为新",
+  "time" : {
+    "start" : 1601373330283,
+    "stop" : 1601373330493,
+    "duration" : 210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f65c0931223676e",
+  "name" : "id不存在",
+  "time" : {
+    "start" : 1601373339201,
+    "stop" : 1601373339291,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da6e067ea4fc3a0c",
+  "name" : "typeBasis为undefined",
+  "time" : {
+    "start" : 1601373346099,
+    "stop" : 1601373346208,
+    "duration" : 109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f9a626991a165c3",
+  "name" : "添加认证方式-id不存在",
+  "time" : {
+    "start" : 1601373329608,
+    "stop" : 1601373329765,
+    "duration" : 157
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a960127465a753",
+  "name" : "修改提示信息，有到有，不修改信息",
+  "time" : {
+    "start" : 1601373339396,
+    "stop" : 1601373339490,
+    "duration" : 94
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f98059cfe8cd85ce",
+  "name" : "添加黑名单",
+  "time" : {
+    "start" : 1601373336571,
+    "stop" : 1601373336685,
+    "duration" : 114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "574155a06d6ca94b",
+  "name" : "批量黑名单失效,有效Id",
+  "time" : {
+    "start" : 1601373337485,
+    "stop" : 1601373337597,
+    "duration" : 112
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "490e5930ecec044",
+  "name" : "批量删除认证策略-单条，ID存在",
+  "time" : {
+    "start" : 1601373333606,
+    "stop" : 1601373333686,
+    "duration" : 80
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2413cf16828b7435",
+  "name" : "添加认证方式-添加多个，均不存在",
+  "time" : {
+    "start" : 1601373329424,
+    "stop" : 1601373329602,
+    "duration" : 178
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a48ca91dfef89fc5",
+  "name" : "添加策略规则-id不存在",
+  "time" : {
+    "start" : 1601373343570,
+    "stop" : 1601373343738,
+    "duration" : 168
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9b56f54dd9d2531",
+  "name" : "删除策略规则-策略id存在，规则id不存在",
+  "time" : {
+    "start" : 1601373344465,
+    "stop" : 1601373344523,
+    "duration" : 58
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1327c43af821648a",
+  "name" : "添加策略规则-规则脚本不合法",
+  "time" : {
+    "start" : 1601373332550,
+    "stop" : 1601373332774,
+    "duration" : 224
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc42cea257a33d13",
+  "name" : "新增web重定向策略",
+  "time" : {
+    "start" : 1601373343746,
+    "stop" : 1601373343865,
+    "duration" : 119
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9bf85033dc835c1",
+  "name" : "添加策略规则-规则名称为空",
+  "time" : {
+    "start" : 1601373332397,
+    "stop" : 1601373332488,
+    "duration" : 91
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4c26d61f5f7752e",
+  "name" : "修改后软件名称过长",
+  "time" : {
+    "start" : 1601373350760,
+    "stop" : 1601373350959,
+    "duration" : 199
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fdfe1499a2fbb803",
+  "name" : "添加认证方式-认证方式为userNamePassword",
+  "time" : {
+    "start" : 1601373328025,
+    "stop" : 1601373328202,
+    "duration" : 177
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b22066347f9c3131",
+  "name" : "指定时间修改有效时间",
+  "time" : {
+    "start" : 1601373338847,
+    "stop" : 1601373338946,
+    "duration" : 99
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d67459fade657311",
+  "name" : "添加策略标签-标签为空",
+  "time" : {
+    "start" : 1601373330121,
+    "stop" : 1601373330276,
+    "duration" : 155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cdff90a2017a9f57",
+  "name" : "删除软件安装信息失败-id不存在",
+  "time" : {
+    "start" : 1601373349942,
+    "stop" : 1601373350010,
+    "duration" : 68
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bf55a65db7e7a1db",
+  "name" : "添加黑名单",
+  "time" : {
+    "start" : 1601373337026,
+    "stop" : 1601373337136,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3537b9bb3218f03c",
+  "name" : "批量删除软件信息，ID多个，值存在",
+  "time" : {
+    "start" : 1601373347661,
+    "stop" : 1601373347855,
+    "duration" : 194
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b39aede2d04cc85c",
+  "name" : "批量删除软件-存在有效与无效ID",
+  "time" : {
+    "start" : 1601373346968,
+    "stop" : 1601373347141,
+    "duration" : 173
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c3a7ccd55e5c6501",
+  "name" : "新增web重定向策略",
+  "time" : {
+    "start" : 1601373342367,
+    "stop" : 1601373342492,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "441dbad3d8880a40",
+  "name" : "批量删除软件安装信息，ID值不存在",
+  "time" : {
+    "start" : 1601373348270,
+    "stop" : 1601373348464,
+    "duration" : 194
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9dafa5d33dbe53e0",
+  "name" : "添加策略规则-规则脚本不合法",
+  "time" : {
+    "start" : 1601373342969,
+    "stop" : 1601373343090,
+    "duration" : 121
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "419c875c8d2b4e7a",
+  "name" : "删除软件信息",
+  "time" : {
+    "start" : 1601373349329,
+    "stop" : 1601373349410,
+    "duration" : 81
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f43a9de49d0cbd9d",
+  "name" : "新增web重定向策略-test02",
+  "time" : {
+    "start" : 1601373344022,
+    "stop" : 1601373344143,
+    "duration" : 121
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d279bd3a4736a65f",
+  "name" : "删除web重定向策略-id不存在",
+  "time" : {
+    "start" : 1601373345025,
+    "stop" : 1601373345086,
+    "duration" : 61
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75e37aeba6deb15b",
+  "name" : "添加认证方式-添加多个，全部存在",
+  "time" : {
+    "start" : 1601373325571,
+    "stop" : 1601373325730,
+    "duration" : 159
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34f77a7153c33fef",
+  "name" : "软件描述为空",
+  "time" : {
+    "start" : 1601373345530,
+    "stop" : 1601373345630,
+    "duration" : 100
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb5a86f6a60ce1ae",
+  "name" : "添加软件成功",
+  "time" : {
+    "start" : 1601373346682,
+    "stop" : 1601373346784,
+    "duration" : 102
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e686dc0aec5ad64",
+  "name" : "删除认证策略-id不存在",
+  "time" : {
+    "start" : 1601373334074,
+    "stop" : 1601373334137,
+    "duration" : 63
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63e55979cde378c6",
+  "name" : "使黑名单失效-Id存在,更新人用户",
+  "time" : {
+    "start" : 1601373339926,
+    "stop" : 1601373340021,
+    "duration" : 95
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9042b75ebf1c7f5d",
+  "name" : "查询所有SSO对接配置-1条配置",
+  "time" : {
+    "start" : 1601373341244,
+    "stop" : 1601373341364,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43b3025cfc8e68f9",
+  "name" : "批量删除认证策略-全部ID均不存在",
+  "time" : {
+    "start" : 1601373333496,
+    "stop" : 1601373333600,
+    "duration" : 104
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7445a175321b0960",
+  "name" : "修改SSO对接配置-source已存在",
+  "time" : {
+    "start" : 1601373342102,
+    "stop" : 1601373342359,
+    "duration" : 257
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "326903d0c3233fc9",
+  "name" : "添加策略规则-已存在新添加",
+  "time" : {
+    "start" : 1601373343335,
+    "stop" : 1601373343429,
+    "duration" : 94
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "145a842bec99a867",
+  "name" : "添加SSO对接配置-URL不合法",
+  "time" : {
+    "start" : 1601373340697,
+    "stop" : 1601373340722,
+    "duration" : 25
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "641a2c109db5fcc1",
+  "name" : "添加认证方式-添加单个，方式不存在",
+  "time" : {
+    "start" : 1601373326033,
+    "stop" : 1601373326189,
+    "duration" : 156
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "817778b16a5f6cea",
+  "name" : "添加认证方式-认证方式已存在，添加新的认证方式",
+  "time" : {
+    "start" : 1601373328995,
+    "stop" : 1601373329105,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70f894712dceffbc",
+  "name" : "修改终止低优先级策略标识-由false到true",
+  "time" : {
+    "start" : 1601373335608,
+    "stop" : 1601373335773,
+    "duration" : 165
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c070c6bfd53e985",
+  "name" : "新增认证策略-规则脚本不合法",
+  "time" : {
+    "start" : 1601373331390,
+    "stop" : 1601373331539,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7deb759b6992033",
+  "name" : "软件ICON为空",
+  "time" : {
+    "start" : 1601373345404,
+    "stop" : 1601373345524,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2eb6ab44746eb44",
+  "name" : "添加策略标签-策略id不存在",
+  "time" : {
+    "start" : 1601373330523,
+    "stop" : 1601373330729,
+    "duration" : 206
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ffc78136435166f5",
+  "name" : "修改提示信息，id不存在",
+  "time" : {
+    "start" : 1601373339711,
+    "stop" : 1601373339805,
+    "duration" : 94
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b3a3386493591eb",
+  "name" : "删除策略规则-规则id不存在",
+  "time" : {
+    "start" : 1601373334602,
+    "stop" : 1601373334653,
+    "duration" : 51
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43b83aeb38aef8ac",
+  "name" : "查询所有SSO对接配置-主流程",
+  "time" : {
+    "start" : 1601373341086,
+    "stop" : 1601373341237,
+    "duration" : 151
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae86089ad91bd2af",
+  "name" : "添加策略规则-规则名称重复",
+  "time" : {
+    "start" : 1601373332170,
+    "stop" : 1601373332391,
+    "duration" : 221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4db0cc0435994d6e",
+  "name" : "软件名称过长",
+  "time" : {
+    "start" : 1601373346543,
+    "stop" : 1601373346676,
+    "duration" : 133
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f4ef673c8c1f6d1",
+  "name" : "修改策略描述-策略id不存在",
+  "time" : {
+    "start" : 1601373335499,
+    "stop" : 1601373335602,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a236d8654ab1463a",
+  "name" : "修改SSO对接配置",
+  "time" : {
+    "start" : 1601373341491,
+    "stop" : 1601373341638,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5878436a8cdb4c10",
+  "name" : "软件名称为空",
+  "time" : {
+    "start" : 1601373345255,
+    "stop" : 1601373345397,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca20e48f3e90fa74",
+  "name" : "修改终止低优先级策略标识-由true到true",
+  "time" : {
+    "start" : 1601373336292,
+    "stop" : 1601373336431,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8739319edf3cac56",
+  "name" : "修改软件来源为自动获取",
+  "time" : {
+    "start" : 1601373350966,
+    "stop" : 1601373351105,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa05956499c428c3",
+  "name" : "批量删除认证策略-部分ID均存在",
+  "time" : {
+    "start" : 1601373333388,
+    "stop" : 1601373333491,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "520f70723ddc7e23",
+  "name" : "添加策略规则-规则标签为3个值",
+  "time" : {
+    "start" : 1601373342654,
+    "stop" : 1601373342820,
+    "duration" : 166
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a2bfb762c7a895d",
+  "name" : "修改策略描述-描述信息为新",
+  "time" : {
+    "start" : 1601373335348,
+    "stop" : 1601373335492,
+    "duration" : 144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82bc22a8a7b999ac",
+  "name" : "使黑名单失效-Id存在,更新人不存在",
+  "time" : {
+    "start" : 1601373340028,
+    "stop" : 1601373340116,
+    "duration" : 88
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b06a7ec5be11d44b",
+  "name" : "软件名称版本唯一性校验",
+  "time" : {
+    "start" : 1601373346790,
+    "stop" : 1601373346962,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "452ad4da77b61917",
+  "name" : "修改策略描述-描述信息从有到无",
+  "time" : {
+    "start" : 1601373335187,
+    "stop" : 1601373335341,
+    "duration" : 154
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff17a914256d71f1",
+  "name" : "添加策略规则-规则名称为空",
+  "time" : {
+    "start" : 1601373343097,
+    "stop" : 1601373343179,
+    "duration" : 82
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "39ce7bd329d93ce9",
+  "name" : "修改提示信息，无到有，更新人admin",
+  "time" : {
+    "start" : 1601373339496,
+    "stop" : 1601373339597,
+    "duration" : 101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80bf33428232ddc4",
+  "name" : "添加黑名单",
+  "time" : {
+    "start" : 1601373337270,
+    "stop" : 1601373337365,
+    "duration" : 95
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48dc11346b30f77a",
+  "name" : "修改SSO对接配置-enable",
+  "time" : {
+    "start" : 1601373341643,
+    "stop" : 1601373341795,
+    "duration" : 152
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90971f8399b07ef",
+  "name" : "source为MANAUL",
+  "time" : {
+    "start" : 1601373345992,
+    "stop" : 1601373346093,
+    "duration" : 101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "907e31590f812e4d",
+  "name" : "永久有效修改为指定时间",
+  "time" : {
+    "start" : 1601373339078,
+    "stop" : 1601373339195,
+    "duration" : 117
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6fdfd6734eba4b0f",
+  "name" : "软件id为空",
+  "time" : {
+    "start" : 1601373346213,
+    "stop" : 1601373346315,
+    "duration" : 102
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b273f7ab4d701f59",
+  "name" : "清空分类信息-ID不存在",
+  "time" : {
+    "start" : 1601373349093,
+    "stop" : 1601373349224,
+    "duration" : 131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dedf45394d9401a3",
+  "name" : "批量删除认证策略-全部ID均存在",
+  "time" : {
+    "start" : 1601373333193,
+    "stop" : 1601373333382,
+    "duration" : 189
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "36479626210d46d3",
+  "name" : "修改黑名单类型对象-MAC-USER_MAC",
+  "time" : {
+    "start" : 1601373338303,
+    "stop" : 1601373338413,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18dd9d213d325b50",
+  "name" : "修改黑名单类型对象-id不存在",
+  "time" : {
+    "start" : 1601373338611,
+    "stop" : 1601373338713,
+    "duration" : 102
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "113b1a06fa30b511",
+  "name" : "批量黑名单失效,Id为空",
+  "time" : {
+    "start" : 1601373337941,
+    "stop" : 1601373338052,
+    "duration" : 111
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5cc9684bf9eee56",
+  "name" : "去除软件版本和大小",
+  "time" : {
+    "start" : 1601373352054,
+    "stop" : 1601373352213,
+    "duration" : 159
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a1ef65de9dd39e3",
+  "name" : "删除策略规则-规则id存在",
+  "time" : {
+    "start" : 1601373334500,
+    "stop" : 1601373334548,
+    "duration" : 48
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9a8b19718858947",
+  "name" : "修改终止低优先级策略标识-策略id不存在",
+  "time" : {
+    "start" : 1601373335782,
+    "stop" : 1601373335924,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1dcbe4c028fd9b09",
+  "name" : "添加认证方式-认证方式为userNamePassword",
+  "time" : {
+    "start" : 1601373324890,
+    "stop" : 1601373325112,
+    "duration" : 222
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "38e780d54e8cc46e",
+  "name" : "修改提示信息，有到有，修改信息",
+  "time" : {
+    "start" : 1601373339297,
+    "stop" : 1601373339390,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "37ec89c50b4ab6dd",
+  "name" : "批量删除软件安装信息，ID多个，值存在",
+  "time" : {
+    "start" : 1601373348653,
+    "stop" : 1601373348885,
+    "duration" : 232
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "19206185d3ed4e68",
+  "name" : "修改终止低优先级策略标识-由false到false",
+  "time" : {
+    "start" : 1601373336437,
+    "stop" : 1601373336563,
+    "duration" : 126
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ff4607818d139b3",
+  "name" : "软件类型为空",
+  "time" : {
+    "start" : 1601373345638,
+    "stop" : 1601373345745,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72820bb2d63889d5",
+  "name" : "添加关联管理员-管理员id存在，添加成功",
+  "time" : {
+    "start" : 1601373326199,
+    "stop" : 1601373326316,
+    "duration" : 117
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b48572ff26ca9c49",
+  "name" : "添加SSO对接配置成功",
+  "time" : {
+    "start" : 1601373340283,
+    "stop" : 1601373340388,
+    "duration" : 105
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0e2eb478339ab8d",
+  "name" : "修改策略描述-描述信息为新",
+  "time" : {
+    "start" : 1601373334668,
+    "stop" : 1601373334877,
+    "duration" : 209
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b8d2710ae6af8dd",
+  "name" : "typeBasis为manual",
+  "time" : {
+    "start" : 1601373346429,
+    "stop" : 1601373346536,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "460f64563984f84",
+  "name" : "修改软件成功",
+  "time" : {
+    "start" : 1601373350064,
+    "stop" : 1601373350217,
+    "duration" : 153
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c501fd96074766e9",
+  "name" : "添加策略规则-规则id不存在",
+  "time" : {
+    "start" : 1601373332967,
+    "stop" : 1601373333187,
+    "duration" : 220
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7d6c414a2344e2b8",
+  "name" : "修改后记录与已有记录重复",
+  "time" : {
+    "start" : 1601373350438,
+    "stop" : 1601373350592,
+    "duration" : 154
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40950277fcf81e0c",
+  "name" : "删除策略规则-规则id不存在",
+  "time" : {
+    "start" : 1601373344724,
+    "stop" : 1601373344785,
+    "duration" : 61
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6bafd2f1ee8c515",
+  "name" : "删除认证策略-id存在",
+  "time" : {
+    "start" : 1601373333906,
+    "stop" : 1601373333961,
+    "duration" : 55
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e925fa406b3bb0fa",
+  "name" : "变更软件分类信息",
+  "time" : {
+    "start" : 1601373352221,
+    "stop" : 1601373352343,
+    "duration" : 122
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82639a7b2e0d59b5",
+  "name" : "修改软件厂商",
+  "time" : {
+    "start" : 1601373351111,
+    "stop" : 1601373351292,
+    "duration" : 181
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "758a1221feb21ebe",
+  "name" : "删除SSO对接配置-id不存在",
+  "time" : {
+    "start" : 1601373340961,
+    "stop" : 1601373341040,
+    "duration" : 79
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4300b0893fb49259",
+  "name" : "变更分类信息-分类不存在",
+  "time" : {
+    "start" : 1601373352350,
+    "stop" : 1601373352445,
+    "duration" : 95
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "213c0d6d7cfb8553",
+  "name" : "删除web重定向策略-id存在",
+  "time" : {
+    "start" : 1601373344880,
+    "stop" : 1601373344944,
+    "duration" : 64
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "caf706a336c946f9",
+  "name" : "批量黑名单失效,有效Id+无效Id",
+  "time" : {
+    "start" : 1601373337372,
+    "stop" : 1601373337478,
+    "duration" : 106
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1638a926af64b31d",
+  "name" : "指定时间修改为永久有效",
+  "time" : {
+    "start" : 1601373338952,
+    "stop" : 1601373339072,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23dbb738da09932c",
+  "name" : "新增认证策略-policyName已存在",
+  "time" : {
+    "start" : 1601373331067,
+    "stop" : 1601373331254,
+    "duration" : 187
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9adb62551816881",
+  "name" : "批量删除软件信息，ID为空",
+  "time" : {
+    "start" : 1601373347146,
+    "stop" : 1601373347295,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e15194d7256fa7",
+  "name" : "批量黑名单失效,多个存在Id",
+  "time" : {
+    "start" : 1601373337699,
+    "stop" : 1601373337932,
+    "duration" : 233
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c56df8114b6dcaa5",
+  "name" : "添加软件描述和厂商",
+  "time" : {
+    "start" : 1601373351941,
+    "stop" : 1601373352048,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8666945c09b21cde",
+  "name" : "添加关联管理员-策略id不存在",
+  "time" : {
+    "start" : 1601373326936,
+    "stop" : 1601373327148,
+    "duration" : 212
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "886e5b48d0bbbdbb",
+  "name" : "修改黑名单类型对象-USER-修改userID",
+  "time" : {
+    "start" : 1601373338420,
+    "stop" : 1601373338514,
+    "duration" : 94
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f77a733fec93cc5",
+  "name" : "添加认证方式-添加多个，部分存在",
+  "time" : {
+    "start" : 1601373325403,
+    "stop" : 1601373325550,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1201c9a35bb47f73",
+  "name" : "修改黑名单类型对象-USER+MAC修改userid和mac",
+  "time" : {
+    "start" : 1601373338719,
+    "stop" : 1601373338840,
+    "duration" : 121
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "96f4ea68b556cd12",
+  "name" : "软件大小为空",
+  "time" : {
+    "start" : 1601373345863,
+    "stop" : 1601373345986,
+    "duration" : 123
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,43 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":{
+            "mainCase": [
+                {
+                    "collection": "authenticationPolicies",
+                    "findDatas": [
+                         {
+                            "isDeleted" : true,
+                            "desc" : "测试"
+                         }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "desc" : "测试"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ],
+            "case_01": [
+                {
+                    "collection": "authenticationPolicies",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "desc" : "测试"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "desc" : "测试"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ]
+        }
+    }
+}

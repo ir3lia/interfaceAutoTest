@@ -1,0 +1,35 @@
+{
+    "linkid":{
+        "dbName": "linkid-dev",
+        "collectionData":[
+            {
+                "collection": "IDENTITY_USER",
+                "findDatas": [
+                    {
+                        "teacherId": "hahaha001",
+                        "name":"哈哈儿001",
+                        "tel" : "18200110022",
+                        "idCard" : "1234567",
+                        "szdw" : [ 
+                            "R5ed89becb0a1760006eeeeee"
+                        ],
+                        "gwmc" : [ 
+                            "R5edefe46723f3400077fffff"
+                        ],
+                        "sfzjlx" : "居民身份证",
+                        "sex" : "男性"
+                    }
+                ],
+                "deleteDatas":[
+                    {
+                        "teacherId": "hahaha001",
+                        "name":"哈哈儿001"
+                    }
+                ],
+                "isObjectId": true,
+                "insertDatas":[]
+            }
+        ]
+    }
+
+}

@@ -1,0 +1,434 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":{
+            "mainCase": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                         {
+                            "isDeleted" : true,
+                            "name" : "QQ"
+                         }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e98",
+                            "name":"QQ",
+                            "desc":"测试",
+                            "version":"2019",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_01": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "QQ"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e98",
+                            "name":"ces",
+                            "desc":"测试",
+                            "version":"2019",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_02": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "QQ"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e99",
+                            "name":"QQ",
+                            "desc":"测试",
+                            "version":"12.0.1",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_03": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "ces"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "ces"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e99",
+                            "name":"QQ",
+                            "desc":"测试",
+                            "version":"12.0.1",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_04": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "QQ"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e99",
+                            "name":"QQ",
+                            "desc":"测试",
+                            "version":"12.0.1",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_05": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "QQ"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e99",
+                            "name":"QQ",
+                            "desc":"测试",
+                            "version":"12.0.1",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_06": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "QQ"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e99",
+                            "name":"QQ",
+                            "desc":"测试",
+                            "version":"12.0.1",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_07": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "QQ"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e99",
+                            "name":"QQ",
+                            "desc":"测试",
+                            "version":"12.0.1",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_08": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "QQ"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e99",
+                            "name":"QQ",
+                            "desc":"测试",
+                            "version":"12.0.1",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_09": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "wechat"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "wechat"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e99",
+                            "name":"QQ",
+                            "desc":"测试",
+                            "version":"12.0.1",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_10": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "QQ"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e99",
+                            "name":"QQ",
+                            "desc":"测试",
+                            "version":"12.0.1",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_11": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "QQ"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e99",
+                            "name":"QQ",
+                            "version":"12.0.1",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_12": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "QQ"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id":"14d1f7056fc3450007db4e99",
+                            "name":"QQ",
+                            "desc":"测试",
+                            "version":"12.0.1",
+                            "vendor":"腾讯",
+                            "size":"500",
+                            "source":"MANUAL",
+                            "typeBasis": "manual",
+                            "_version_":"0",
+                            "createTime":"2019-10-31 08:53:49.280",
+                            "lastModifiedTime":"2019-10-31 08:53:49.280",
+                            "_class":"com.ruijie.authentication.nodemanager.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

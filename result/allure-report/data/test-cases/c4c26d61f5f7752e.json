@@ -1,0 +1,159 @@
+{
+  "uid" : "c4c26d61f5f7752e",
+  "name" : "修改后软件名称过长",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.editSoftwareInfo.test_editsoftware.Test_class#test_all",
+  "historyId" : "475f8a1df2f9c0323313d4f5b72c14a7",
+  "time" : {
+    "start" : 1601373350760,
+    "stop" : 1601373350959,
+    "duration" : 199
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3020088637458a3",
+      "name" : "测试人员",
+      "source" : "3020088637458a3.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "dfb0a4bf8a47f8e0",
+      "name" : "接口入参",
+      "source" : "dfb0a4bf8a47f8e0.attach",
+      "type" : "text/plain",
+      "size" : 850
+    }, {
+      "uid" : "ed89ed93f4e3f3a9",
+      "name" : "接口出参",
+      "source" : "ed89ed93f4e3f3a9.attach",
+      "type" : "text/plain",
+      "size" : 132
+    }, {
+      "uid" : "8a41fb8aaf81f0c6",
+      "name" : "stdout",
+      "source" : "8a41fb8aaf81f0c6.txt",
+      "type" : "text/plain",
+      "size" : 396
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "修改软件信息"
+  }, {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "story",
+    "value" : "修改软件信息-测试用例"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.editSoftwareInfo"
+  }, {
+    "name" : "suite",
+    "value" : "test_editsoftware"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.editSoftwareInfo.test_editsoftware"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'修改后软件名称过长'"
+  }, {
+    "name" : "description",
+    "value" : "'修改后软件名称过长'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试', 'softwareName': '打的是多撒大所大声道撒多撒多撒多撒大所大所大所大所大所多撒大所大所大所大所大所多撒多撒多所多撒多撒多所大声道撒大大所大所多撒大所多13(⊙o⊙)…324324324324324324324234大声道撒大所大多撒大所大所大所大所大所大所大萨达所大所多撒多撒多撒多撒多撒多撒大所多撒大所大所多撒大所大所大所多撒多撒多撒多撒多所QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '实体名称超过了最大允许长度'}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 62,
+        "unknown" : 0,
+        "total" : 65
+      },
+      "items" : [ {
+        "uid" : "828cabd67da026e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280504234,
+          "stop" : 1601280504387,
+          "duration" : 153
+        }
+      }, {
+        "uid" : "a8fdc27bb6e8057f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249243291,
+          "stop" : 1600249243431,
+          "duration" : 140
+        }
+      }, {
+        "uid" : "28a1f60f659738ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236176597,
+          "stop" : 1600236176776,
+          "duration" : 179
+        }
+      }, {
+        "uid" : "f7bf45a0ffdeee90",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821963244,
+          "stop" : 1599821963427,
+          "duration" : 183
+        }
+      }, {
+        "uid" : "facc7a0a46e85d1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820138760,
+          "stop" : 1599820138954,
+          "duration" : 194
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c4c26d61f5f7752e.json",
+  "parameterValues" : [ "'修改后软件名称过长'", "'修改后软件名称过长'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试', 'softwareName': '打的是多撒大所大声道撒多撒多撒多撒大所大所大所大所大所多撒大所大所大所大所大所多撒多撒多所多撒多撒多所大声道撒大大所大所多撒大所多13(⊙o⊙)…324324324324324324324234大声道撒大所大多撒大所大所大所大所大所大所大萨达所大所多撒多撒多撒多撒多撒多撒大所多撒大所大所多撒大所大所大所多撒多撒多撒多撒多所QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '实体名称超过了最大允许长度'}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

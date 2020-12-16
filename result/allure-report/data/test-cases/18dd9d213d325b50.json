@@ -1,0 +1,159 @@
+{
+  "uid" : "18dd9d213d325b50",
+  "name" : "修改黑名单类型对象-id不存在",
+  "fullName" : "testCase.SMP.authentication.BlackListController.editCategory.test_editCategory.Test_class#test_all",
+  "historyId" : "99490659e33e62b67f6a24bc56cec838",
+  "time" : {
+    "start" : 1601373338611,
+    "stop" : 1601373338713,
+    "duration" : 102
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "84de21a6e054c8ce",
+      "name" : "测试人员",
+      "source" : "84de21a6e054c8ce.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "10acd46e1651eee2",
+      "name" : "接口入参",
+      "source" : "10acd46e1651eee2.attach",
+      "type" : "text/plain",
+      "size" : 34
+    }, {
+      "uid" : "3bad41e41d51c9f8",
+      "name" : "接口出参",
+      "source" : "3bad41e41d51c9f8.attach",
+      "type" : "text/plain",
+      "size" : 140
+    }, {
+      "uid" : "7ecb84848565f1b4",
+      "name" : "stdout",
+      "source" : "7ecb84848565f1b4.txt",
+      "type" : "text/plain",
+      "size" : 181
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "BlackListController"
+  }, {
+    "name" : "story",
+    "value" : "修改黑名单提示信息-测试用例"
+  }, {
+    "name" : "feature",
+    "value" : "修改黑名单提示信息"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.BlackListController.editCategory"
+  }, {
+    "name" : "suite",
+    "value" : "test_editCategory"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.BlackListController.editCategory.test_editCategory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'修改黑名单类型对象-id不存在'"
+  }, {
+    "name" : "description",
+    "value" : "'id不存在'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'id': '5f1fd825bf7a2d0006820000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '黑名单[5f1fd825bf7a2d0006820000]不存在！'}}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 39,
+        "unknown" : 0,
+        "total" : 39
+      },
+      "items" : [ {
+        "uid" : "67f3aa411352e02c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280491102,
+          "stop" : 1601280491213,
+          "duration" : 111
+        }
+      }, {
+        "uid" : "53bf43cfb2279ec7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249231172,
+          "stop" : 1600249231257,
+          "duration" : 85
+        }
+      }, {
+        "uid" : "568e9a18a39447e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236163456,
+          "stop" : 1600236163567,
+          "duration" : 111
+        }
+      }, {
+        "uid" : "484768f1c3f2ee50",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821950401,
+          "stop" : 1599821950528,
+          "duration" : 127
+        }
+      }, {
+        "uid" : "be630ef05af22e85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820126911,
+          "stop" : 1599820127018,
+          "duration" : 107
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "18dd9d213d325b50.json",
+  "parameterValues" : [ "'修改黑名单类型对象-id不存在'", "'id不存在'", "{'query': {'id': '5f1fd825bf7a2d0006820000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '黑名单[5f1fd825bf7a2d0006820000]不存在！'}}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+}

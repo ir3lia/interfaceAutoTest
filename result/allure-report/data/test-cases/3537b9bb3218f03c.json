@@ -1,0 +1,159 @@
+{
+  "uid" : "3537b9bb3218f03c",
+  "name" : "批量删除软件信息，ID多个，值存在",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.batchDelSoftwareInfo.test_batchDelSoftware.Test_class#test_all",
+  "historyId" : "6a88c86b730c3009da33479c4a49d6ed",
+  "time" : {
+    "start" : 1601373347661,
+    "stop" : 1601373347855,
+    "duration" : 194
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "369fca8e9dd2759",
+      "name" : "测试人员",
+      "source" : "369fca8e9dd2759.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "158ff94950798713",
+      "name" : "接口入参",
+      "source" : "158ff94950798713.attach",
+      "type" : "text/plain",
+      "size" : 56
+    }, {
+      "uid" : "5e4bd2e17b54dc99",
+      "name" : "接口出参",
+      "source" : "5e4bd2e17b54dc99.attach",
+      "type" : "text/plain",
+      "size" : 75
+    }, {
+      "uid" : "b1a6a5939dbdc659",
+      "name" : "stdout",
+      "source" : "b1a6a5939dbdc659.txt",
+      "type" : "text/plain",
+      "size" : 343
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "修改软件信息"
+  }, {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "story",
+    "value" : "修改软件信息-测试用例"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.batchDelSoftwareInfo"
+  }, {
+    "name" : "suite",
+    "value" : "test_batchDelSoftware"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.batchDelSoftwareInfo.test_batchDelSoftware"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'批量删除软件信息，ID多个，值存在'"
+  }, {
+    "name" : "description",
+    "value" : "'批量删除软件信息，ID多个，值存在'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': ['14d1f7056fc3450007db4e98', '14d1f7056fc3450007db4e91'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 2, 'fail': 0, 'sum': 0}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 57,
+        "unknown" : 0,
+        "total" : 58
+      },
+      "items" : [ {
+        "uid" : "91a770c00df9035a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280500956,
+          "stop" : 1601280501149,
+          "duration" : 193
+        }
+      }, {
+        "uid" : "9df72d50fffa7e8f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249240243,
+          "stop" : 1600249240434,
+          "duration" : 191
+        }
+      }, {
+        "uid" : "e6e0c4a2afa3650d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236173410,
+          "stop" : 1600236173599,
+          "duration" : 189
+        }
+      }, {
+        "uid" : "5edabbf7a06bb974",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821960222,
+          "stop" : 1599821960415,
+          "duration" : 193
+        }
+      }, {
+        "uid" : "49959680258b27f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820135899,
+          "stop" : 1599820136076,
+          "duration" : 177
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3537b9bb3218f03c.json",
+  "parameterValues" : [ "'批量删除软件信息，ID多个，值存在'", "'批量删除软件信息，ID多个，值存在'", "{'query': ['14d1f7056fc3450007db4e98', '14d1f7056fc3450007db4e91'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 2, 'fail': 0, 'sum': 0}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

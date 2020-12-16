@@ -1,0 +1,48 @@
+{
+    "mainCaseData":[
+        {
+            "title": "新增web重定向策略",
+            "otherInfo":{
+                "description": "新增web重定向策略-isTerminateInferior为false，策略标签有3个值，所有信息齐全"
+            },
+            "httpData": {
+                "query": [
+                    "test01",
+                    "test02",
+                    "test03"
+                ],
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "新增web重定向策略-策略名称已存在",
+            "otherInfo":{
+                "description": "新增web重定向策略-策略名称已存在"
+            },
+            "httpData": {
+                "query": [
+                    "test01"
+                ],
+                "response": {
+                    "code" : 0,
+                    "message": "系统中已存在同名的策略！"
+                    },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

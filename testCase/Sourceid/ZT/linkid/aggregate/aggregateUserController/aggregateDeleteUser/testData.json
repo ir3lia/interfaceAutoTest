@@ -1,0 +1,49 @@
+{
+    "mainCaseData":[
+        {
+            "title": "删除教职工正常",
+            "otherInfo":{
+                "description": "传入正确的教职工objectId，且教职工用户不存在任何业务关联，删除成功！"
+            },
+            "httpData": {
+                "query": {
+                    "userObjectId": "5ecc6fa1c57a4300064e0000"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OKKK",
+                    "data" : true
+                },
+                "isCheckDB": true,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "删除教职工失败-教职工id不存在",
+            "otherInfo":{
+                "description": "传入数据库不存在的用户objectId，提示删除失败！"
+            },
+            "httpData": {
+                "query": {
+                    "userObjectId": "5ecc6fa1c57a430000000000"
+                },
+                "response": {
+                    "code": 204,
+                    "message": "Precondition Failed",
+                    "data": {
+                        "errorCode": 1030007,
+                        "errorMessage": "用户已被移除，请确认后重新操作"
+                    }
+                },
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        }
+    ]
+}

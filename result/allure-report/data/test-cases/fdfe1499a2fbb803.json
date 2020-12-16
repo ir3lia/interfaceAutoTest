@@ -1,0 +1,159 @@
+{
+  "uid" : "fdfe1499a2fbb803",
+  "name" : "添加认证方式-认证方式为userNamePassword",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAuthType.test_addPolicyAuthType.Test_class#test_main",
+  "historyId" : "233a0c0dca586ae8a95c594d12469fde",
+  "time" : {
+    "start" : 1601373328025,
+    "stop" : 1601373328202,
+    "duration" : 177
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f71268850bc12e17",
+      "name" : "测试人员",
+      "source" : "f71268850bc12e17.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "2721be529702e16d",
+      "name" : "接口入参",
+      "source" : "2721be529702e16d.attach",
+      "type" : "text/plain",
+      "size" : 18
+    }, {
+      "uid" : "84e486cc833e4d94",
+      "name" : "接口出参",
+      "source" : "84e486cc833e4d94.attach",
+      "type" : "text/plain",
+      "size" : 44
+    }, {
+      "uid" : "a46578de2f3955d7",
+      "name" : "stdout",
+      "source" : "a46578de2f3955d7.txt",
+      "type" : "text/plain",
+      "size" : 560
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-主流程"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAuthType"
+  }, {
+    "name" : "suite",
+    "value" : "test_addPolicyAuthType"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAuthType.test_addPolicyAuthType"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加认证方式-认证方式为userNamePassword'"
+  }, {
+    "name" : "description",
+    "value" : "'添加认证方式-认证方式为userNamePassword'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 33,
+        "unknown" : 0,
+        "total" : 33
+      },
+      "items" : [ {
+        "uid" : "8a89ea834bbc4206",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280479817,
+          "stop" : 1601280480039,
+          "duration" : 222
+        }
+      }, {
+        "uid" : "de5700560216e358",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249220735,
+          "stop" : 1600249220944,
+          "duration" : 209
+        }
+      }, {
+        "uid" : "28e3e010e618c588",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249141035,
+          "stop" : 1600249141227,
+          "duration" : 192
+        }
+      }, {
+        "uid" : "c3b6e182954085b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236151917,
+          "stop" : 1600236152107,
+          "duration" : 190
+        }
+      }, {
+        "uid" : "afef61d6d2729d0a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156575779,
+          "stop" : 1600156575965,
+          "duration" : 186
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fdfe1499a2fbb803.json",
+  "parameterValues" : [ "'添加认证方式-认证方式为userNamePassword'", "'添加认证方式-认证方式为userNamePassword'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

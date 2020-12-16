@@ -1,0 +1,13 @@
+
+ ==清理数据库 & 插入数据==
+all
+------------------------------delete nodeSoftwareInstallInfo 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： True
+------------------------------insert nodeSoftwareInstallInfo 1 ------------------------------
+------------------------------insert nodeSoftwareInstallInfo 2 ------------------------------
+
+ ==清理数据库==
+delete
+------------------------------delete nodeSoftwareInstallInfo 1 ------------------------------
+删除成功数量： 0

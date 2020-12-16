@@ -1,0 +1,67 @@
+{
+    "mainCaseData":[
+        {
+            "title": "添加SSO对接配置成功",
+            "otherInfo":{
+                "description": "SSO对接配置信息完整，保存成功！"
+            },
+            "httpData": {
+                "query": {
+                    "authConfig": {
+                        "agentId": "string",
+                        "alipayPublicKey": "string",
+                        "clientId": "ztfwbTmYDEXj6pBhBwsf-0bw",
+                        "clientSecret": "8CuUiuHBUYu7csxfDSmYng",
+                        "redirectUri": "http://id09.rghall.com.cn/",
+                        "stackOverflowKey": "string",
+                        "unionId": true
+                        },
+                    "enable": true,
+                    "id": "string",
+                    "source": "zto"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "添加SSO对接配置-URL不合法",
+            "otherInfo":{
+                "description": "添加SSO对接配置-URL不合法"
+            },
+            "httpData": {
+                "query": {
+                    "authConfig": {
+                    "agentId": "string",
+                    "alipayPublicKey": "string",
+                    "clientId": "ztfwbTmYDEXj6pBhBwsf-0bw",
+                    "clientSecret": "8CuUiuHBUYu7csxfDSmYng",
+                    "redirectUri": "id09.rghall.com.cn",
+                    "stackOverflowKey": "string",
+                    "unionId": true
+                    },
+                "enable": true,
+                "id": "string",
+                "source": "zto"
+                },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed"
+                },
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

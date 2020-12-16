@@ -1,0 +1,133 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":{
+            "mainCase": [
+                {
+                    "collection": "blackList_domain",
+                    "findDatas": [
+                         {
+                            "isDeleted" : true,
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                         }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ],
+            "case_01": [
+                {
+                    "collection": "blackList_domain",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ],
+            "case_02": [
+                {
+                    "collection": "blackList_domain",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ],
+            "case_03": [
+                {
+                    "collection": "blackList_domain",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ],
+            "case_04": [
+                {
+                    "collection": "blackList_domain",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ],
+            "case_05": [
+                {
+                    "collection": "blackList_domain",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ],
+            "case_06": [
+                {
+                    "collection": "blackList_domain",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ]
+        }
+    }
+}

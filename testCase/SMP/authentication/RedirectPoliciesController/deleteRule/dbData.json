@@ -1,0 +1,55 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":[
+            {
+                    "collection": "webRedirectPolicy",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "desc" : "test"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "test"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5f3a3710893a2500068349a4",
+                            "name" : "test",
+                            "desc" : "test",
+                            "ruleList" : [
+                                {
+                                    "_id" : "5f3e3dc2893a2500068411c6",
+                                    "name" : "ces",
+                                    "desc" : "测试添加",
+                                    "templateName" : "string",
+                                    "priority" : 0,
+                                    "ruleContent" : "",
+                                    "ruleTags" : [
+                                        "test01"
+                                    ],
+                                    "supportRuleCondition" : {},
+                                    "createTime" : "2020-08-20 09:09:22.640"
+                                }
+                            ],
+                            "policyTag" : [
+                                    "test01"
+                                ],
+                            "priority" : 1,
+                            "policyState" : "INITIAL",
+                            "isTerminateInferior" : true,
+                            "displayCategory" : "ADMINISTRATOR",
+                            "_version_" : "1",
+                            "createTime" : "2020-08-17 07:51:44.049",
+                            "lastModifiedTime" : "2020-08-20 09:09:22.640",
+                            "_class" : "com.ruijie.authentication.session.domain.webredirect.WebRedirectPolicy"
+                        }
+                    ]
+                }
+        ]
+    }
+}

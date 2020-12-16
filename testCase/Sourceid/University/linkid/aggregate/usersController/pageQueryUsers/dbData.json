@@ -1,0 +1,34 @@
+{
+  "linkid":{
+     "desc": "删除导入的用户",
+     "dbName": "linkid-dev",
+     "collectionData":{
+            "mainCase": [
+              {
+                "collection": "IDENTITY_USER",
+                "findDatas": [],
+                "deleteDatas":[
+                    {
+                        "teacherId":"test40"
+                    }
+                ],
+                "isObjectId": true,
+                "insertDatas":[]
+              }
+            ],
+            "case_01": [
+              {
+                "collection": "IDENTITY_USER",
+                "findDatas": [],
+                "deleteDatas":[
+                    {
+                        "teacherId":"test40"
+                    }
+                ],
+                "isObjectId": true,
+                "insertDatas":[]
+              }
+            ]
+          }
+      }
+}

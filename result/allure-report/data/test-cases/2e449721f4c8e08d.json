@@ -1,0 +1,159 @@
+{
+  "uid" : "2e449721f4c8e08d",
+  "name" : "批量删除软件安装信息-存在有效与无效ID",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.batchDelSoftwareInstallInfo.test_batchDelSoftwareInstallInfo.Test_class#test_main",
+  "historyId" : "8e790d94136b59a1fa9b3940f6f223c3",
+  "time" : {
+    "start" : 1601373347861,
+    "stop" : 1601373348068,
+    "duration" : 207
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "634316e30bdeeae2",
+      "name" : "测试人员",
+      "source" : "634316e30bdeeae2.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "efac1d846ddf89fe",
+      "name" : "接口入参",
+      "source" : "efac1d846ddf89fe.attach",
+      "type" : "text/plain",
+      "size" : 56
+    }, {
+      "uid" : "659e1281305ce0d3",
+      "name" : "接口出参",
+      "source" : "659e1281305ce0d3.attach",
+      "type" : "text/plain",
+      "size" : 75
+    }, {
+      "uid" : "2c6744814ab994d2",
+      "name" : "stdout",
+      "source" : "2c6744814ab994d2.txt",
+      "type" : "text/plain",
+      "size" : 429
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "story",
+    "value" : "批量删除软件安装信息-主流程"
+  }, {
+    "name" : "feature",
+    "value" : "批量删除软件安装信息"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.batchDelSoftwareInstallInfo"
+  }, {
+    "name" : "suite",
+    "value" : "test_batchDelSoftwareInstallInfo"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.batchDelSoftwareInstallInfo.test_batchDelSoftwareInstallInfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'批量删除软件安装信息-存在有效与无效ID'"
+  }, {
+    "name" : "description",
+    "value" : "'主流程用例-批量删除软件安装信息-存在有效与无效ID'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': ['11cd2ec56fc345000793c4d1', '11cd2ec56fc345000793c4d2'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 1, 'fail': 1, 'sum': 0}}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 60,
+        "unknown" : 0,
+        "total" : 60
+      },
+      "items" : [ {
+        "uid" : "1daec812a4ca0d90",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280501155,
+          "stop" : 1601280501362,
+          "duration" : 207
+        }
+      }, {
+        "uid" : "fe012e81f603b2e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249240440,
+          "stop" : 1600249240618,
+          "duration" : 178
+        }
+      }, {
+        "uid" : "3a1d254266d7d3a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236173605,
+          "stop" : 1600236173777,
+          "duration" : 172
+        }
+      }, {
+        "uid" : "8967a709a20b33e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821960422,
+          "stop" : 1599821960603,
+          "duration" : 181
+        }
+      }, {
+        "uid" : "e9f49b2b4b642aab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820136082,
+          "stop" : 1599820136282,
+          "duration" : 200
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2e449721f4c8e08d.json",
+  "parameterValues" : [ "'批量删除软件安装信息-存在有效与无效ID'", "'主流程用例-批量删除软件安装信息-存在有效与无效ID'", "{'query': ['11cd2ec56fc345000793c4d1', '11cd2ec56fc345000793c4d2'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 1, 'fail': 1, 'sum': 0}}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

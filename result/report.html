@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test Report</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function find_all(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sort_column(elem) {
+    toggle_sort_states(elem);
+    var colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    var key;
+    if (elem.classList.contains('numeric')) {
+        key = key_num;
+    } else if (elem.classList.contains('result')) {
+        key = key_result;
+    } else {
+        key = key_alpha;
+    }
+    sort_table(elem, key(colIndex));
+}
+
+function show_all_extras() {
+    find_all('.col-result').forEach(show_extras);
+}
+
+function hide_all_extras() {
+    find_all('.col-result').forEach(hide_extras);
+}
+
+function show_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.remove("collapsed");
+    expandcollapse.classList.remove("expander");
+    expandcollapse.classList.add("collapser");
+}
+
+function hide_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.add("collapsed");
+    expandcollapse.classList.remove("collapser");
+    expandcollapse.classList.add("expander");
+}
+
+function show_filters() {
+    var filter_items = document.getElementsByClassName('filter');
+    for (var i = 0; i < filter_items.length; i++)
+        filter_items[i].hidden = false;
+}
+
+function add_collapse() {
+    // Add links for show/hide all
+    var resulttable = find('table#results-table');
+    var showhideall = document.createElement("p");
+    showhideall.innerHTML = '<a href="javascript:show_all_extras()">Show all details</a> / ' +
+                            '<a href="javascript:hide_all_extras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    find_all('.col-result').forEach(function(elem) {
+        var collapsed = get_query_parameter('collapsed') || 'Passed';
+        var extras = elem.parentNode.nextElementSibling;
+        var expandcollapse = document.createElement("span");
+        if (extras.classList.contains("collapsed")) {
+            expandcollapse.classList.add("expander")
+        } else if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add("collapsed");
+            expandcollapse.classList.add("expander");
+        } else {
+            expandcollapse.classList.add("collapser");
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener("click", function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains("collapsed")) {
+                show_extras(event.currentTarget);
+            } else {
+                hide_extras(event.currentTarget);
+            }
+        });
+    })
+}
+
+function get_query_parameter(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () {
+    reset_sort_headers();
+
+    add_collapse();
+
+    show_filters();
+
+    sort_column(find('.initial-sort'));
+
+    find_all('.sortable').forEach(function(elem) {
+        elem.addEventListener("click",
+                              function(event) {
+                                  sort_column(elem);
+                              }, false)
+    });
+
+};
+
+function sort_table(clicked, key_func) {
+    var rows = find_all('.results-table-row');
+    var reversed = !clicked.classList.contains('asc');
+    var sorted_rows = sort(rows, key_func, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    var thead = document.getElementById("results-table-head");
+    document.getElementById('results-table').remove();
+    var parent = document.createElement("table");
+    parent.id = "results-table";
+    parent.appendChild(thead);
+    sorted_rows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName("BODY")[0].appendChild(parent);
+}
+
+function sort(items, key_func, reversed) {
+    var sort_array = items.map(function(item, i) {
+        return [key_func(item), i];
+    });
+
+    sort_array.sort(function(a, b) {
+        var key_a = a[0];
+        var key_b = b[0];
+
+        if (key_a == key_b) return 0;
+
+        if (reversed) {
+            return (key_a < key_b ? 1 : -1);
+        } else {
+            return (key_a > key_b ? 1 : -1);
+        }
+    });
+
+    return sort_array.map(function(item) {
+        var index = item[1];
+        return items[index];
+    });
+}
+
+function key_alpha(col_index) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[col_index].firstChild.data.toLowerCase();
+    };
+}
+
+function key_num(col_index) {
+    return function(elem) {
+        return parseFloat(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function key_result(col_index) {
+    return function(elem) {
+        var strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+                       'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function reset_sort_headers() {
+    find_all('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    find_all('.sortable').forEach(function(elem) {
+        var icon = document.createElement("div");
+        icon.className = "sort-icon";
+        icon.textContent = "vvv";
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove("desc", "active");
+        elem.classList.add("asc", "inactive");
+    });
+}
+
+function toggle_sort_states(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        reset_sort_headers();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function is_all_rows_hidden(value) {
+  return value.hidden == false;
+}
+
+function filter_table(elem) {
+    var outcome_att = "data-test-result";
+    var outcome = elem.getAttribute(outcome_att);
+    class_outcome = outcome + " results-table-row";
+    var outcome_rows = document.getElementsByClassName(class_outcome);
+
+    for(var i = 0; i < outcome_rows.length; i++){
+        outcome_rows[i].hidden = !elem.checked;
+    }
+
+    var rows = find_all('.results-table-row').filter(is_all_rows_hidden);
+    var all_rows_hidden = rows.length == 0 ? true : false;
+    var not_found_message = document.getElementById("not-found-message");
+    not_found_message.hidden = !all_rows_hidden;
+}
+</script>
+    <h1>report.html</h1>
+    <p>Report generated on 04-Jun-2020 at 19:43:25 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>Packages</td>
+        <td>{"pluggy": "0.13.1", "py": "1.8.1", "pytest": "5.4.1"}</td></tr>
+      <tr>
+        <td>Platform</td>
+        <td>Darwin-18.0.0-x86_64-i386-64bit</td></tr>
+      <tr>
+        <td>Plugins</td>
+        <td>{"allure-pytest": "2.8.13", "dependency": "0.4.0", "forked": "1.1.3", "html": "2.1.1", "metadata": "1.8.0", "rerunfailures": "9.0", "xdist": "1.32.0"}</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>3.7.4</td></tr></table>
+    <h2>Summary</h2>
+    <p>16 tests ran in 6.06 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">11 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">5 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable numeric" col="duration">Duration</th>
+          <th>Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/aggregateUserController/aggregateDeleteUser/test_aggregateDeleteUser.py::Test_class::test_all[删除教职工失败-教职工id不存在-传入数据库不存在的用户objectId，提示删除失败！-httpParameters0]</td>
+          <td class="col-duration">0.03</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_aggregateDeleteUser.Test_class object at 0x10f761510&gt;, case = &#x27;删除教职工失败-教职工id不存在&#x27;, description = &#x27;传入数据库不存在的用户objectId，提示删除失败！&#x27;<br/>httpParameters = {&#x27;checkDBType&#x27;: &#x27;non-exist&#x27;, &#x27;httpType&#x27;: &#x27;POST&#x27;, &#x27;isCheckDB&#x27;: False, &#x27;paramType&#x27;: &#x27;string&#x27;, ...}<br/><br/>    @allure.story(interfaceChName + &quot;-测试用例&quot;)<br/>    @allure.title(&quot;{case}&quot;)<br/>    @pytest.mark.dependency(name=interfaceEnName + &quot;_all&quot;, depends=[interfaceEnName + &quot;_main&quot;])<br/>    @pytest.mark.parametrize(&quot;case,description,httpParameters&quot;, list(parameters_all))<br/>    def test_all(self,case,description,httpParameters):<br/>        allure.attach(&#x27;{0}&#x27;.format(testerName),&quot;测试人员&quot;)<br/>        allure.attach(json.dumps(httpParameters[&quot;query&quot;],ensure_ascii=False),&quot;接口入参&quot;)  #测试用例的入参<br/>        if httpParameters[&quot;paramType&quot;] == &quot;string&quot;:<br/>            stringParams = jsonAnalysis.getStringParams(httpParameters[&quot;query&quot;])<br/>            urlPath2 = urlPath + stringParams<br/>            postJ = httpApi.httpRequests(urlIP,urlPath2,httpParameters[&quot;httpType&quot;])<br/>        elif httpParameters[&quot;paramType&quot;] == &quot;json&quot;:<br/>            postJ = httpApi.httpRequests(urlIP,urlPath,httpParameters[&quot;httpType&quot;],parame=httpParameters[&quot;query&quot;])<br/>        else:<br/>            assert 0 , &#x27;参数类型「&#x27;+httpParameters[&quot;paramType&quot;]+&#x27;」无法处理！&#x27;<br/>        allure.attach(&quot;{0}&quot;.format(postJ),&quot;接口出参&quot;)  #测试用例的出参<br/>        keyPaths = jsonAnalysis.getKeyPaths(httpParameters[&#x27;response&#x27;])<br/>        for path in keyPaths:<br/>            res1 = jsonAnalysis.getKeyValues(httpParameters[&quot;response&quot;],path)<br/>            res2 = jsonAnalysis.getKeyValues(postJ,path)<br/>            assert len(res2) &gt; 0 , path + &quot;不存在&quot;<br/>&gt;           assert res1 == res2 , path + &quot; 值错误！&quot;<br/><span class="error">E           AssertionError: [&#x27;code&#x27;] 值错误！</span><br/><span class="error">E           assert [204] == [412]</span><br/><span class="error">E             At index 0 diff: 204 != 412</span><br/><span class="error">E             Use -v to get the full diff</span><br/><br/>testCase/test_linkid/test_aggregate/aggregateUserController/aggregateDeleteUser/test_aggregateDeleteUser.py:103: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+ ==清理数据库 &amp; 插入数据==
+all
+------------------------------delete IDENTITY_USER 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： True
+------------------------------insert IDENTITY_USER 1 ------------------------------
+time data &#x27;5ecc6fa1c57a4300064e0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ec203f9ef451a000687078a&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4508c21aa41dca734b4&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;硕士研究生毕业&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73726&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2020-05-25T16:00:00.000+0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c51aaf1cf14fbfcff67ded0&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd55971048a2f376b34d32d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;01&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7375d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy@ruijie.com.cn&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7373c&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;中国共产党预备党员&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd44318048a2f376b2e6dab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋1&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd442fc048a2f376b2e6cba&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5df750057e8171000153ebb7&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy1234567890&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c09dde87be07b74cd74cb4a&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5e0466381569ae000193b7ab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73733&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;汉族&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd841c8048a2f376b5c6024&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73725&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73769&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73736&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;居民身份证&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73724&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+<br/> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;code&#x27;, &#x27;message&#x27;, &#x27;errorCode&#x27;, &#x27;errorMessage&#x27;]
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/usersController/checkUserIsDelete/test_checkUserIsDelete.py::Test_savaTeacher::test_all[用户关联「学校管理员」，判断教职工不可删除-正常-教职工为某学校的管理员，不可执行删除操作，接口返回对应的提示信息-httpParameters1]</td>
+          <td class="col-duration">0.41</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_checkUserIsDelete.Test_savaTeacher object at 0x10f70ec50&gt;, case = &#x27;用户关联「学校管理员」，判断教职工不可删除-正常&#x27;, description = &#x27;教职工为某学校的管理员，不可执行删除操作，接口返回对应的提示信息&#x27;<br/>httpParameters = {&#x27;caseNum&#x27;: &#x27;case_02&#x27;, &#x27;httpType&#x27;: &#x27;POST&#x27;, &#x27;isCheckDB&#x27;: False, &#x27;paramType&#x27;: &#x27;string&#x27;, ...}<br/><br/>    @allure.story(interfaceChName + &quot;-测试用例&quot;)<br/>    @allure.title(&quot;{case}&quot;)<br/>    @pytest.mark.dependency(name=interfaceEnName + &quot;_all&quot;, depends=[interfaceEnName + &quot;_main&quot;])<br/>    @pytest.mark.parametrize(&quot;case,description,httpParameters&quot;, list(parameters_all))<br/>    def test_all(self,case,description,httpParameters):<br/>        allure.attach(&#x27;{0}&#x27;.format(testerName),&quot;测试人员&quot;)<br/>        allure.attach(json.dumps(httpParameters[&quot;query&quot;],ensure_ascii=False),&quot;接口入参&quot;)  #测试用例的入参<br/>        if &#x27;caseNum&#x27; in httpParameters:<br/>            print(&quot;\n ==清理数据库 &amp; 插入数据==&quot;)<br/>            mongoDataOpr.oprDatasToDB(dbJsonPath,dbName,&quot;all&quot;,httpParameters[&quot;caseNum&quot;])<br/>        if httpParameters[&quot;paramType&quot;] == &quot;string&quot;:<br/>            stringParams = jsonAnalysis.getStringParams(httpParameters[&quot;query&quot;])<br/>            urlPath2 = urlPath + stringParams<br/>            postJ = httpApi.httpRequests(urlIP,urlPath2,httpParameters[&quot;httpType&quot;])<br/>        elif httpParameters[&quot;paramType&quot;] == &quot;json&quot;:<br/>            postJ = httpApi.httpRequests(urlIP,urlPath,httpParameters[&quot;httpType&quot;],parame=httpParameters[&quot;query&quot;])<br/>        else:<br/>            assert 0 , &#x27;参数类型「&#x27;+httpParameters[&quot;paramType&quot;]+&#x27;」无法处理！&#x27;<br/>        allure.attach(&quot;{0}&quot;.format(postJ),&quot;接口出参&quot;)  #测试用例的出参<br/>        keyPaths = jsonAnalysis.getKeyPaths(httpParameters[&#x27;response&#x27;])<br/>        for path in keyPaths:<br/>            res1 = jsonAnalysis.getKeyValues(httpParameters[&quot;response&quot;],path)<br/>            res2 = jsonAnalysis.getKeyValues(postJ,path)<br/>            assert len(res2) &gt; 0 , path + &quot;不存在&quot;<br/>&gt;           assert res1 == res2 , path + &quot; 值错误！&quot;<br/><span class="error">E           AssertionError: [&#x27;data&#x27;][&#x27;errorMessage&#x27;] 值错误！</span><br/><span class="error">E           assert [&#x27;嘻嘻幼儿园管理员11&#x27;] == [&#x27;嘻嘻幼儿园管理员&#x27;]</span><br/><span class="error">E             At index 0 diff: &#x27;嘻嘻幼儿园管理员11&#x27; != &#x27;嘻嘻幼儿园管理员&#x27;</span><br/><span class="error">E             Use -v to get the full diff</span><br/><br/>testCase/test_linkid/test_aggregate/usersController/checkUserIsDelete/test_checkUserIsDelete.py:114: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>
+ ==清理数据库 &amp; 插入数据==
+all
+------------------------------delete IDENTITY_USER 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： True
+------------------------------insert IDENTITY_USER 1 ------------------------------
+time data &#x27;5ecc6fa1c57a4300064e0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ed7468da7f2650006500005&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4508c21aa41dca734b4&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;硕士研究生毕业&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73726&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2020-05-25T16:00:00.000+0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd55971048a2f376b34d32d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;01&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7375d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy@ruijie.com.cn&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7373c&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;中国共产党预备党员&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd44318048a2f376b2e6dab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd442fc048a2f376b2e6cba&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5df750057e8171000153ebb7&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy1234567890&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c09dde87be07b74cd74cb4a&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5e0466381569ae000193b7ab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73733&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;汉族&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd841c8048a2f376b5c6024&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73725&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73769&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73736&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;居民身份证&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73724&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------delete ZT_SCHOOL 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： False
+------------------------------insert ZT_SCHOOL 1 ------------------------------
+------------------------------delete ZT_CAMPUS 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： True
+------------------------------insert ZT_CAMPUS 1 ------------------------------
+time data &#x27;5ed7468da7f2650006500002&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ed7468da7f2650006500000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;默认校区&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------delete ZT_MANAGER 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： True
+------------------------------insert ZT_MANAGER 1 ------------------------------
+time data &#x27;5ed7468da7f2650006500004&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ecc6fa1c57a4300064e0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------delete ZT_ORGANIZATION 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： False
+------------------------------insert ZT_ORGANIZATION 1 ------------------------------
+------------------------------delete ORGANIZATION 1 ------------------------------
+删除成功数量： 0
+------------------------------delete ORGANIZATION 2 ------------------------------
+删除成功数量： 0
+是否objectId格式： False
+------------------------------insert ORGANIZATION 1 ------------------------------
+------------------------------insert ORGANIZATION 2 ------------------------------
+-------------------叶节点key- [&#x27;code&#x27;, &#x27;message&#x27;, &#x27;errorCode&#x27;, &#x27;errorMessage&#x27;]
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/ztApiOrganizationController/ztOrgBatchGet/test_ztOrgBatchGet.py::Test_class::test_all[批量获取组织正常-传入两个正确的组织id，接口返回这两个组织的详细信息，包括学校机构id，组织类型，学校机构名称，学校机构地址，地址经度，地址纬度，行政区划码，更新时间，创建时间-httpParameters0]</td>
+          <td class="col-duration">0.14</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_ztOrgBatchGet.Test_class object at 0x10f74fe50&gt;, case = &#x27;批量获取组织正常&#x27;<br/>description = &#x27;传入两个正确的组织id，接口返回这两个组织的详细信息，包括学校机构id，组织类型，学校机构名称，学校机构地址，地址经度，地址纬度，行政区划码，更新时间，创建时间&#x27;<br/>httpParameters = {&#x27;httpType&#x27;: &#x27;POST&#x27;, &#x27;isCheckDB&#x27;: False, &#x27;paramType&#x27;: &#x27;json&#x27;, &#x27;query&#x27;: {&#x27;ids&#x27;: [&#x27;R5ebdfefe86aeaa0006d60000&#x27;, &#x27;R5ebdfefe86aeaa0006d60001&#x27;]}, ...}<br/><br/>    @allure.title(&quot;{case}&quot;)<br/>    @allure.story(interfaceChName + &quot;-测试用例&quot;)<br/>    @pytest.mark.dependency(name=interfaceEnName + &quot;_all&quot;, depends=[interfaceEnName + &quot;_main&quot;])<br/>    @pytest.mark.parametrize(&quot;case,description,httpParameters&quot;, list(parameters_all))<br/>    def test_all(self,case,description,httpParameters):<br/>        allure.attach(&#x27;{0}&#x27;.format(testerName),&quot;测试人员&quot;)<br/>        allure.attach(json.dumps(httpParameters[&quot;query&quot;],ensure_ascii=False),&quot;接口入参&quot;)  #测试用例的入参<br/>        if httpParameters[&quot;paramType&quot;] == &quot;string&quot;:<br/>            stringParams = jsonAnalysis.getStringParams(httpParameters[&quot;query&quot;])<br/>            urlPath2 = urlPath + stringParams<br/>            postJ = httpApi.httpRequests(urlIP,urlPath2,httpParameters[&quot;httpType&quot;],token=tokenJ[&#x27;access_token&#x27;])<br/>        elif httpParameters[&quot;paramType&quot;] == &quot;json&quot;:<br/>            postJ = httpApi.httpRequests(urlIP,urlPath,httpParameters[&quot;httpType&quot;],parame=httpParameters[&quot;query&quot;],token=tokenJ[&#x27;access_token&#x27;])<br/>        else:<br/>            assert 0 , &#x27;参数类型「&#x27;+httpParameters[&quot;paramType&quot;]+&#x27;」无法处理！&#x27;<br/>        allure.attach(&quot;{0}&quot;.format(postJ),&quot;接口出参&quot;)  #测试用例的出参<br/>        keyPaths = jsonAnalysis.getKeyPaths(httpParameters[&#x27;response&#x27;])<br/>        for path in keyPaths:<br/>            res1 = jsonAnalysis.getKeyValues(httpParameters[&quot;response&quot;],path)<br/>            res2 = jsonAnalysis.getKeyValues(postJ,path)<br/>            assert len(res2) &gt; 0 , path + &quot;不存在&quot;<br/>&gt;           assert res1 == res2 , path + &quot; 值错误！&quot;<br/><span class="error">E           AssertionError: [&#x27;data&#x27;][0][&#x27;dwmc&#x27;] 值错误！</span><br/><span class="error">E           assert [&#x27;环游中学111&#x27;] == [&#x27;环游中学&#x27;]</span><br/><span class="error">E             At index 0 diff: &#x27;环游中学111&#x27; != &#x27;环游中学&#x27;</span><br/><span class="error">E             Use -v to get the full diff</span><br/><br/>testCase/test_linkid/test_aggregate/ztApiOrganizationController/ztOrgBatchGet/test_ztOrgBatchGet.py:105: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;message&#x27;, &#x27;id&#x27;, &#x27;type&#x27;, &#x27;dwmc&#x27;, &#x27;jgdz&#x27;, &#x27;address&#x27;, &#x27;longitude&#x27;, &#x27;latitude&#x27;, &#x27;xzqhm&#x27;, &#x27;id&#x27;, &#x27;type&#x27;, &#x27;dwmc&#x27;, &#x27;jgdz&#x27;, &#x27;address&#x27;, &#x27;xzqhm&#x27;]
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/ztApiOrganizationController/ztOrgBatchGet/test_ztOrgBatchGet.py::Test_class::test_all[入参中ids存在不合法的id，返回合法的组织信息-传入两个正确的组织id，和1个不合法的组织id-httpParameters1]</td>
+          <td class="col-duration">0.28</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_ztOrgBatchGet.Test_class object at 0x11084b610&gt;, case = &#x27;入参中ids存在不合法的id，返回合法的组织信息&#x27;, description = &#x27;传入两个正确的组织id，和1个不合法的组织id&#x27;<br/>httpParameters = {&#x27;httpType&#x27;: &#x27;POST&#x27;, &#x27;isCheckDB&#x27;: False, &#x27;paramType&#x27;: &#x27;json&#x27;, &#x27;query&#x27;: {&#x27;ids&#x27;: [&#x27;R5ebdfefe86aeaa0006d60000&#x27;, &#x27;R5ebdfefe86aeaa0006d60001&#x27;, &#x27;JS00000001&#x27;]}, ...}<br/><br/>    @allure.title(&quot;{case}&quot;)<br/>    @allure.story(interfaceChName + &quot;-测试用例&quot;)<br/>    @pytest.mark.dependency(name=interfaceEnName + &quot;_all&quot;, depends=[interfaceEnName + &quot;_main&quot;])<br/>    @pytest.mark.parametrize(&quot;case,description,httpParameters&quot;, list(parameters_all))<br/>    def test_all(self,case,description,httpParameters):<br/>        allure.attach(&#x27;{0}&#x27;.format(testerName),&quot;测试人员&quot;)<br/>        allure.attach(json.dumps(httpParameters[&quot;query&quot;],ensure_ascii=False),&quot;接口入参&quot;)  #测试用例的入参<br/>        if httpParameters[&quot;paramType&quot;] == &quot;string&quot;:<br/>            stringParams = jsonAnalysis.getStringParams(httpParameters[&quot;query&quot;])<br/>            urlPath2 = urlPath + stringParams<br/>            postJ = httpApi.httpRequests(urlIP,urlPath2,httpParameters[&quot;httpType&quot;],token=tokenJ[&#x27;access_token&#x27;])<br/>        elif httpParameters[&quot;paramType&quot;] == &quot;json&quot;:<br/>            postJ = httpApi.httpRequests(urlIP,urlPath,httpParameters[&quot;httpType&quot;],parame=httpParameters[&quot;query&quot;],token=tokenJ[&#x27;access_token&#x27;])<br/>        else:<br/>            assert 0 , &#x27;参数类型「&#x27;+httpParameters[&quot;paramType&quot;]+&#x27;」无法处理！&#x27;<br/>        allure.attach(&quot;{0}&quot;.format(postJ),&quot;接口出参&quot;)  #测试用例的出参<br/>        keyPaths = jsonAnalysis.getKeyPaths(httpParameters[&#x27;response&#x27;])<br/>        for path in keyPaths:<br/>            res1 = jsonAnalysis.getKeyValues(httpParameters[&quot;response&quot;],path)<br/>            res2 = jsonAnalysis.getKeyValues(postJ,path)<br/>&gt;           assert len(res2) &gt; 0 , path + &quot;不存在&quot;<br/><span class="error">E           AssertionError: [&#x27;data&#x27;][0][&#x27;noneKey&#x27;][&#x27;none&#x27;]不存在</span><br/><span class="error">E           assert 0 &gt; 0</span><br/><span class="error">E            +  where 0 = len([])</span><br/><br/>testCase/test_linkid/test_aggregate/ztApiOrganizationController/ztOrgBatchGet/test_ztOrgBatchGet.py:104: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;message&#x27;, &#x27;id&#x27;, &#x27;type&#x27;, &#x27;dwmc&#x27;, &#x27;jgdz&#x27;, &#x27;address&#x27;, &#x27;longitude&#x27;, &#x27;latitude&#x27;, &#x27;xzqhm&#x27;, &#x27;none&#x27;, &#x27;id&#x27;, &#x27;type&#x27;, &#x27;dwmc&#x27;, &#x27;jgdz&#x27;, &#x27;address&#x27;, &#x27;xzqhm&#x27;]
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testCase/test_linkid/test_domain/userController/findCategoryCode/test_findCategoryCode.py::Test_class::test_all[查询用户人员类型正常-传入正确的用户objectId，返回用户的人员类型代码！-httpParameters0]</td>
+          <td class="col-duration">0.03</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_findCategoryCode.Test_class object at 0x110964bd0&gt;, case = &#x27;查询用户人员类型正常&#x27;, description = &#x27;传入正确的用户objectId，返回用户的人员类型代码！&#x27;<br/>httpParameters = {&#x27;httpType&#x27;: &#x27;POST&#x27;, &#x27;isCheckDB&#x27;: False, &#x27;paramType&#x27;: &#x27;json&#x27;, &#x27;query&#x27;: [&#x27;5ecc6fa1c57a4300064e0000YY&#x27;], ...}<br/><br/>    @allure.story(interfaceChName + &quot;-测试用例&quot;)<br/>    @allure.title(&quot;{case}&quot;)<br/>    @pytest.mark.dependency(name=interfaceEnName + &quot;_all&quot;, depends=[interfaceEnName + &quot;_main&quot;])<br/>    @pytest.mark.parametrize(&quot;case,description,httpParameters&quot;, list(parameters_all))<br/>    def test_all(self,case,description,httpParameters):<br/>        allure.attach(&#x27;{0}&#x27;.format(testerName),&quot;测试人员&quot;)<br/>        allure.attach(json.dumps(httpParameters[&quot;query&quot;],ensure_ascii=False),&quot;接口入参&quot;)  #测试用例的入参<br/>        if httpParameters[&quot;paramType&quot;] == &quot;string&quot;:<br/>            stringParams = jsonAnalysis.getStringParams(httpParameters[&quot;query&quot;])<br/>            urlPath2 = urlPath + stringParams<br/>            postJ = httpApi.httpRequests(urlIP,urlPath2,httpParameters[&quot;httpType&quot;])<br/>        elif httpParameters[&quot;paramType&quot;] == &quot;json&quot;:<br/>            postJ = httpApi.httpRequests(urlIP,urlPath,httpParameters[&quot;httpType&quot;],parame=httpParameters[&quot;query&quot;])<br/>        else:<br/>            assert 0 , &#x27;参数类型「&#x27;+httpParameters[&quot;paramType&quot;]+&#x27;」无法处理！&#x27;<br/>        allure.attach(&quot;{0}&quot;.format(postJ),&quot;接口出参&quot;)  #测试用例的出参<br/>        keyPaths = jsonAnalysis.getKeyPaths(httpParameters[&#x27;response&#x27;])<br/>        for path in keyPaths:<br/>            res1 = jsonAnalysis.getKeyValues(httpParameters[&quot;response&quot;],path)<br/>            res2 = jsonAnalysis.getKeyValues(postJ,path)<br/>            assert len(res2) &gt; 0 , path + &quot;不存在&quot;<br/>&gt;           assert res1 == res2 , path + &quot; 值错误！&quot;<br/><span class="error">E           AssertionError: [&#x27;code&#x27;] 值错误！</span><br/><span class="error">E           assert [200] == [204]</span><br/><span class="error">E             At index 0 diff: 200 != 204</span><br/><span class="error">E             Use -v to get the full diff</span><br/><br/>testCase/test_linkid/test_domain/userController/findCategoryCode/test_findCategoryCode.py:102: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+ ==清理数据库 &amp; 插入数据==
+all
+------------------------------delete IDENTITY_USER 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： True
+------------------------------insert IDENTITY_USER 1 ------------------------------
+time data &#x27;5ecc6fa1c57a4300064e0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ec203f9ef451a000687078a&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ec3865d3d5322000646e093&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4508c21aa41dca734b4&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;硕士研究生毕业&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73726&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2020-05-25T16:00:00.000+0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c51aaf1cf14fbfcff67ded0&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd55971048a2f376b34d32d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;01&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7375d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy@ruijie.com.cn&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7373c&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;中国共产党预备党员&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd44318048a2f376b2e6dab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋1&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd442fc048a2f376b2e6cba&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5df750057e8171000153ebb7&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy1234567890&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c09dde87be07b74cd74cb4a&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5e0466381569ae000193b7ab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73733&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;汉族&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd841c8048a2f376b5c6024&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73725&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73769&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73736&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;居民身份证&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73724&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+<br/> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;code&#x27;, &#x27;message&#x27;, &#x27;01&#x27;]
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/aggregateUserController/aggregateDeleteUser/test_aggregateDeleteUser.py::Test_class::test_main[删除教职工正常-传入正确的教职工objectId，且教职工用户不存在任何业务关联，删除成功！-httpParameters0]</td>
+          <td class="col-duration">0.10</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>
+ ==清理数据库 &amp; 插入数据==
+all
+------------------------------delete IDENTITY_USER 1 ------------------------------
+删除成功数量： 1
+是否objectId格式： True
+------------------------------insert IDENTITY_USER 1 ------------------------------
+time data &#x27;5ecc6fa1c57a4300064e0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ec203f9ef451a000687078a&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4508c21aa41dca734b4&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;硕士研究生毕业&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73726&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2020-05-25T16:00:00.000+0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c51aaf1cf14fbfcff67ded0&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd55971048a2f376b34d32d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;01&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7375d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy@ruijie.com.cn&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7373c&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;中国共产党预备党员&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd44318048a2f376b2e6dab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋1&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd442fc048a2f376b2e6cba&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5df750057e8171000153ebb7&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy1234567890&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c09dde87be07b74cd74cb4a&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5e0466381569ae000193b7ab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73733&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;汉族&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd841c8048a2f376b5c6024&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73725&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73769&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73736&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;居民身份证&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73724&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+<br/> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;code&#x27;, &#x27;message&#x27;, &#x27;data&#x27;]
+find
+------------------------------find IDENTITY_USER 1 ------------------------------
+no data 
+ &lt;class &#x27;str&#x27;&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/usersController/checkUserIsDelete/test_checkUserIsDelete.py::Test_savaTeacher::test_main[用户存在关联业务，判断教职工不可删除-正常-教职工用户为学校管理员、校长、班主任、任课老师，无法执行删除操作，接口返回对应的提示信息-httpParameters0]</td>
+          <td class="col-duration">0.68</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+ ==清理数据库 &amp; 插入数据==
+all
+------------------------------delete IDENTITY_USER 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： True
+------------------------------insert IDENTITY_USER 1 ------------------------------
+time data &#x27;5ecc6fa1c57a4300064e0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ed7468da7f2650006500005&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4508c21aa41dca734b4&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;硕士研究生毕业&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73726&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2020-05-25T16:00:00.000+0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd55971048a2f376b34d32d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;01&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7375d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy@ruijie.com.cn&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7373c&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;中国共产党预备党员&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd44318048a2f376b2e6dab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd442fc048a2f376b2e6cba&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5df750057e8171000153ebb7&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy1234567890&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c09dde87be07b74cd74cb4a&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5e0466381569ae000193b7ab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73733&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;汉族&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd841c8048a2f376b5c6024&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73725&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73769&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73736&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;居民身份证&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73724&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------delete ZT_SCHOOL 1 ------------------------------
+删除成功数量： 1
+是否objectId格式： False
+------------------------------insert ZT_SCHOOL 1 ------------------------------
+------------------------------delete ZT_SCHOOL_GRADE 1 ------------------------------
+删除成功数量： 1
+是否objectId格式： True
+------------------------------insert ZT_SCHOOL_GRADE 1 ------------------------------
+time data &#x27;5ed746f4a7f2650006500001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ed7468da7f2650006500000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;0&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------delete ZT_CAMPUS 1 ------------------------------
+删除成功数量： 1
+是否objectId格式： True
+------------------------------insert ZT_CAMPUS 1 ------------------------------
+time data &#x27;5ed7468da7f2650006500002&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ed7468da7f2650006500000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;默认校区&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------delete ZT_CLAXX 1 ------------------------------
+删除成功数量： 1
+是否objectId格式： True
+------------------------------insert ZT_CLAXX 1 ------------------------------
+time data &#x27;5ed7468da7f2650006500003&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;1班&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ed7468da7f2650006500000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ed7468da7f2650006500002&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;0&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ed746f4a7f2650006500001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ecc6fa1c57a4300064e0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;01&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ecc6fa1c57a4300064e0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------delete ZT_MANAGER 1 ------------------------------
+删除成功数量： 1
+是否objectId格式： True
+------------------------------insert ZT_MANAGER 1 ------------------------------
+time data &#x27;5ed7468da7f2650006500004&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ecc6fa1c57a4300064e0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------delete ZT_ORGANIZATION 1 ------------------------------
+删除成功数量： 1
+是否objectId格式： False
+------------------------------insert ZT_ORGANIZATION 1 ------------------------------
+------------------------------delete ORGANIZATION 1 ------------------------------
+删除成功数量： 1
+------------------------------delete ORGANIZATION 2 ------------------------------
+删除成功数量： 1
+是否objectId格式： False
+------------------------------insert ORGANIZATION 1 ------------------------------
+------------------------------insert ORGANIZATION 2 ------------------------------
+-------------------叶节点key- [&#x27;code&#x27;, &#x27;message&#x27;, &#x27;errorCode&#x27;, &#x27;errorMessage&#x27;]
+
+ ==清理数据库==
+delete
+------------------------------delete IDENTITY_USER 1 ------------------------------
+删除成功数量： 1
+------------------------------delete ZT_SCHOOL 1 ------------------------------
+删除成功数量： 1
+------------------------------delete ZT_SCHOOL_GRADE 1 ------------------------------
+删除成功数量： 1
+------------------------------delete ZT_CAMPUS 1 ------------------------------
+删除成功数量： 1
+------------------------------delete ZT_CLAXX 1 ------------------------------
+删除成功数量： 1
+------------------------------delete ZT_MANAGER 1 ------------------------------
+删除成功数量： 1
+------------------------------delete ZT_ORGANIZATION 1 ------------------------------
+删除成功数量： 1
+------------------------------delete ORGANIZATION 1 ------------------------------
+删除成功数量： 1
+------------------------------delete ORGANIZATION 2 ------------------------------
+删除成功数量： 1
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/usersController/checkUserIsDelete/test_checkUserIsDelete.py::Test_savaTeacher::test_all[用户不存在关联业务，判断教职工可删除-正常-教职工不存在任何关联业务，可正常执行删除操作，接口返回对应的提示信息-httpParameters0]</td>
+          <td class="col-duration">0.18</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+ ==清理数据库 &amp; 插入数据==
+all
+------------------------------delete IDENTITY_USER 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： True
+------------------------------insert IDENTITY_USER 1 ------------------------------
+time data &#x27;5ecc6fa1c57a4300064e0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ed7468da7f2650006500005&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4508c21aa41dca734b4&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;硕士研究生毕业&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73726&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2020-05-25T16:00:00.000+0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd55971048a2f376b34d32d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;01&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7375d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy@ruijie.com.cn&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7373c&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;中国共产党预备党员&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd44318048a2f376b2e6dab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd442fc048a2f376b2e6cba&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5df750057e8171000153ebb7&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy1234567890&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c09dde87be07b74cd74cb4a&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5e0466381569ae000193b7ab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73733&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;汉族&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd841c8048a2f376b5c6024&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73725&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73769&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73736&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;居民身份证&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73724&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+-------------------叶节点key- [&#x27;code&#x27;, &#x27;message&#x27;, &#x27;data&#x27;]
+
+ ==清理数据库==
+delete
+------------------------------delete IDENTITY_USER 1 ------------------------------
+删除成功数量： 1
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/usersController/saveTeacher/test_saveTeacher.py::Test_class::test_main[保存教职工正常-教职工所有属性值均完整，保存成功！-httpParameters0]</td>
+          <td class="col-duration">0.19</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>
+ ==清理数据库==
+all
+------------------------------delete IDENTITY_USER 1 ------------------------------
+删除成功数量： 1
+是否objectId格式： True
+------------------------------delete ZT_SCHOOL 1 ------------------------------
+删除成功数量： 1
+是否objectId格式： False
+------------------------------insert ZT_SCHOOL 1 ------------------------------
+------------------------------delete ZT_CAMPUS 1 ------------------------------
+删除成功数量： 1
+是否objectId格式： True
+------------------------------insert ZT_CAMPUS 1 ------------------------------
+time data &#x27;5ed7468da7f2650006500002&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ed7468da7f2650006500000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;默认校区&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------delete ZT_ORGANIZATION 1 ------------------------------
+删除成功数量： 1
+是否objectId格式： False
+------------------------------insert ZT_ORGANIZATION 1 ------------------------------
+------------------------------delete ORGANIZATION 1 ------------------------------
+删除成功数量： 1
+------------------------------delete ORGANIZATION 2 ------------------------------
+删除成功数量： 1
+是否objectId格式： False
+------------------------------insert ORGANIZATION 1 ------------------------------
+------------------------------insert ORGANIZATION 2 ------------------------------
+<br/> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;code&#x27;, &#x27;message&#x27;, &#x27;data&#x27;]
+find
+------------------------------find IDENTITY_USER 1 ------------------------------
+[{&#x27;_id&#x27;: &#x27;5ed8de5a79c1c1000686b641&#x27;, &#x27;roleIds&#x27;: [], &#x27;labelIds&#x27;: [], &#x27;teacherId&#x27;: &#x27;10017573&#x27;, &#x27;password&#x27;: &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27;, &#x27;name&#x27;: &#x27;懒洋洋&#x27;, &#x27;idCard&#x27;: &#x27;363636199900111122&#x27;, &#x27;szdw&#x27;: [&#x27;5ed7468da7f2650006500005&#x27;], &#x27;gwmc&#x27;: [], &#x27;sex&#x27;: &#x27;男性&#x27;, &#x27;userPropertys&#x27;: {&#x27;5c4fd4518c21aa41dca73724&#x27;: {&#x27;objectId&#x27;: &#x27;5c4fd4518c21aa41dca73724&#x27;, &#x27;value&#x27;: &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27;, &#x27;source&#x27;: &#x27;RG_SourceID&#x27;}, &#x27;5c4fd4518c21aa41dca73736&#x27;: {&#x27;objectId&#x27;: &#x27;5c4fd4518c21aa41dca73736&#x27;, &#x27;value&#x27;: &#x27;居民身份证&#x27;}, &#x27;5c4fd4518c21aa41dca73769&#x27;: {&#x27;objectId&#x27;: &#x27;5c4fd4518c21aa41dca73769&#x27;, &#x27;value&#x27;: [&#x27;5ed7468da7f2650006500005&#x27;]}, &#x27;5c4fd4518c21aa41dca73725&#x27;: {&#x27;objectId&#x27;: &#x27;5c4fd4518c21aa41dca73725&#x27;, &#x27;value&#x27;: True, &#x27;source&#x27;: &#x27;RG_SourceID&#x27;}, &#x27;5bd841c8048a2f376b5c6024&#x27;: {&#x27;objectId&#x27;: &#x27;5bd841c8048a2f376b5c6024&#x27;, &#x27;value&#x27;: &#x27;男性&#x27;}, &#x27;5c4fd4518c21aa41dca73733&#x27;: {&#x27;objectId&#x27;: &#x27;5c4fd4518c21aa41dca73733&#x27;, &#x27;value&#x27;: &#x27;汉族&#x27;}, &#x27;5e0466381569ae000193b7ab&#x27;: {&#x27;objectId&#x27;: &#x27;5e0466381569ae000193b7ab&#x27;, &#x27;value&#x27;: &#x27;lyy001&#x27;}, &#x27;5c09dde87be07b74cd74cb4a&#x27;: {&#x27;objectId&#x27;: &#x27;5c09dde87be07b74cd74cb4a&#x27;, &#x27;value&#x27;: &#x27;363636199900111122&#x27;}, &#x27;5df750057e8171000153ebb7&#x27;: {&#x27;objectId&#x27;: &#x27;5df750057e8171000153ebb7&#x27;, &#x27;value&#x27;: &#x27;lyy1234567890&#x27;}, &#x27;5bd442fc048a2f376b2e6cba&#x27;: {&#x27;objectId&#x27;: &#x27;5bd442fc048a2f376b2e6cba&#x27;, &#x27;value&#x27;: &#x27;10017573&#x27;}, &#x27;5bd44318048a2f376b2e6dab&#x27;: {&#x27;objectId&#x27;: &#x27;5bd44318048a2f376b2e6dab&#x27;, &#x27;value&#x27;: &#x27;懒洋洋&#x27;}, &#x27;5c4fd4518c21aa41dca7373c&#x27;: {&#x27;objectId&#x27;: &#x27;5c4fd4518c21aa41dca7373c&#x27;, &#x27;value&#x27;: &#x27;中国共产党预备党员&#x27;}, &#x27;5c4fd4518c21aa41dca7375d&#x27;: {&#x27;objectId&#x27;: &#x27;5c4fd4518c21aa41dca7375d&#x27;, &#x27;value&#x27;: &#x27;lyy@ruijie.com.cn&#x27;}, &#x27;5bd55971048a2f376b34d32d&#x27;: {&#x27;objectId&#x27;: &#x27;5bd55971048a2f376b34d32d&#x27;, &#x27;value&#x27;: &#x27;01&#x27;}, &#x27;5c51aaf1cf14fbfcff67ded0&#x27;: {&#x27;objectId&#x27;: &#x27;5c51aaf1cf14fbfcff67ded0&#x27;, &#x27;value&#x27;: []}, &#x27;5c4fd4518c21aa41dca73726&#x27;: {&#x27;objectId&#x27;: &#x27;5c4fd4518c21aa41dca73726&#x27;, &#x27;value&#x27;: datetime.datetime(2020, 6, 3, 16, 0), &#x27;source&#x27;: &#x27;RG_SourceID&#x27;}, &#x27;5c4fd4508c21aa41dca734b4&#x27;: {&#x27;objectId&#x27;: &#x27;5c4fd4508c21aa41dca734b4&#x27;, &#x27;value&#x27;: &#x27;硕士研究生毕业&#x27;}}, &#x27;szdwAndGwmcs&#x27;: [{&#x27;szdw&#x27;: &#x27;5ed7468da7f2650006500005&#x27;}], &#x27;createdTime&#x27;: &#x27;2020-06-04 11:43:22&#x27;, &#x27;updatedTime&#x27;: &#x27;2020-06-04 11:43:22&#x27;, &#x27;isDeleted&#x27;: False}] 
+ &lt;class &#x27;list&#x27;&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/usersController/saveTeacher/test_saveTeacher.py::Test_class::test_all[保存教职工失败——身份证号大于18位-教职工所有属性值均完整，保存成功！-httpParameters0]</td>
+          <td class="col-duration">0.12</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>
+ ==清理数据库==
+all
+------------------------------delete IDENTITY_USER 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： True
+------------------------------delete ZT_SCHOOL 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： False
+------------------------------insert ZT_SCHOOL 1 ------------------------------
+------------------------------delete ZT_CAMPUS 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： True
+------------------------------insert ZT_CAMPUS 1 ------------------------------
+time data &#x27;5ed7468da7f2650006500002&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ed7468da7f2650006500000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;默认校区&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------delete ZT_ORGANIZATION 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： False
+------------------------------insert ZT_ORGANIZATION 1 ------------------------------
+------------------------------delete ORGANIZATION 1 ------------------------------
+删除成功数量： 0
+------------------------------delete ORGANIZATION 2 ------------------------------
+删除成功数量： 0
+是否objectId格式： False
+------------------------------insert ORGANIZATION 1 ------------------------------
+------------------------------insert ORGANIZATION 2 ------------------------------
+<br/> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;code&#x27;, &#x27;message&#x27;, &#x27;errorCode&#x27;, &#x27;errorMessage&#x27;]
+find
+------------------------------find IDENTITY_USER 1 ------------------------------
+no data 
+ &lt;class &#x27;str&#x27;&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/ztApiOrganizationController/ztOrgBatchGet/test_ztOrgBatchGet.py::Test_class::test_main[批量获取组织正常-传入两个正确的组织id，接口返回这两个组织的详细信息，包括学校机构id，组织类型，学校机构名称，学校机构地址，地址经度，地址纬度，行政区划码，更新时间，创建时间-httpParameters0]</td>
+          <td class="col-duration">0.23</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>====（整个测试类）前置条件：插入组织数据====
+insert
+是否objectId格式： False
+------------------------------insert ZT_SCHOOL 1 ------------------------------
+------------------------------insert ZT_SCHOOL 2 ------------------------------
+是否objectId格式： True
+------------------------------insert ZT_CAMPUS 1 ------------------------------
+time data &#x27;5ebe140686aeaa0006d70000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;默认校区&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------insert ZT_CAMPUS 2 ------------------------------
+time data &#x27;5ebe140686aeaa0006d70001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;默认校区&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+是否objectId格式： True
+------------------------------insert ZT_SCHOOL_GRADE 1 ------------------------------
+time data &#x27;5ebe140686aeaa0006d80000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------insert ZT_SCHOOL_GRADE 2 ------------------------------
+time data &#x27;5ebe140686aeaa0006d81000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------insert ZT_SCHOOL_GRADE 3 ------------------------------
+time data &#x27;5ebe140686aeaa0006d82000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------insert ZT_SCHOOL_GRADE 4 ------------------------------
+time data &#x27;5ebe140686aeaa0006d80001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------insert ZT_SCHOOL_GRADE 5 ------------------------------
+time data &#x27;5ebe140686aeaa0006d81001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------insert ZT_SCHOOL_GRADE 6 ------------------------------
+time data &#x27;5ebe140686aeaa0006d82001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+是否objectId格式： True
+------------------------------insert ZT_CLAXX 1 ------------------------------
+time data &#x27;5ebe140686aeaa0006d69000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;1班&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d70000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d80000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;20&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------insert ZT_CLAXX 2 ------------------------------
+time data &#x27;5ebe140686aeaa0006d69100&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;1班&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d70000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d81000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;20&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------insert ZT_CLAXX 3 ------------------------------
+time data &#x27;5ebe140686aeaa0006d69200&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;1班&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d70000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d82000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;20&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------insert ZT_CLAXX 4 ------------------------------
+time data &#x27;5ebe140686aeaa0006d69001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;1班&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d70001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d80001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;20&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------insert ZT_CLAXX 5 ------------------------------
+time data &#x27;5ebe140686aeaa0006d69101&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;1班&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d70001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d81001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;20&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+------------------------------insert ZT_CLAXX 6 ------------------------------
+time data &#x27;5ebe140686aeaa0006d69201&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;1班&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ebdfefe86aeaa0006d60001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d70001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5ebe140686aeaa0006d82001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;20&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+是否objectId格式： False
+------------------------------insert ZT_ORGANIZATION 1 ------------------------------
+------------------------------insert ZT_ORGANIZATION 2 ------------------------------
+是否objectId格式： False
+------------------------------insert ORGANIZATION 1 ------------------------------
+------------------------------insert ORGANIZATION 2 ------------------------------
+<br/> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;message&#x27;, &#x27;id&#x27;, &#x27;type&#x27;, &#x27;dwmc&#x27;, &#x27;jgdz&#x27;, &#x27;address&#x27;, &#x27;xzqhm&#x27;, &#x27;id&#x27;, &#x27;type&#x27;, &#x27;dwmc&#x27;, &#x27;jgdz&#x27;, &#x27;address&#x27;, &#x27;xzqhm&#x27;]
+---------------断言json {&#x27;message&#x27;: &#x27;ok&#x27;, &#x27;data&#x27;: [{&#x27;id&#x27;: &#x27;R5ebdfefe86aeaa0006d60000&#x27;, &#x27;type&#x27;: 2, &#x27;dwmc&#x27;: &#x27;环游中学&#x27;, &#x27;jgdz&#x27;: &#x27;上海市浦东新区浦东大道834弄-834号-甲&#x27;, &#x27;address&#x27;: &#x27;上海市浦东新区浦东大道834弄-834号-甲&#x27;, &#x27;xzqhm&#x27;: &#x27;310104&#x27;}, {&#x27;id&#x27;: &#x27;R5ebdfefe86aeaa0006d60001&#x27;, &#x27;type&#x27;: 2, &#x27;dwmc&#x27;: &#x27;新世界中学&#x27;, &#x27;jgdz&#x27;: &#x27;上海市普陀区石泉路76号&#x27;, &#x27;address&#x27;: &#x27;上海市普陀区石泉路76号&#x27;, &#x27;xzqhm&#x27;: &#x27;110101&#x27;}]}
+---------------断言key [&quot;[&#x27;message&#x27;]&quot;, &quot;[&#x27;data&#x27;][0][&#x27;id&#x27;]&quot;, &quot;[&#x27;data&#x27;][1][&#x27;id&#x27;]&quot;, &quot;[&#x27;data&#x27;][0][&#x27;type&#x27;]&quot;, &quot;[&#x27;data&#x27;][1][&#x27;type&#x27;]&quot;, &quot;[&#x27;data&#x27;][0][&#x27;dwmc&#x27;]&quot;, &quot;[&#x27;data&#x27;][1][&#x27;dwmc&#x27;]&quot;, &quot;[&#x27;data&#x27;][0][&#x27;jgdz&#x27;]&quot;, &quot;[&#x27;data&#x27;][1][&#x27;jgdz&#x27;]&quot;, &quot;[&#x27;data&#x27;][0][&#x27;address&#x27;]&quot;, &quot;[&#x27;data&#x27;][1][&#x27;address&#x27;]&quot;, &quot;[&#x27;data&#x27;][0][&#x27;xzqhm&#x27;]&quot;, &quot;[&#x27;data&#x27;][1][&#x27;xzqhm&#x27;]&quot;]
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/ztApiOrganizationController/ztOrgBatchGet/test_ztOrgBatchGet.py::Test_class::test_all[入参中ids长度为100，返回100id中合法的组织信息-传入100个组织id，其中两个合法-httpParameters2]</td>
+          <td class="col-duration">0.26</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;message&#x27;, &#x27;id&#x27;, &#x27;type&#x27;, &#x27;dwmc&#x27;, &#x27;jgdz&#x27;, &#x27;address&#x27;, &#x27;longitude&#x27;, &#x27;latitude&#x27;, &#x27;xzqhm&#x27;, &#x27;id&#x27;, &#x27;type&#x27;, &#x27;dwmc&#x27;, &#x27;jgdz&#x27;, &#x27;address&#x27;, &#x27;xzqhm&#x27;]
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/ztApiOrganizationController/ztOrgBatchGet/test_ztOrgBatchGet.py::Test_class::test_all[入参中ids存在相同且合法的id，重复的id接口只返回一个对应的组织信息-传入三个正确的组织id，其中2个重复-httpParameters3]</td>
+          <td class="col-duration">0.25</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;message&#x27;, &#x27;id&#x27;, &#x27;type&#x27;, &#x27;dwmc&#x27;, &#x27;jgdz&#x27;, &#x27;address&#x27;, &#x27;longitude&#x27;, &#x27;latitude&#x27;, &#x27;xzqhm&#x27;, &#x27;id&#x27;, &#x27;type&#x27;, &#x27;dwmc&#x27;, &#x27;jgdz&#x27;, &#x27;address&#x27;, &#x27;xzqhm&#x27;]
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/ztApiOrganizationController/ztOrgBatchGet/test_ztOrgBatchGet.py::Test_class::test_all[入参中ids为空-校验接口对空数组的异常处理-httpParameters4]</td>
+          <td class="col-duration">0.07</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;code&#x27;, &#x27;message&#x27;]
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/test_linkid/test_aggregate/ztApiOrganizationController/ztOrgBatchGet/test_ztOrgBatchGet.py::Test_class::test_all[入参中ids长度为101，接口返回异常，ids最大支持100批量查询-校验接口对数组长度限制的校验，接口限制ids数组最大长度为100-httpParameters5]</td>
+          <td class="col-duration">0.07</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;code&#x27;, &#x27;message&#x27;]
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/test_linkid/test_domain/userController/findCategoryCode/test_findCategoryCode.py::Test_class::test_main[查询用户人员类型正常-传入正确的用户objectId，返回用户的人员类型代码！-httpParameters0]</td>
+          <td class="col-duration">0.05</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>
+ ==清理数据库 &amp; 插入数据==
+all
+------------------------------delete IDENTITY_USER 1 ------------------------------
+删除成功数量： 0
+是否objectId格式： True
+------------------------------insert IDENTITY_USER 1 ------------------------------
+time data &#x27;5ecc6fa1c57a4300064e0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ec203f9ef451a000687078a&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;R5ec3865d3d5322000646e093&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4508c21aa41dca734b4&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;硕士研究生毕业&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73726&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;2020-05-25T16:00:00.000+0000&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c51aaf1cf14fbfcff67ded0&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd55971048a2f376b34d32d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;01&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7375d&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy@ruijie.com.cn&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca7373c&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;中国共产党预备党员&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd44318048a2f376b2e6dab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;懒洋洋1&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd442fc048a2f376b2e6cba&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;10017625&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5df750057e8171000153ebb7&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy1234567890&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c09dde87be07b74cd74cb4a&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;363636199900111122&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5e0466381569ae000193b7ab&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;lyy001&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73733&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;汉族&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5bd841c8048a2f376b5c6024&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;男性&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73725&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73769&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73736&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;居民身份证&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;5c4fd4518c21aa41dca73724&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;Ex32+UBitndhWIuEkwsrJg==&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+time data &#x27;RG_SourceID&#x27; does not match format &#x27;%Y-%m-%d %H:%M:%S.%f&#x27; 不是时间格式
+<br/> ------------------------------Captured stdout call------------------------------ <br/>-------------------叶节点key- [&#x27;code&#x27;, &#x27;message&#x27;, &#x27;01&#x27;]
+<br/></div></td></tr></tbody></table></body></html>

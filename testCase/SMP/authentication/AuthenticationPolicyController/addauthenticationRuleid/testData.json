@@ -1,0 +1,68 @@
+{
+    "mainCaseData":[
+        {
+            "title": "添加策略规则-规则标签为3个值",
+            "otherInfo":{
+                "description": "添加策略规则-规则标签为3个值"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试",
+                    "priority": 0,
+                    "ruleContent": "",
+                    "ruleName": "测试",
+                    "ruleTags": [
+                        "string01",
+                        "string02",
+                        "string03"
+                    ],
+                    "supportCondition": {},
+                    "templateName": "string"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "添加策略规则-规则id不存在",
+            "otherInfo":{
+                "description": "添加策略规则-规则id不存在"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试",
+                    "priority": 0,
+                    "ruleContent": "",
+                    "ruleName": "测试",
+                    "ruleTags": [
+                        "string01"
+                    ],
+                    "supportCondition": {},
+                    "templateName": "string"
+                },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data": {
+                        "errorCode": 6031801,
+                        "errorMessage": "系统中不存在ID为[5f475da0893a250006851111]的认证策略"
+                    }
+                },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

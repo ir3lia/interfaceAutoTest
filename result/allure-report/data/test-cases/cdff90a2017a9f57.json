@@ -1,0 +1,219 @@
+{
+  "uid" : "cdff90a2017a9f57",
+  "name" : "删除软件安装信息失败-id不存在",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.delSoftwareInstallInfo.test_delSoftwareInstallInfo.Test_class#test_all",
+  "historyId" : "949bb52fb25db0cec2e96dcd7a7ef867",
+  "time" : {
+    "start" : 1601373349942,
+    "stop" : 1601373350010,
+    "duration" : 68
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1601373349873,
+      "stop" : 1601373349941,
+      "duration" : 68
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Module__pytest_setup_module",
+    "time" : {
+      "start" : 1601373349660,
+      "stop" : 1601373349676,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e203e1538154d1ed",
+      "name" : "测试人员",
+      "source" : "e203e1538154d1ed.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "a5563b1be7b3a64c",
+      "name" : "接口入参",
+      "source" : "a5563b1be7b3a64c.json",
+      "type" : "application/json",
+      "size" : 34
+    }, {
+      "uid" : "e887d0f182dea784",
+      "name" : "接口出参",
+      "source" : "e887d0f182dea784.json",
+      "type" : "application/json",
+      "size" : 155
+    }, {
+      "uid" : "92a92f0c94d3a0c5",
+      "name" : "stdout",
+      "source" : "92a92f0c94d3a0c5.txt",
+      "type" : "text/plain",
+      "size" : 429
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1601373350013,
+      "stop" : 1601373350059,
+      "duration" : 46
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Module__pytest_setup_module::0",
+    "time" : {
+      "start" : 1601373350060,
+      "stop" : 1601373350060,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "删除软件信息"
+  }, {
+    "name" : "story",
+    "value" : "删除软件信息-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.delSoftwareInstallInfo"
+  }, {
+    "name" : "suite",
+    "value" : "test_delSoftwareInstallInfo"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.delSoftwareInstallInfo.test_delSoftwareInstallInfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'删除软件安装信息失败-id不存在'"
+  }, {
+    "name" : "description",
+    "value" : "'Id不存在，软件安装信息删除失败！'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'id': '5ecc6fa1c57a4300064e0000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '系统中不存在编号为[5ecc6fa1c57a4300064e0000]的实体'}}, 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 50,
+        "unknown" : 0,
+        "total" : 50
+      },
+      "items" : [ {
+        "uid" : "c7ae44908518d1e6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280503369,
+          "stop" : 1601280503430,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "f35d71cc45671821",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249242495,
+          "stop" : 1600249242558,
+          "duration" : 63
+        }
+      }, {
+        "uid" : "1e2661e36a6cde13",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236175707,
+          "stop" : 1600236175781,
+          "duration" : 74
+        }
+      }, {
+        "uid" : "33cf9d962399c52b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821962406,
+          "stop" : 1599821962466,
+          "duration" : 60
+        }
+      }, {
+        "uid" : "c985b3831121fa4b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820138008,
+          "stop" : 1599820138081,
+          "duration" : 73
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "cdff90a2017a9f57.json",
+  "parameterValues" : [ "'删除软件安装信息失败-id不存在'", "'Id不存在，软件安装信息删除失败！'", "{'query': {'id': '5ecc6fa1c57a4300064e0000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '系统中不存在编号为[5ecc6fa1c57a4300064e0000]的实体'}}, 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+}

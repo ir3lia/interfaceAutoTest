@@ -1,0 +1,43 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":{
+            "mainCase": [
+                {
+                    "collection": "webRedirectPolicy",
+                    "findDatas": [
+                         {
+                            "isDeleted" : true,
+                            "_class" : "com.ruijie.authentication.session.domain.webredirect.WebRedirectPolicy"
+                         }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.webredirect.WebRedirectPolicy"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ],
+            "case_01": [
+                {
+                    "collection": "webRedirectPolicy",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "_class" : "com.ruijie.authentication.session.domain.webredirect.WebRedirectPolicy"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.webredirect.WebRedirectPolicy"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ]
+        }
+    }
+}

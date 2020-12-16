@@ -1,0 +1,159 @@
+{
+  "uid" : "7445a175321b0960",
+  "name" : "修改SSO对接配置-source已存在",
+  "fullName" : "testCase.SMP.authentication.OAuthController.updateSSO.test_updateSSO.Test_class#test_all",
+  "historyId" : "3b6acd9dd5f2ae5712fd5b67c40d4019",
+  "time" : {
+    "start" : 1601373342102,
+    "stop" : 1601373342359,
+    "duration" : 257
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "baab3364158d220",
+      "name" : "测试人员",
+      "source" : "baab3364158d220.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "3088dcb9be9625ec",
+      "name" : "接口入参",
+      "source" : "3088dcb9be9625ec.attach",
+      "type" : "text/plain",
+      "size" : 312
+    }, {
+      "uid" : "9fe6be39900abb40",
+      "name" : "接口出参",
+      "source" : "9fe6be39900abb40.attach",
+      "type" : "text/plain",
+      "size" : 117
+    }, {
+      "uid" : "ab19b6fdfde4c6ea",
+      "name" : "stdout",
+      "source" : "ab19b6fdfde4c6ea.txt",
+      "type" : "text/plain",
+      "size" : 651
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OAuthController"
+  }, {
+    "name" : "story",
+    "value" : "修改SSO对接配置-测试用例"
+  }, {
+    "name" : "feature",
+    "value" : "修改SSO对接配置"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.OAuthController.updateSSO"
+  }, {
+    "name" : "suite",
+    "value" : "test_updateSSO"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.OAuthController.updateSSO.test_updateSSO"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'修改SSO对接配置-source已存在'"
+  }, {
+    "name" : "description",
+    "value" : "'修改SSO对接配置-source已存在'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn/', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': '5ecf697f20449b1bd45ba833', 'source': 'zto-test'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'OAuth source has exists '}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 5,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 39,
+        "unknown" : 0,
+        "total" : 44
+      },
+      "items" : [ {
+        "uid" : "7e9663716c94667a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280495159,
+          "stop" : 1601280495380,
+          "duration" : 221
+        }
+      }, {
+        "uid" : "14a2813324cf8245",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249234694,
+          "stop" : 1600249234971,
+          "duration" : 277
+        }
+      }, {
+        "uid" : "ca7ce83b268250c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236167353,
+          "stop" : 1600236167675,
+          "duration" : 322
+        }
+      }, {
+        "uid" : "887b9b59dc15259b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821954353,
+          "stop" : 1599821954615,
+          "duration" : 262
+        }
+      }, {
+        "uid" : "bcf7edd41c06db3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820130457,
+          "stop" : 1599820130731,
+          "duration" : 274
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7445a175321b0960.json",
+  "parameterValues" : [ "'修改SSO对接配置-source已存在'", "'修改SSO对接配置-source已存在'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn/', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': '5ecf697f20449b1bd45ba833', 'source': 'zto-test'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'OAuth source has exists '}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

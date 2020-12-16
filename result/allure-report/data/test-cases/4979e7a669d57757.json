@@ -1,0 +1,159 @@
+{
+  "uid" : "4979e7a669d57757",
+  "name" : "添加认证方式-添加多个，均不存在",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.addAuthenticationTypes.test_addAuthenticationTypes.Test_class#test_main",
+  "historyId" : "4c76ab5e01f590e72dc9bc5daf585124",
+  "time" : {
+    "start" : 1601373325244,
+    "stop" : 1601373325397,
+    "duration" : 153
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "70eb463b1636beb4",
+      "name" : "测试人员",
+      "source" : "70eb463b1636beb4.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "a69341b0e07742ad",
+      "name" : "接口入参",
+      "source" : "a69341b0e07742ad.attach",
+      "type" : "text/plain",
+      "size" : 40
+    }, {
+      "uid" : "29f1ec17f285aa32",
+      "name" : "接口出参",
+      "source" : "29f1ec17f285aa32.attach",
+      "type" : "text/plain",
+      "size" : 44
+    }, {
+      "uid" : "ea6dc8d80bdf5dd0",
+      "name" : "stdout",
+      "source" : "ea6dc8d80bdf5dd0.txt",
+      "type" : "text/plain",
+      "size" : 441
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-主流程"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addAuthenticationTypes"
+  }, {
+    "name" : "suite",
+    "value" : "test_addAuthenticationTypes"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addAuthenticationTypes.test_addAuthenticationTypes"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加认证方式-添加多个，均不存在'"
+  }, {
+    "name" : "description",
+    "value" : "'添加认证方式-添加多个，均不存在'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': ['userNamePassword', 'SMSAuth', 'OAuth'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "900d02019eaa98f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280476859,
+          "stop" : 1601280477006,
+          "duration" : 147
+        }
+      }, {
+        "uid" : "e68f85c230715f4e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249218005,
+          "stop" : 1600249218159,
+          "duration" : 154
+        }
+      }, {
+        "uid" : "5c86229dc05768ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249138344,
+          "stop" : 1600249138454,
+          "duration" : 110
+        }
+      }, {
+        "uid" : "b90787a6d293fadd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236149177,
+          "stop" : 1600236149352,
+          "duration" : 175
+        }
+      }, {
+        "uid" : "d014673011dc6627",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156573835,
+          "stop" : 1600156573993,
+          "duration" : 158
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4979e7a669d57757.json",
+  "parameterValues" : [ "'添加认证方式-添加多个，均不存在'", "'添加认证方式-添加多个，均不存在'", "{'query': ['userNamePassword', 'SMSAuth', 'OAuth'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

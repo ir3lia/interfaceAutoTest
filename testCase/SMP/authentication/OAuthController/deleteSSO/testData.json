@@ -1,0 +1,48 @@
+{
+    "mainCaseData":[
+        {
+            "title": "删除SSO对接配置-Id存在",
+            "otherInfo":{
+                "description": "Id存在，SSO对接配置删除成功！"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5ecf697f20449b1bd45ba833"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "isCheckDB": true,
+                "checkDBType": "non-exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "删除SSO对接配置-id不存在",
+            "otherInfo":{
+                "description": "Id不存在，SSO对接配置删除失败！"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5ecc6fa1c57a4300064e0000"
+                },
+                "response": {
+                    "code": 412,
+                    "message": "Precondition Failed",
+                    "data": {
+                        "errorCode": 0,
+                        "errorMessage": "OAuth id has not exists "
+                    }
+                },
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        }
+    ]
+}

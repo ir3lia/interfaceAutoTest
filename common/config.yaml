@@ -1,0 +1,9 @@
+config:
+- common:
+    linkidIP: http://172.17.8.242:9888
+
+- dbInfo:
+    mongodbIp: 172.17.8.242
+    mongodbPort: 27017
+    mongodbUser: admin
+    mongodbPsw: abc123Aa

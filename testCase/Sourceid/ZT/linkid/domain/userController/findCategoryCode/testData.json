@@ -1,0 +1,44 @@
+{
+    "mainCaseData":[
+        {
+            "title": "查询用户人员类型正常",
+            "otherInfo":{
+                "description": "传入正确的用户objectId，返回用户的人员类型代码！"
+            },
+            "httpData": {
+                "query": ["5ecc6fa1c57a4300064e0000"],
+                "response": {
+                    "code": 200,
+                    "message": "OK",
+                    "data": {
+                        "01": [
+                        "01"
+                        ]
+                    }
+                },
+                "isCheckDB": false,
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "查询用户人员类型失败-用户不存在",
+            "otherInfo":{
+                "description": "传入错误的用户objectId，返回空！"
+            },
+            "httpData": {
+                "query": ["5ecc6fa1c57a4300064e0000YY"],
+                "response": {
+                    "code": 204,
+                    "message": "No Content",
+                    "data": {}
+                },
+                "isCheckDB": false,
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

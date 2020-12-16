@@ -1,0 +1,15 @@
+apiPath:
+- paths:
+    #Zt Api Organization Controller
+    publicZtOrgGetPath: /linkid/api/public/zt/organization/list
+
+    #Aggregate Users Controller
+    aggregateSaveTeacher: /linkid/api/aggregate/users/save
+    aggregateCheckUserIsDelete: /linkid/api/aggregate/users/checkUserIsDelete
+
+    #Aggregate User Controller
+    aggregateDeleteUser: /linkid/api/aggregate/user/delete
+
+    #User Controller
+    findCategoryCode: /linkid/api/user/find/category/code/objectId
+    userCreate: /linkid/api/user/create

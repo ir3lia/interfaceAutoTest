@@ -1,0 +1,159 @@
+{
+  "uid" : "222b861cbf8dab06",
+  "name" : "批量黑名单失效,无效Id",
+  "fullName" : "testCase.SMP.authentication.BlackListController.batchInvalidblackLists.test_batchInvalid.Test_class#test_all",
+  "historyId" : "dfdfaeece75ee9663ed477b0913d8147",
+  "time" : {
+    "start" : 1601373337603,
+    "stop" : 1601373337693,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cac36c999a752e23",
+      "name" : "测试人员",
+      "source" : "cac36c999a752e23.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "9b041a7067fafc66",
+      "name" : "接口入参",
+      "source" : "9b041a7067fafc66.attach",
+      "type" : "text/plain",
+      "size" : 28
+    }, {
+      "uid" : "e375b0dfcced4deb",
+      "name" : "接口出参",
+      "source" : "e375b0dfcced4deb.attach",
+      "type" : "text/plain",
+      "size" : 44
+    }, {
+      "uid" : "2e7040220915c529",
+      "name" : "stdout",
+      "source" : "2e7040220915c529.txt",
+      "type" : "text/plain",
+      "size" : 268
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "批量失效黑名单"
+  }, {
+    "name" : "epic",
+    "value" : "BlackListController"
+  }, {
+    "name" : "story",
+    "value" : "批量失效黑名单-测试用例"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.BlackListController.batchInvalidblackLists"
+  }, {
+    "name" : "suite",
+    "value" : "test_batchInvalid"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.BlackListController.batchInvalidblackLists.test_batchInvalid"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'批量黑名单失效,无效Id'"
+  }, {
+    "name" : "description",
+    "value" : "'批量黑名单失效,无效Id,更新人不存在'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': ['5f1fd825bf7a2d0006820478'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 43,
+        "unknown" : 0,
+        "total" : 43
+      },
+      "items" : [ {
+        "uid" : "3c07c2596ef1d192",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280490081,
+          "stop" : 1601280490214,
+          "duration" : 133
+        }
+      }, {
+        "uid" : "816001a38123209f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249230268,
+          "stop" : 1600249230364,
+          "duration" : 96
+        }
+      }, {
+        "uid" : "2ec0b47174dba9d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236162382,
+          "stop" : 1600236162486,
+          "duration" : 104
+        }
+      }, {
+        "uid" : "6b0f320710d05f0c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821949301,
+          "stop" : 1599821949412,
+          "duration" : 111
+        }
+      }, {
+        "uid" : "ef276d85104990ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820125900,
+          "stop" : 1599820126019,
+          "duration" : 119
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "222b861cbf8dab06.json",
+  "parameterValues" : [ "'批量黑名单失效,无效Id'", "'批量黑名单失效,无效Id,更新人不存在'", "{'query': ['5f1fd825bf7a2d0006820478'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

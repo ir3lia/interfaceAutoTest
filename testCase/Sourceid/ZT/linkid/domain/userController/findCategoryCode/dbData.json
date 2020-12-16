@@ -1,0 +1,142 @@
+{
+    "linkid":{
+        "dbName": "linkid-dev",
+        "collectionData":[
+            {
+                "collection": "IDENTITY_USER",
+                "findDatas": [
+                    {
+                        "isDeleted" : false,
+                        "name":"懒洋洋"
+                    }
+                
+                ],
+                "deleteDatas":[
+                    {
+                        "name":"懒洋洋"
+                    }
+                ],
+                "isObjectId": true,
+                "insertDatas":[
+                    {
+                        "_id" : "5ecc6fa1c57a4300064e0000",
+                        "roleIds" : [],
+                        "labelIds" : [],
+                        "teacherId" : "10017625",
+                        "password" : "Ex32+UBitndhWIuEkwsrJg==",
+                        "name" : "懒洋洋",
+                        "idCard" : "363636199900111122",
+                        "szdw" : [ 
+                            "R5ec203f9ef451a000687078a"
+                        ],
+                        "gwmc" : [ 
+                            "R5ec3865d3d5322000646e093"
+                        ],
+                        "sex" : "男性",
+                        "userPropertys" : {
+                            "5c4fd4518c21aa41dca73724" : {
+                                "objectId" : "5c4fd4518c21aa41dca73724",
+                                "value" : "Ex32+UBitndhWIuEkwsrJg==",
+                                "source" : "RG_SourceID"
+                            },
+                            "5c4fd4518c21aa41dca73736" : {
+                                "objectId" : "5c4fd4518c21aa41dca73736",
+                                "value" : "居民身份证",
+                                "source" : "RG_SourceID"
+                            },
+                            "5c4fd4518c21aa41dca73769" : {
+                                "objectId" : "5c4fd4518c21aa41dca73769",
+                                "value" : [ 
+                                    "R5ec203f9ef451a000687078a"
+                                ],
+                                "source" : "RG_SourceID"
+                            },
+                            "5c4fd4518c21aa41dca73725" : {
+                                "objectId" : "5c4fd4518c21aa41dca73725",
+                                "value" : true,
+                                "source" : "RG_SourceID"
+                            },
+                            "5bd841c8048a2f376b5c6024" : {
+                                "objectId" : "5bd841c8048a2f376b5c6024",
+                                "value" : "男性",
+                                "source" : "RG_SourceID"
+                            },
+                            "5c4fd4518c21aa41dca73733" : {
+                                "objectId" : "5c4fd4518c21aa41dca73733",
+                                "value" : "汉族",
+                                "source" : "RG_SourceID"
+                            },
+                            "5e0466381569ae000193b7ab" : {
+                                "objectId" : "5e0466381569ae000193b7ab",
+                                "value" : "lyy001",
+                                "source" : "RG_SourceID"
+                            },
+                            "5c09dde87be07b74cd74cb4a" : {
+                                "objectId" : "5c09dde87be07b74cd74cb4a",
+                                "value" : "363636199900111122",
+                                "source" : "RG_SourceID"
+                            },
+                            "5df750057e8171000153ebb7" : {
+                                "objectId" : "5df750057e8171000153ebb7",
+                                "value" : "lyy1234567890",
+                                "source" : "RG_SourceID"
+                            },
+                            "5bd442fc048a2f376b2e6cba" : {
+                                "objectId" : "5bd442fc048a2f376b2e6cba",
+                                "value" : "10017625",
+                                "source" : "RG_SourceID"
+                            },
+                            "5bd44318048a2f376b2e6dab" : {
+                                "objectId" : "5bd44318048a2f376b2e6dab",
+                                "value" : "懒洋洋1",
+                                "source" : "RG_SourceID"
+                            },
+                            "5c4fd4518c21aa41dca7373c" : {
+                                "objectId" : "5c4fd4518c21aa41dca7373c",
+                                "value" : "中国共产党预备党员",
+                                "source" : "RG_SourceID"
+                            },
+                            "5c4fd4518c21aa41dca7375d" : {
+                                "objectId" : "5c4fd4518c21aa41dca7375d",
+                                "value" : "lyy@ruijie.com.cn",
+                                "source" : "RG_SourceID"
+                            },
+                            "5bd55971048a2f376b34d32d" : {
+                                "objectId" : "5bd55971048a2f376b34d32d",
+                                "value" : "01",
+                                "source" : "RG_SourceID"
+                            },
+                            "5c51aaf1cf14fbfcff67ded0" : {
+                                "objectId" : "5c51aaf1cf14fbfcff67ded0",
+                                "value" : [ 
+                                    "R5ec3865d3d5322000646e093"
+                                ],
+                                "source" : "RG_SourceID"
+                            },
+                            "5c4fd4518c21aa41dca73726" : {
+                                "objectId" : "5c4fd4518c21aa41dca73726",
+                                "value" : "2020-05-25T16:00:00.000+0000",
+                                "source" : "RG_SourceID"
+                            },
+                            "5c4fd4508c21aa41dca734b4" : {
+                                "objectId" : "5c4fd4508c21aa41dca734b4",
+                                "value" : "硕士研究生毕业",
+                                "source" : "RG_SourceID"
+                            }
+                        },
+                        "szdwAndGwmcs" : [ 
+                            {
+                                "szdw" : "R5ec203f9ef451a000687078a",
+                                "gwmc" : "R5ec3865d3d5322000646e093"
+                            }
+                        ],
+                        "createdTime" : "2020-05-26 01:23:45.289",
+                        "updatedTime" : "2020-05-26 01:30:34.973",
+                        "isDeleted" : false
+                    }
+                ]
+            }
+        ]
+    }
+
+}

@@ -1,0 +1,57 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":[
+            {
+                "collection": "authenticationPolicies",
+                "findDatas": [
+                    {
+                        "isDeleted" : true,
+                        "name" : "测试"
+                    }
+                ],
+                "deleteDatas":[
+                    {
+                        "name" : "测试"
+                    }
+                ],
+                "isObjectId": true,
+                "insertDatas":[
+                    {
+                        "_id" : "5f475da0893a250006859b74",
+                        "name" : "测试",
+                        "desc" : "测试",
+                        "ruleList" : [
+                            {
+                                "_id" : "5f47619e893a250006859bbc",
+                                "name" : "标签",
+                                "desc" : "测试",
+                                "templateName" : "string",
+                                "priority" : 0,
+                                "ruleContent" : "",
+                                "ruleTags" : [
+                                    "string01"
+                                ],
+                                "supportRuleCondition" : {},
+                                "createTime" : "2020-08-27 07:32:46.524"
+                            }
+                        ],
+                        "policyTag" : [
+                            "string"
+                        ],
+                        "supportAuthType" : [],
+                        "priority" : 0,
+                        "displayCategory" : "ADMINISTRATOR",
+                        "policyState" : "INITIAL",
+                        "isTerminateInferior" : false,
+                        "policyAdmins" : [],
+                        "_version_" : "0",
+                        "createTime" : "2020-08-27 07:15:44.743",
+                        "lastModifiedTime" : "2020-08-27 07:15:44.743",
+                        "_class" : "com.ruijie.authentication.session.domain.authentication.AuthenticationPolicy"
+                    }
+                ]
+            }
+        ]
+    }
+}

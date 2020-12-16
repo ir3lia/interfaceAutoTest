@@ -1,0 +1,159 @@
+{
+  "uid" : "7d6c414a2344e2b8",
+  "name" : "修改后记录与已有记录重复",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.editSoftwareInfo.test_editsoftware.Test_class#test_all",
+  "historyId" : "9c10ed86e0f818b85d78027e5a139a5f",
+  "time" : {
+    "start" : 1601373350438,
+    "stop" : 1601373350592,
+    "duration" : 154
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "22ca77053c62d229",
+      "name" : "测试人员",
+      "source" : "22ca77053c62d229.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "35996e2a62f391ed",
+      "name" : "接口入参",
+      "source" : "35996e2a62f391ed.attach",
+      "type" : "text/plain",
+      "size" : 318
+    }, {
+      "uid" : "9476c0a124b39984",
+      "name" : "接口出参",
+      "source" : "9476c0a124b39984.attach",
+      "type" : "text/plain",
+      "size" : 118
+    }, {
+      "uid" : "88be84e680716340",
+      "name" : "stdout",
+      "source" : "88be84e680716340.txt",
+      "type" : "text/plain",
+      "size" : 396
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "修改软件信息"
+  }, {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "story",
+    "value" : "修改软件信息-测试用例"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.editSoftwareInfo"
+  }, {
+    "name" : "suite",
+    "value" : "test_editsoftware"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.editSoftwareInfo.test_editsoftware"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'修改后记录与已有记录重复'"
+  }, {
+    "name" : "description",
+    "value" : "'修改后记录与已有记录重复'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试', 'softwareName': 'ces', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '2019', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '名称已存在,请更改'}}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 71,
+        "unknown" : 0,
+        "total" : 75
+      },
+      "items" : [ {
+        "uid" : "6dea413b87e36be7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280503864,
+          "stop" : 1601280504044,
+          "duration" : 180
+        }
+      }, {
+        "uid" : "2ca7cec214f963cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249242940,
+          "stop" : 1600249243112,
+          "duration" : 172
+        }
+      }, {
+        "uid" : "587640c5c214f800",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236176191,
+          "stop" : 1600236176414,
+          "duration" : 223
+        }
+      }, {
+        "uid" : "75cacfbe48c82b9d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821962863,
+          "stop" : 1599821963039,
+          "duration" : 176
+        }
+      }, {
+        "uid" : "5598400b21d6b4f9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820138413,
+          "stop" : 1599820138560,
+          "duration" : 147
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7d6c414a2344e2b8.json",
+  "parameterValues" : [ "'修改后记录与已有记录重复'", "'修改后记录与已有记录重复'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试', 'softwareName': 'ces', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '2019', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '名称已存在,请更改'}}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

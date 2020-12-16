@@ -1,0 +1,51 @@
+{
+    "mainCaseData":[
+        {
+            "title": "删除策略规则-规则id存在",
+            "otherInfo":{
+                "description": "添加策略规则-规则id存在"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f475da0893a250006859b74"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "删除策略规则-策略id不存在",
+            "otherInfo":{
+                "description": "删除策略规则-策略id不存在"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f475da0893a250006859b00"
+                },
+                "response": {
+                    "code" : 412,
+                    "message": "Precondition Failed",
+                    "data":
+                    {
+                        "errorCode": 6031801,
+                        "errorMessage": "系统中不存在ID为[5f475da0893a250006859b00]的认证策略"
+                    }
+                },
+                "caseNum": "case01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        }
+    ]
+}

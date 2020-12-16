@@ -1,0 +1,52 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: ['code'] 值错误！\nassert [412] == [200]\n  At index 0 diff: 412 != 200\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "添加策略规则-规则名称为空",
+        "uid" : "9bf85033dc835c1",
+        "parentUid" : "23ec5ca7c0a9fecd8708fc1ceb841242",
+        "status" : "failed",
+        "time" : {
+          "start" : 1601373332397,
+          "stop" : 1601373332488,
+          "duration" : 91
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'添加策略规则-规则名称为空'", "'添加策略规则-规则名称为空'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'domain.session.authenticationPolicy.policy_already_has_the_same_rule'}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+      }, {
+        "name" : "添加SSO对接配置-URL不合法",
+        "uid" : "145a842bec99a867",
+        "parentUid" : "23ec5ca7c0a9fecd8708fc1ceb841242",
+        "status" : "failed",
+        "time" : {
+          "start" : 1601373340697,
+          "stop" : 1601373340722,
+          "duration" : 25
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'添加SSO对接配置-URL不合法'", "'添加SSO对接配置-URL不合法'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'id09.rghall.com.cn', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': 'string', 'source': 'zto'}, 'response': {'code': 412, 'message': 'Precondition Failed'}, 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+      }, {
+        "name" : "添加策略规则-规则名称为空",
+        "uid" : "ff17a914256d71f1",
+        "parentUid" : "23ec5ca7c0a9fecd8708fc1ceb841242",
+        "status" : "failed",
+        "time" : {
+          "start" : 1601373343097,
+          "stop" : 1601373343179,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'添加策略规则-规则名称为空'", "'添加策略规则-规则名称为空'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': '', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+      } ],
+      "uid" : "23ec5ca7c0a9fecd8708fc1ceb841242"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -1,0 +1,43 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":[
+            {
+                "collection": "authenticationPolicies",
+                "findDatas": [
+                    {
+                        "isDeleted" : true,
+                        "name" : "测试"
+                    }
+                ],
+                "deleteDatas":[
+                    {
+                        "name" : "测试"
+                    }
+                ],
+                "isObjectId": true,
+                "insertDatas":[
+                    {
+                        "_id" : "5f4365f1893a25000684b3fd",
+                        "name" : "测试",
+                        "desc" : "测试",
+                        "ruleList" : [],
+                        "policyTag" : [
+                            "test01"
+                        ],
+                        "supportAuthType" : [],
+                        "priority" : 1,
+                        "displayCategory" : "ADMINISTRATOR",
+                        "policyState" : "INITIAL",
+                        "isTerminateInferior" : false,
+                        "policyAdmins" : [],
+                        "_version_" : "0",
+                        "createTime" : "2020-08-24 07:02:09.852",
+                        "lastModifiedTime" : "2020-08-24 07:02:09.852",
+                        "_class" : "com.ruijie.authentication.session.domain.authentication.AuthenticationPolicy"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,186 @@
+{
+    "mainCaseData":[
+        {
+            "title": "添加认证方式-认证方式为userNamePassword",
+            "otherInfo":{
+                "description": "添加认证方式-认证方式为userNamePassword"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "添加认证方式-认证方式为macAfterAuth",
+            "otherInfo":{
+                "description": "添加认证方式-认证方式为macAfterAuth"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加认证方式-认证方式为SMSAuth",
+            "otherInfo":{
+                "description": "添加认证方式-认证方式为SMSAuth"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加认证方式-认证方式为macDumbNodeAuth",
+            "otherInfo":{
+                "description": "添加认证方式-认证方式为macDumbNodeAuth"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_03",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加认证方式-认证方式为portalQrCodeAuth",
+            "otherInfo":{
+                "description": "添加认证方式-认证方式为portalQrCodeAuth"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_04",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加认证方式-认证方式为OAuth",
+            "otherInfo":{
+                "description": "添加认证方式-认证方式为OAuth"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_05",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加认证方式-认证方式已存在，添加新的认证方式",
+            "otherInfo":{
+                "description": "添加认证方式-已存在，添加新的认证方式"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_06",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加认证方式-认证方式已存在，添加重复的",
+            "otherInfo":{
+                "description": "添加认证方式-已存在，添加重复的"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_07",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加认证方式-认证方式已存在，添加不在范围内的",
+            "otherInfo":{
+                "description": "添加认证方式-已存在，添加不在范围内的"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_08",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

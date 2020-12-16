@@ -1,0 +1,163 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":{
+            "mainCase": [
+                {
+                    "collection": "blackList_domain",
+                    "findDatas": [
+                         {
+                            "isDeleted" : true,
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                         }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                        "_id" : "5f1fd825bf7a2d0006820422",
+                        "blackListCategoryObject" : {
+                            "userObjectId" : "5f17e3486227f3000629a7a5",
+                            "nodeMac" : "",
+                            "blackListCategory" : "USER_MAC_SPECIFIC"
+                            },
+                        "infoMessage" : "测试",
+                        "effectiveEndTimeObject" : {
+                        "effectiveEndTime" : "2020-07-27 22:08:22.723"
+                            },
+                        "activeState" : "ACTIVE",
+                        "createUser" : "admin",
+                        "createCategory" : "2",
+                        "lastModifiedUser" : "string",
+                        "_version_" : "0",
+                        "createTime" : "2020-07-28 07:47:49.692",
+                        "lastModifiedTime" : "2020-07-28 07:47:49.692",
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ]
+                }
+            ],
+            "case_01": [
+                {
+                    "collection": "blackList_domain",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                        "_id" : "5f1fd825bf7a2d0006820422",
+                        "blackListCategoryObject" : {
+                            "userObjectId" : "5f17e3486227f3000629a7a5",
+                            "nodeMac" : "",
+                            "blackListCategory" : "USER_MAC_SPECIFIC"
+                            },
+                        "infoMessage" : "测试",
+                        "effectiveEndTimeObject" : {
+                        "effectiveEndTime" : "2020-07-27 22:08:22.723"
+                            },
+                        "activeState" : "ACTIVE",
+                        "createUser" : "admin",
+                        "createCategory" : "2",
+                        "lastModifiedUser" : "string",
+                        "_version_" : "0",
+                        "createTime" : "2020-07-28 07:47:49.692",
+                        "lastModifiedTime" : "2020-07-28 07:47:49.692",
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ]
+                }
+            ],
+            "case_02": [
+                {
+                    "collection": "blackList_domain",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                        "_id" : "5f1fd825bf7a2d0006820422",
+                        "blackListCategoryObject" : {
+                            "userObjectId" : "5f17e3486227f3000629a7a5",
+                            "nodeMac" : "",
+                            "blackListCategory" : "USER_MAC_SPECIFIC"
+                            },
+                        "infoMessage" : "测试",
+                        "effectiveEndTimeObject" : {
+                        "effectiveEndTime" : "2020-07-27 22:08:22.723"
+                            },
+                        "activeState" : "ACTIVE",
+                        "createUser" : "admin",
+                        "createCategory" : "2",
+                        "lastModifiedUser" : "string",
+                        "_version_" : "0",
+                        "createTime" : "2020-07-28 07:47:49.692",
+                        "lastModifiedTime" : "2020-07-28 07:47:49.692",
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ]
+                }
+            ],
+            "case_03": [
+                {
+                    "collection": "blackList_domain",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                        "_id" : "5f1fd825bf7a2d0006820422",
+                        "blackListCategoryObject" : {
+                            "userObjectId" : "5f17e3486227f3000629a7a5",
+                            "nodeMac" : "",
+                            "blackListCategory" : "USER_MAC_SPECIFIC"
+                            },
+                        "infoMessage" : "测试",
+                        "effectiveEndTimeObject" : {
+                        "effectiveEndTime" : "2020-07-27 22:08:22.723"
+                            },
+                        "activeState" : "ACTIVE",
+                        "createUser" : "admin",
+                        "createCategory" : "2",
+                        "lastModifiedUser" : "string",
+                        "_version_" : "0",
+                        "createTime" : "2020-07-28 07:47:49.692",
+                        "lastModifiedTime" : "2020-07-28 07:47:49.692",
+                        "_class" : "com.ruijie.authentication.session.domain.blacklist.BlackList"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,44 @@
+apiPath:
+- paths:
+    #Black List Controller
+    addblacklist: /radiusSession/blackLists
+    invalidlacklist: /radiusSession/blackLists
+    batchInvalid: /radiusSession/blackLists/batchInvalid
+    editInfoMessage: /radiusSession/blackLists
+
+    #OAuth Controller
+    addSSO: /radiusSession/authenMethod/OAuth/config/addSSO
+    deleteSSO: /radiusSession/authenMethod/OAuth/config/deleteSSO
+    getAllSSO: /radiusSession/authenMethod/OAuth/config/getAllSSO
+    updateSSO: /radiusSession/authenMethod/OAuth/config/updateSSO
+
+    #Software Controller
+    addSoftwareInfo: /nodeManager/software/addSoftwareInfo
+    delSoftwareInfo: /nodeManager/software/delSoftwareInfo
+    editSoftwareInfo: /nodeManager/software/editSoftwareInfo
+    batchDelSoftwareInfo: /nodeManager/software/batchDelSoftwareInfo
+    delSoftwareInstallInfo: /nodeManager/software/delSoftwareInstallInfo
+    batchDelSoftwareInstallInfo: /nodeManager/software/batchDelSoftwareInstallInfo
+    clearClassify: /nodeManager/software/clearClassify
+    exchangeClassify: /nodeManager/software/exchangeClassify
+
+    #RedirectPoliciesController
+    addwebRedirectPolicies: /radiusSession/webRedirectPolicies
+    delwebRedirectPolicies: /radiusSession/webRedirectPolicies
+    editPolicyDesc: /radiusSession/webRedirectPolicies
+    addRule: /radiusSession/webRedirectPolicies
+    deleteRule: /radiusSession/webRedirectPolicies
+
+    #AuthenticationPolicyController
+    addauthenticationPolicies: /radiusSession/authenticationPolicies
+    delauthenticationPolicies : /radiusSession/authenticationPolicies
+    addauthenticationRule: /radiusSession/authenticationPolicies
+    delauthenticationRule: /radiusSession/authenticationPolicies
+    addPolicyTag: /radiusSession/authenticationPolicies
+    editPolicyDesc: /radiusSession/authenticationPolicies
+    editTerminateInferior: /radiusSession/authenticationPolicies
+    batchDeleteauthenticationPolicies: /radiusSession/authenticationPolicies/batchDelete
+    addPolicyAuthType: /radiusSession/authenticationPolicies
+    addPolicyAuthTypes: /radiusSession/authenticationPolicies
+    addPolicyAdmin: /radiusSession/authenticationPolicies
+    addPolicyAdmins: /radiusSession/authenticationPolicies

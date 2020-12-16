@@ -1,0 +1,125 @@
+{
+    "mainCaseData":[
+        {
+            "title": "批量删除软件-存在有效与无效ID",
+            "otherInfo":{
+                "description": "主流程用例-批量删除软件-存在有效与无效ID"
+            },
+            "httpData": {
+                "query": [
+                    "14d1f7056fc3450007db4e98","14d1f7056fc3450007db4e77"
+                    ],
+                "response": {
+                    "code" : 200,
+                    "message" : "OK",
+                    "data": {
+                        "success": 1,
+                        "fail": 1,
+                        "sum": 0
+                        }
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "批量删除软件信息，ID为空",
+            "otherInfo":{
+                "description": "批量删除软件信息，ID为空"
+            },
+            "httpData": {
+                "query": [],
+                "response": {
+                    "code" : 200,
+                    "message" : "OK",
+                    "data": {
+                        "success": 0,
+                        "fail": 0,
+                        "sum": 0
+                        }
+                    },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "批量删除软件信息，ID值不存在",
+            "otherInfo":{
+                "description": "批量删除软件信息，ID值不存在"
+            },
+            "httpData": {
+                "query": ["14d1f7056fc3450007db4e99"],
+                "response": {
+                    "code" : 200,
+                    "message" : "OK",
+                    "data": {
+                        "success": 0,
+                        "fail": 1,
+                        "sum": 0
+                        }
+                    },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "批量删除软件信息，ID值存在",
+            "otherInfo":{
+                "description": "批量删除软件信息，ID值存在"
+            },
+            "httpData": {
+                "query": ["14d1f7056fc3450007db4e98"],
+                "response": {
+                    "code" : 200,
+                    "message" : "OK",
+                    "data": {
+                        "success": 1,
+                        "fail": 0,
+                        "sum": 0
+                        }
+                    },
+                "caseNum": "case_03",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "批量删除软件信息，ID多个，值存在",
+            "otherInfo":{
+                "description": "批量删除软件信息，ID多个，值存在"
+            },
+            "httpData": {
+                "query": [
+                    "14d1f7056fc3450007db4e98","14d1f7056fc3450007db4e91"
+                ],
+                "response": {
+                    "code" : 200,
+                    "message" : "OK",
+                    "data": {
+                        "success": 2,
+                        "fail": 0,
+                        "sum": 0
+                        }
+                    },
+                "caseNum": "case_04",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

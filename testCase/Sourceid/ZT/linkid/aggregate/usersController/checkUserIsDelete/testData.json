@@ -1,0 +1,72 @@
+{
+    "mainCaseData":[
+        {
+            "title": "用户存在关联业务，判断教职工不可删除-正常",
+            "otherInfo":{
+                "description": "教职工用户为学校管理员、校长、班主任、任课老师，无法执行删除操作，接口返回对应的提示信息"
+            },
+            "httpData": {
+                "query": {
+                    "objectId": "5ecc6fa1c57a4300064e0000"
+                },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data" : {
+                      "errorCode" : 0,
+                      "errorMessage" : "嘻嘻幼儿园管理员,嘻嘻幼儿园校长,小班2019级1班班主任,小班2019级1班任课老师"
+                    }
+                },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "用户不存在关联业务，判断教职工可删除-正常",
+            "otherInfo":{
+                "description": "教职工不存在任何关联业务，可正常执行删除操作，接口返回对应的提示信息"
+            },
+            "httpData": {
+                "query": {
+                    "objectId": "5ecc6fa1c57a4300064e0000"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK",
+                    "data" : true
+                  },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        },
+        {
+            "title": "用户关联「学校管理员」，判断教职工不可删除-正常",
+            "otherInfo":{
+                "description": "教职工为某学校的管理员，不可执行删除操作，接口返回对应的提示信息"
+            },
+            "httpData": {
+                "query": {
+                    "objectId": "5ecc6fa1c57a4300064e0000"
+                },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data" : {
+                      "errorCode" : 0,
+                      "errorMessage" : "嘻嘻幼儿园管理员11"
+                    }
+                  },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        }
+    ]
+}

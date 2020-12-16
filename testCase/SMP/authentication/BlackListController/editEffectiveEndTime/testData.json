@@ -1,0 +1,91 @@
+{
+    "mainCaseData":[
+        {
+            "title": "指定时间修改有效时间",
+            "otherInfo":{
+                "description": "指定时间修改有效时间"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "指定时间修改为永久有效",
+            "otherInfo":{
+                "description": "指定时间修改为永久有效"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        },
+        {
+            "title": "永久有效修改为指定时间",
+            "otherInfo":{
+                "description": "永久有效修改为指定时间"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820422"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        },
+        {
+            "title": "id不存在",
+            "otherInfo":{
+                "description": "id不存在"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f1fd825bf7a2d0006820400"
+                },
+                "response": {
+                    "code" : 412,
+                    "message": "Precondition Failed",
+                    "data":
+                    {
+                        "errorCode": 0,
+                        "errorMessage": "黑名单[5f1fd825bf7a2d0006820400]不存在！"
+                    }
+                },
+                "caseNum": "case_03",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        }
+    ]
+}

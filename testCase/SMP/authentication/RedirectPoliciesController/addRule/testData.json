@@ -1,0 +1,179 @@
+{
+    "mainCaseData":[
+        {
+            "title": "添加策略规则-规则标签为3个值",
+            "otherInfo":{
+                "description": "添加策略规则-规则标签为3个值"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试添加",
+                    "priority": 0,
+                    "ruleContent": "",
+                    "ruleName": "测试",
+                    "ruleTags": [
+                        "test01",
+                        "test02",
+                        "test03"
+                    ],
+                    "supportCondition": {},
+                    "templateName": "string"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "添加策略规则-规则标签为1个值",
+            "otherInfo":{
+                "description": "添加策略规则-规则标签为1个值"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试添加",
+                    "priority": 0,
+                    "ruleContent": "",
+                    "ruleName": "测试",
+                    "ruleTags": [
+                        "test01"
+                    ],
+                    "supportCondition": {},
+                    "templateName": "string"
+                },
+                "response": {
+                    "code" : 200,
+                    "message": "OK"
+                    },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加策略规则-规则脚本不合法",
+            "otherInfo":{
+                "description": "添加策略规则-规则脚本不合法"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试添加",
+                    "priority": 0,
+                    "ruleContent": "111",
+                    "ruleName": "测试",
+                    "ruleTags": [
+                        "test01"
+                    ],
+                    "supportCondition": {},
+                    "templateName": "string"
+                },
+                "response": {
+                    "code" : 0,
+                    "message": "策略配置异常！"
+                    },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加策略规则-规则名称为空",
+            "otherInfo":{
+                "description": "添加策略规则-规则名称为空"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试添加",
+                    "priority": 0,
+                    "ruleContent": "",
+                    "ruleName": "",
+                    "ruleTags": [
+                        "test01"
+                    ],
+                    "supportCondition": {},
+                    "templateName": "string"
+                },
+                "response": {
+                    "code" : 412
+                    },
+                "caseNum": "case_03",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加策略规则-规则名称已存在",
+            "otherInfo":{
+                "description": "添加策略规则-规则名称已存在"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试添加",
+                    "priority": 0,
+                    "ruleContent": "",
+                    "ruleName": "ces",
+                    "ruleTags": [
+                        "test01"
+                    ],
+                    "supportCondition": {},
+                    "templateName": "string"
+                },
+                "response": {
+                    "code" : 412,
+                    "message": "Precondition Failed",
+                    "data": {
+                        "errorCode": 0,
+                        "errorMessage": "domain.session.webRedirectPolicy.policy_already_has_the_same_rule"
+                        }
+                    },
+                "caseNum": "case_04",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加策略规则-已存在新添加",
+            "otherInfo":{
+                "description": "添加策略规则-已存在新添加"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试添加",
+                    "priority": 0,
+                    "ruleContent": "",
+                    "ruleName": "测试",
+                    "ruleTags": [
+                        "test01"
+                    ],
+                    "supportCondition": {},
+                    "templateName": "string"
+                },
+                "response": {
+                    "code" : 200,
+                    "message": "OK"
+                    },
+                "caseNum": "case_05",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

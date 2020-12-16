@@ -1,0 +1,159 @@
+{
+  "uid" : "dedf45394d9401a3",
+  "name" : "批量删除认证策略-全部ID均存在",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.batchDelauthenticationPolicies.test_batchDelauthenticationPolicies.Test_class#test_main",
+  "historyId" : "bd5dae7413b9818e1cf19332f2349dd7",
+  "time" : {
+    "start" : 1601373333193,
+    "stop" : 1601373333382,
+    "duration" : 189
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8e18e4b9a3783b05",
+      "name" : "测试人员",
+      "source" : "8e18e4b9a3783b05.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "2f4332d756d43868",
+      "name" : "接口入参",
+      "source" : "2f4332d756d43868.attach",
+      "type" : "text/plain",
+      "size" : 56
+    }, {
+      "uid" : "f18185467b74938b",
+      "name" : "接口出参",
+      "source" : "f18185467b74938b.attach",
+      "type" : "text/plain",
+      "size" : 44
+    }, {
+      "uid" : "b78f5e3d75da530a",
+      "name" : "stdout",
+      "source" : "b78f5e3d75da530a.txt",
+      "type" : "text/plain",
+      "size" : 519
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-主流程"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.batchDelauthenticationPolicies"
+  }, {
+    "name" : "suite",
+    "value" : "test_batchDelauthenticationPolicies"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.batchDelauthenticationPolicies.test_batchDelauthenticationPolicies"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'批量删除认证策略-全部ID均存在'"
+  }, {
+    "name" : "description",
+    "value" : "'主流程用例-批量删除认证策略-全部ID均存在'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': ['5f475da0893a250006859b74', '5f475da0893a250006859b75'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 23,
+        "unknown" : 0,
+        "total" : 23
+      },
+      "items" : [ {
+        "uid" : "5dce7d78b6d414f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280485249,
+          "stop" : 1601280485458,
+          "duration" : 209
+        }
+      }, {
+        "uid" : "a74341f3eb4bc7ee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249225882,
+          "stop" : 1600249226052,
+          "duration" : 170
+        }
+      }, {
+        "uid" : "bd96f505735ec9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249145850,
+          "stop" : 1600249146014,
+          "duration" : 164
+        }
+      }, {
+        "uid" : "d402587ad3993922",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236157391,
+          "stop" : 1600236157607,
+          "duration" : 216
+        }
+      }, {
+        "uid" : "216417dd1c7e1e77",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156580952,
+          "stop" : 1600156581156,
+          "duration" : 204
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dedf45394d9401a3.json",
+  "parameterValues" : [ "'批量删除认证策略-全部ID均存在'", "'主流程用例-批量删除认证策略-全部ID均存在'", "{'query': ['5f475da0893a250006859b74', '5f475da0893a250006859b75'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

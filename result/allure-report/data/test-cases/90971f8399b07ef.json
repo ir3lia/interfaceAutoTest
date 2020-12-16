@@ -1,0 +1,159 @@
+{
+  "uid" : "90971f8399b07ef",
+  "name" : "source为MANAUL",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.addSoftwareInfo.test_addsoftwareinfo.Test_class#test_all",
+  "historyId" : "a92f000e04ef95766a6a4409bf571f2a",
+  "time" : {
+    "start" : 1601373345992,
+    "stop" : 1601373346093,
+    "duration" : 101
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ac0d4517bee81217",
+      "name" : "测试人员",
+      "source" : "ac0d4517bee81217.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "b514dea83e317af",
+      "name" : "接口入参",
+      "source" : "b514dea83e317af.attach",
+      "type" : "text/plain",
+      "size" : 307
+    }, {
+      "uid" : "23eea0647a6ff28c",
+      "name" : "接口出参",
+      "source" : "23eea0647a6ff28c.attach",
+      "type" : "text/plain",
+      "size" : 385
+    }, {
+      "uid" : "6f74dd0ec558ae8d",
+      "name" : "stdout",
+      "source" : "6f74dd0ec558ae8d.txt",
+      "type" : "text/plain",
+      "size" : 287
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "story",
+    "value" : "添加软件信息-测试用例"
+  }, {
+    "name" : "feature",
+    "value" : "添加软件信息"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.addSoftwareInfo"
+  }, {
+    "name" : "suite",
+    "value" : "test_addsoftwareinfo"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.addSoftwareInfo.test_addsoftwareinfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'source为MANAUL'"
+  }, {
+    "name" : "description",
+    "value" : "'source为MANAUL可完成添加'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'MANAUL', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_07', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 90,
+        "unknown" : 0,
+        "total" : 90
+      },
+      "items" : [ {
+        "uid" : "cb325958d29bd2cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280499182,
+          "stop" : 1601280499302,
+          "duration" : 120
+        }
+      }, {
+        "uid" : "e8358cd7cc43abde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249238562,
+          "stop" : 1600249238660,
+          "duration" : 98
+        }
+      }, {
+        "uid" : "feaa7a57bda9fde8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236171515,
+          "stop" : 1600236171646,
+          "duration" : 131
+        }
+      }, {
+        "uid" : "200d0e9ad10a8f1b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821958437,
+          "stop" : 1599821958559,
+          "duration" : 122
+        }
+      }, {
+        "uid" : "3969449a59faf65a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820134271,
+          "stop" : 1599820134382,
+          "duration" : 111
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "90971f8399b07ef.json",
+  "parameterValues" : [ "'source为MANAUL'", "'source为MANAUL可完成添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'MANAUL', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_07', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

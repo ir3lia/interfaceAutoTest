@@ -1,0 +1,159 @@
+{
+  "uid" : "9dafa5d33dbe53e0",
+  "name" : "添加策略规则-规则脚本不合法",
+  "fullName" : "testCase.SMP.authentication.RedirectPoliciesController.addRule.test_addRule.Test_class#test_all",
+  "historyId" : "9af0eec9c815235c844584709d50e55a",
+  "time" : {
+    "start" : 1601373342969,
+    "stop" : 1601373343090,
+    "duration" : 121
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dfe54007ed288392",
+      "name" : "测试人员",
+      "source" : "dfe54007ed288392.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "32402d70f65c8a11",
+      "name" : "接口入参",
+      "source" : "32402d70f65c8a11.attach",
+      "type" : "text/plain",
+      "size" : 157
+    }, {
+      "uid" : "9221357e78d8b07b",
+      "name" : "接口出参",
+      "source" : "9221357e78d8b07b.attach",
+      "type" : "text/plain",
+      "size" : 61
+    }, {
+      "uid" : "963880d091d7a061",
+      "name" : "stdout",
+      "source" : "963880d091d7a061.txt",
+      "type" : "text/plain",
+      "size" : 270
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Web重定向策略管理"
+  }, {
+    "name" : "story",
+    "value" : "Web重定向策略管理-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "RedirectPoliciesController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addRule"
+  }, {
+    "name" : "suite",
+    "value" : "test_addRule"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addRule.test_addRule"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'添加策略规则-规则脚本不合法'"
+  }, {
+    "name" : "description",
+    "value" : "'添加策略规则-规则脚本不合法'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '111', 'ruleName': '测试', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 0, 'message': '策略配置异常！'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 39,
+        "unknown" : 0,
+        "total" : 43
+      },
+      "items" : [ {
+        "uid" : "641f846efda6ed46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280496000,
+          "stop" : 1601280496097,
+          "duration" : 97
+        }
+      }, {
+        "uid" : "e851265d92706751",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249235557,
+          "stop" : 1600249235676,
+          "duration" : 119
+        }
+      }, {
+        "uid" : "5fda46bfbc27e022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236168312,
+          "stop" : 1600236168433,
+          "duration" : 121
+        }
+      }, {
+        "uid" : "e16c02c0384650e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821955208,
+          "stop" : 1599821955317,
+          "duration" : 109
+        }
+      }, {
+        "uid" : "43a6fe8fee677bc2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820131248,
+          "stop" : 1599820131341,
+          "duration" : 93
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9dafa5d33dbe53e0.json",
+  "parameterValues" : [ "'添加策略规则-规则脚本不合法'", "'添加策略规则-规则脚本不合法'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '111', 'ruleName': '测试', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 0, 'message': '策略配置异常！'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

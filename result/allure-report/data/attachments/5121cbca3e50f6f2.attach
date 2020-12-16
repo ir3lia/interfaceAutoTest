@@ -1,0 +1,1 @@
+{'code': 200, 'message': 'OK', 'data': {'id': '5f7304a36d20440006de6e94', 'enable': True, 'source': 'zto', 'authConfig': {'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn/', 'alipayPublicKey': 'string', 'unionId': True, 'stackOverflowKey': 'string', 'agentId': 'string'}}}

@@ -1,0 +1,3 @@
+apiPath:
+- paths:
+    tokenPath: /oauth2.0/accessToken

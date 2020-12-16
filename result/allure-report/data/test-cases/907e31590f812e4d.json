@@ -1,0 +1,159 @@
+{
+  "uid" : "907e31590f812e4d",
+  "name" : "永久有效修改为指定时间",
+  "fullName" : "testCase.SMP.authentication.BlackListController.editEffectiveEndTime.test_editEffectiveEndTime.Test_class#test_all",
+  "historyId" : "5442863b2524e7b3c317ce16648c81d9",
+  "time" : {
+    "start" : 1601373339078,
+    "stop" : 1601373339195,
+    "duration" : 117
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d368ab5a194c9246",
+      "name" : "测试人员",
+      "source" : "d368ab5a194c9246.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "e6c61fc24222d1e7",
+      "name" : "接口入参",
+      "source" : "e6c61fc24222d1e7.attach",
+      "type" : "text/plain",
+      "size" : 34
+    }, {
+      "uid" : "c0bbc861f1eded9a",
+      "name" : "接口出参",
+      "source" : "c0bbc861f1eded9a.attach",
+      "type" : "text/plain",
+      "size" : 44
+    }, {
+      "uid" : "b3ff865f540e15c8",
+      "name" : "stdout",
+      "source" : "b3ff865f540e15c8.txt",
+      "type" : "text/plain",
+      "size" : 268
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "BlackListController"
+  }, {
+    "name" : "story",
+    "value" : "修改黑名单提示信息-测试用例"
+  }, {
+    "name" : "feature",
+    "value" : "修改黑名单提示信息"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.BlackListController.editEffectiveEndTime"
+  }, {
+    "name" : "suite",
+    "value" : "test_editEffectiveEndTime"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.BlackListController.editEffectiveEndTime.test_editEffectiveEndTime"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'永久有效修改为指定时间'"
+  }, {
+    "name" : "description",
+    "value" : "'永久有效修改为指定时间'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 40,
+        "unknown" : 0,
+        "total" : 45
+      },
+      "items" : [ {
+        "uid" : "603a5dbf598a0b0c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280491640,
+          "stop" : 1601280491758,
+          "duration" : 118
+        }
+      }, {
+        "uid" : "e38751bf9f77fcd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249231614,
+          "stop" : 1600249231743,
+          "duration" : 129
+        }
+      }, {
+        "uid" : "54d44c6f68e78c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236163923,
+          "stop" : 1600236164040,
+          "duration" : 117
+        }
+      }, {
+        "uid" : "be1beefb8779c741",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821950947,
+          "stop" : 1599821951059,
+          "duration" : 112
+        }
+      }, {
+        "uid" : "360df505fc99b73f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820127347,
+          "stop" : 1599820127444,
+          "duration" : 97
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "907e31590f812e4d.json",
+  "parameterValues" : [ "'永久有效修改为指定时间'", "'永久有效修改为指定时间'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+}

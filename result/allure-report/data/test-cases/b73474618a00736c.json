@@ -1,0 +1,219 @@
+{
+  "uid" : "b73474618a00736c",
+  "name" : "删除策略规则-规则id存在",
+  "fullName" : "testCase.SMP.authentication.RedirectPoliciesController.deleteRule.test_deleteRule.Test_class#test_main",
+  "historyId" : "b5792c7a4839956fc25ae7d4efd15073",
+  "time" : {
+    "start" : 1601373344599,
+    "stop" : 1601373344659,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1601373344542,
+      "stop" : 1601373344597,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Module__pytest_setup_module",
+    "time" : {
+      "start" : 1601373344534,
+      "stop" : 1601373344542,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9cdf4dcb77b59046",
+      "name" : "测试人员",
+      "source" : "9cdf4dcb77b59046.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "58746b2620e96dc4",
+      "name" : "接口入参",
+      "source" : "58746b2620e96dc4.json",
+      "type" : "application/json",
+      "size" : 34
+    }, {
+      "uid" : "802b3e57386fc2e5",
+      "name" : "接口出参",
+      "source" : "802b3e57386fc2e5.json",
+      "type" : "application/json",
+      "size" : 44
+    }, {
+      "uid" : "bd124025284bed04",
+      "name" : "stdout",
+      "source" : "bd124025284bed04.txt",
+      "type" : "text/plain",
+      "size" : 270
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1601373344662,
+      "stop" : 1601373344662,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Module__pytest_setup_module::0",
+    "time" : {
+      "start" : 1601373344789,
+      "stop" : 1601373344789,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Web重定向策略管理-主流程"
+  }, {
+    "name" : "feature",
+    "value" : "Web重定向策略管理"
+  }, {
+    "name" : "epic",
+    "value" : "RedirectPoliciesController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.deleteRule"
+  }, {
+    "name" : "suite",
+    "value" : "test_deleteRule"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.deleteRule.test_deleteRule"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'删除策略规则-规则id存在'"
+  }, {
+    "name" : "description",
+    "value" : "'添加策略规则-规则id存在'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'id': '5f3a3710893a2500068349a4'}, 'response': {'code': 200, 'message': 'OK'}, 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 43,
+        "unknown" : 0,
+        "total" : 46
+      },
+      "items" : [ {
+        "uid" : "7054ffca3dc51320",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280497700,
+          "stop" : 1601280497737,
+          "duration" : 37
+        }
+      }, {
+        "uid" : "58fc056dbddf3c5d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249237233,
+          "stop" : 1600249237276,
+          "duration" : 43
+        }
+      }, {
+        "uid" : "ebb45eac51e84452",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236170076,
+          "stop" : 1600236170117,
+          "duration" : 41
+        }
+      }, {
+        "uid" : "a694342d4b2dddd2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821956928,
+          "stop" : 1599821956966,
+          "duration" : 38
+        }
+      }, {
+        "uid" : "cf50f0b76f07c838",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820132789,
+          "stop" : 1599820132826,
+          "duration" : 37
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b73474618a00736c.json",
+  "parameterValues" : [ "'删除策略规则-规则id存在'", "'添加策略规则-规则id存在'", "{'query': {'id': '5f3a3710893a2500068349a4'}, 'response': {'code': 200, 'message': 'OK'}, 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+}

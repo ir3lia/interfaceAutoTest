@@ -1,0 +1,1 @@
+{'code': 200, 'message': 'OK', 'data': {'id': '5f7304a76d20440006de6eba', 'name': '测试', 'nameEn': None, 'desc': None, 'filteringContent': None, 'priority': 0, 'isTerminateInferior': False, 'policyTags': ['test01'], 'ruleList': [], 'createTime': [2020, 9, 29, 17, 55, 51, 268000000], 'lastModifiedTime': [2020, 9, 29, 17, 55, 51, 268000000]}}

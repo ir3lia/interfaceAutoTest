@@ -1,0 +1,159 @@
+{
+  "uid" : "afb9801a45c6d6fd",
+  "name" : "新增认证策略-所有字段都不为空，策略标签有3个值",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationPolicy.test_addauthenticationPolicy.Test_class#test_main",
+  "historyId" : "293c7762c05dcbdb0fed24e65bdda877",
+  "time" : {
+    "start" : 1601373331260,
+    "stop" : 1601373331384,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5a1af4e38f8ba6a2",
+      "name" : "测试人员",
+      "source" : "5a1af4e38f8ba6a2.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "6f1499f933b73465",
+      "name" : "接口入参",
+      "source" : "6f1499f933b73465.attach",
+      "type" : "text/plain",
+      "size" : 30
+    }, {
+      "uid" : "cd8ebfba67ed94ea",
+      "name" : "接口出参",
+      "source" : "cd8ebfba67ed94ea.attach",
+      "type" : "text/plain",
+      "size" : 373
+    }, {
+      "uid" : "4fa937576fd69208",
+      "name" : "stdout",
+      "source" : "4fa937576fd69208.txt",
+      "type" : "text/plain",
+      "size" : 333
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-主流程"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationPolicy"
+  }, {
+    "name" : "suite",
+    "value" : "test_addauthenticationPolicy"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationPolicy.test_addauthenticationPolicy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'新增认证策略-所有字段都不为空，策略标签有3个值'"
+  }, {
+    "name" : "description",
+    "value" : "'新增认证策略-所有字段都不为空，策略标签有3个值'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': ['test01', 'test02', 'test03'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 46,
+        "unknown" : 0,
+        "total" : 46
+      },
+      "items" : [ {
+        "uid" : "6d30d338c7c4af32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280483307,
+          "stop" : 1601280483406,
+          "duration" : 99
+        }
+      }, {
+        "uid" : "5a0f44fabbe146d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249224033,
+          "stop" : 1600249224143,
+          "duration" : 110
+        }
+      }, {
+        "uid" : "c296d7597137f43f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249144129,
+          "stop" : 1600249144231,
+          "duration" : 102
+        }
+      }, {
+        "uid" : "2c886fd81964dd39",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236155347,
+          "stop" : 1600236155468,
+          "duration" : 121
+        }
+      }, {
+        "uid" : "4129fe9c175999b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156579139,
+          "stop" : 1600156579249,
+          "duration" : 110
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "afb9801a45c6d6fd.json",
+  "parameterValues" : [ "'新增认证策略-所有字段都不为空，策略标签有3个值'", "'新增认证策略-所有字段都不为空，策略标签有3个值'", "{'query': ['test01', 'test02', 'test03'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

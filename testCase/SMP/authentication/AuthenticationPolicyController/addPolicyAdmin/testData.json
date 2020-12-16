@@ -1,0 +1,86 @@
+{
+    "mainCaseData":[
+        {
+            "title": "添加关联管理员-管理员id存在，添加成功",
+            "otherInfo":{
+                "description": "添加关联管理员-管理员id存在，添加成功"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "添加关联管理员-管理员id不存在，添加成功",
+            "otherInfo":{
+                "description": "添加关联管理员-管理员id不存在，添加成功"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加关联管理员-已存在管理员，添加新的",
+            "otherInfo":{
+                "description": "添加关联管理员-已存在管理员，添加新的"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "添加关联管理员-已存在管理员，添加重复的",
+            "otherInfo":{
+                "description": "添加关联管理员-已存在管理员，添加重复的"
+            },
+            "httpData": {
+                "query": {
+                    "desc": "测试"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

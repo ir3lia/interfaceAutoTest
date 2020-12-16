@@ -1,0 +1,85 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":{
+            "mainCase": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                         {
+                            "isDeleted" : true,
+                            "name" : "QQ"
+                         }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5ef1b78673ec7d00060a79e1",
+                            "classifyResult" : {
+                            "5ef189e573ec7d0006097584" : [
+                                "5ef189e573ec7d0006097584"
+                                ]
+                            },
+                            "typeBasis" : "manual",
+                            "name" : "QQ",
+                            "desc" : "测试",
+                            "version" : "12.0.1",
+                            "vendor" : "腾讯",
+                            "size" : 12040,
+                            "icon" : "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                            "source" : "AUTO",
+                            "_version_" : "1",
+                            "createTime" : "2020-06-23 08:04:22.540",
+                            "lastModifiedTime" : "2020-06-23 08:04:22.552Z",
+                            "_class" : "com.ruijie.authentication.session.program.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ],
+            "case_01": [
+                {
+                    "collection": "softwareInfo",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "QQ"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "QQ"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5ef1b78673ec7d00060a79e1",
+                            "classifyResult" : {
+                            "5ef189e573ec7d0006097584" : [
+                                "5ef189e573ec7d0006097584"
+                                ]
+                            },
+                            "typeBasis" : "manual",
+                            "name" : "QQ",
+                            "desc" : "测试",
+                            "version" : "12.0.1",
+                            "vendor" : "腾讯",
+                            "size" : 12040,
+                            "icon" : "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                            "source" : "AUTO",
+                            "_version_" : "1",
+                            "createTime" : "2020-06-23 08:04:22.540",
+                            "lastModifiedTime" : "2020-06-23 08:04:22.552Z",
+                            "_class" : "com.ruijie.authentication.session.program.domain.program.SoftwareInfo"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

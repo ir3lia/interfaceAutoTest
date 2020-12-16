@@ -1,0 +1,60 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":{
+            "mainCase": [
+                {
+                    "collection": "webRedirectPolicy",
+                    "findDatas": [
+                         {
+                            "isDeleted" : true,
+                            "name" : "test"
+                         }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "test"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[]
+                }
+            ],
+            "case_01": [
+                {
+                    "collection": "webRedirectPolicy",
+                    "findDatas": [
+                        {
+                        "isDeleted" : true,
+                        "name" : "test"
+                        }
+                    ],
+                    "deleteDatas":[
+                        {
+                            "name" : "test"
+                        }
+                    ],
+                    "isObjectId": true,
+                    "insertDatas":[
+                        {
+                            "_id" : "5f3a3710893a2500068349a4",
+                            "name" : "test",
+                            "desc" : "测试",
+                            "policyTag" : [
+                                "test01"
+                            ],
+                            "priority" : 1,
+                            "policyState" : "INITIAL",
+                            "isTerminateInferior" : true,
+                            "displayCategory" : "ADMINISTRATOR",
+                            "_version_" : "0",
+                            "createTime" : "2020-08-17 07:51:44.049",
+                            "lastModifiedTime" : "2020-08-17 07:51:44.049",
+                            "_class" : "com.ruijie.authentication.session.domain.webredirect.WebRedirectPolicy"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

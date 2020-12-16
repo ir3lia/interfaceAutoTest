@@ -1,0 +1,390 @@
+{
+    "mainCaseData":[
+        {
+            "title": "添加软件成功",
+            "otherInfo":{
+                "description": "主流程用例-添加软件成功！"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                    },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                    },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "软件名称为空",
+            "otherInfo":{
+                "description": "软件名称为空无法添加"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data" : {
+                        "errorCode" : 0,
+                        "errorMessage" : "实体名称不能为空"
+                    }
+                },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "软件ICON为空",
+            "otherInfo":{
+                "description": "软件ICON为空可完成添加"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "软件描述为空",
+            "otherInfo":{
+                "description": "软件描述为空可完成添加"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_03",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "软件类型为空",
+            "otherInfo":{
+                "description": "软件类型为空可完成添加"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_04",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "软件厂商为空",
+            "otherInfo":{
+                "description": "软件厂商为空可完成添加"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_05",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "软件大小为空",
+            "otherInfo":{
+                "description": "软件大小为空可完成添加"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_06",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "source为MANAUL",
+            "otherInfo":{
+                "description": "source为MANAUL可完成添加"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "MANAUL",
+                    "typeBasis": "auto"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_07",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "typeBasis为undefined",
+            "otherInfo":{
+                "description": "typeBasis为undefined可完成添加"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "undefined"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_08",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "软件id为空",
+            "otherInfo":{
+                "description": "软件id为空可完成添加"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_09",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "typeBasis为auto",
+            "otherInfo":{
+                "description": "typeBasis为auto可完成添加"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "AUTO",
+                    "typeBasis": "auto"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_10",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "typeBasis为manual",
+            "otherInfo":{
+                "description": "typeBasis为manual可完成添加"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "QQ",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "MANUAL",
+                    "typeBasis": "manual"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "case_11",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        },
+        {
+            "title": "软件名称过长",
+            "otherInfo":{
+                "description": "软件名称过长"
+            },
+            "httpData": {
+                "query": {
+                    "icon": "R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy",
+                    "id": "addbynode1",
+                    "softwareDesc": "测试",
+                    "softwareName": "Q打的是多撒大所大声道撒多撒多撒多撒大所大所大所大所大所多撒大所大所大所大所大所多撒多撒多所多撒多撒多所大声道撒大大所大所多撒大所多13(⊙o⊙)…324324324324324324324234大声道撒大所大多撒大所大所大所大所大所大所大萨达所大所多撒多撒多撒多撒多撒多撒大所多撒大所大所多撒大所大所大所多撒多撒多撒多撒多所打的是多撒大所大声道撒多撒多撒多撒大所大所大所大所大所多撒大所大所大所大所大所多撒多撒多所多撒多撒多所大声道撒大大所大所多撒大所多13(⊙o⊙)…324324324324324324324234大声道撒大所大多撒大所大所大所大所大所大所大萨达所大所多撒多撒多撒多撒多撒多撒大所多撒大所大所多撒大所大所大所多撒多撒多撒多撒多所Q",
+                    "softwareSize": 12040,
+                    "softwareTypeId": "5ef189e573ec7d0006097584",
+                    "softwareVendor": "腾讯",
+                    "softwareVersion": "12.0.1",
+                    "source": "MANUAL",
+                    "typeBasis": "manual"
+                },
+                "response": {
+                    "code" : 412,
+                    "message" : "Precondition Failed",
+                    "data": {
+                        "errorCode": 0,
+                        "errorMessage": "实体名称超过了最大允许长度"
+                        }
+                },
+                "caseNum": "case_12",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "json"
+            }
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "mainCaseData":[
+        {
+            "title": "变更软件分类信息",
+            "otherInfo":{
+                "description": "Id存在，分类存在，分类信息变更成功！"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5efc655ebf7a2d00064aec22"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK"
+                },
+                "caseNum": "mainCase",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "变更分类信息-分类不存在",
+            "otherInfo":{
+                "description": "Id存在，分类不存在，分类信息变更成功！"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5efc655ebf7a2d00064aec22"
+                },
+                "response": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "caseNum": "case_01",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        },
+        {
+            "title": "变更分类信息-id不存在",
+            "otherInfo":{
+                "description": "Id不存在，分类信息变更失败！"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5ecc6fa1c57a4300064e0000"
+                },
+                "response": {
+                    "code": 412,
+                    "message": "Precondition Failed",
+                    "data": {
+                        "errorCode": 0,
+                        "errorMessage": "系统中不存在编号为[5ecc6fa1c57a4300064e0000]的实体"
+                    }
+                },
+                "caseNum": "case_02",
+                "isCheckDB": false,
+                "checkDBType": "non-exist",
+                "httpType" : "POST",
+                "paramType": "string"
+            }
+        }
+    ]
+}

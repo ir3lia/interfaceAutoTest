@@ -1,0 +1,219 @@
+{
+  "uid" : "b6bafd2f1ee8c515",
+  "name" : "删除认证策略-id存在",
+  "fullName" : "testCase.SMP.authentication.AuthenticationPolicyController.delauthenticationPolicies.test_delauthenticationPolicies.Test_class#test_main",
+  "historyId" : "a760a37c04567ccffb5a5f8ff7a33874",
+  "time" : {
+    "start" : 1601373333906,
+    "stop" : 1601373333961,
+    "duration" : 55
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Module__pytest_setup_module",
+    "time" : {
+      "start" : 1601373333813,
+      "stop" : 1601373333819,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1601373333820,
+      "stop" : 1601373333905,
+      "duration" : 85
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5c822aed0c99d5d",
+      "name" : "测试人员",
+      "source" : "5c822aed0c99d5d.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "63f07f3ddcfa7895",
+      "name" : "接口入参",
+      "source" : "63f07f3ddcfa7895.json",
+      "type" : "application/json",
+      "size" : 34
+    }, {
+      "uid" : "5dbcab6f420c9889",
+      "name" : "接口出参",
+      "source" : "5dbcab6f420c9889.json",
+      "type" : "application/json",
+      "size" : 44
+    }, {
+      "uid" : "4d84ad8d4402dbd7",
+      "name" : "stdout",
+      "source" : "4d84ad8d4402dbd7.txt",
+      "type" : "text/plain",
+      "size" : 426
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Module__pytest_setup_module::0",
+    "time" : {
+      "start" : 1601373334166,
+      "stop" : 1601373334166,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1601373333964,
+      "stop" : 1601373334005,
+      "duration" : 41
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "认证策略管理-主流程"
+  }, {
+    "name" : "epic",
+    "value" : "AuthenticationPolicyController"
+  }, {
+    "name" : "feature",
+    "value" : "认证策略管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.delauthenticationPolicies"
+  }, {
+    "name" : "suite",
+    "value" : "test_delauthenticationPolicies"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.AuthenticationPolicyController.delauthenticationPolicies.test_delauthenticationPolicies"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'删除认证策略-id存在'"
+  }, {
+    "name" : "description",
+    "value" : "'删除认证策略-id存在'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'id': '5f4365f1893a25000684b3fd'}, 'response': {'code': 200, 'message': 'OK', 'data': None}, 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 41,
+        "unknown" : 0,
+        "total" : 41
+      },
+      "items" : [ {
+        "uid" : "cfbbe713332b15ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280486035,
+          "stop" : 1601280486082,
+          "duration" : 47
+        }
+      }, {
+        "uid" : "1c7005407d7d230c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249226572,
+          "stop" : 1600249226626,
+          "duration" : 54
+        }
+      }, {
+        "uid" : "939940ef574ae393",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249146536,
+          "stop" : 1600249146593,
+          "duration" : 57
+        }
+      }, {
+        "uid" : "7e82fc1a25b90966",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236158223,
+          "stop" : 1600236158279,
+          "duration" : 56
+        }
+      }, {
+        "uid" : "72e3343c7b8baad2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600156581722,
+          "stop" : 1600156581776,
+          "duration" : 54
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b6bafd2f1ee8c515.json",
+  "parameterValues" : [ "'删除认证策略-id存在'", "'删除认证策略-id存在'", "{'query': {'id': '5f4365f1893a25000684b3fd'}, 'response': {'code': 200, 'message': 'OK', 'data': None}, 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+}

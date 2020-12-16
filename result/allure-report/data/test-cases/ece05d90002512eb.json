@@ -1,0 +1,159 @@
+{
+  "uid" : "ece05d90002512eb",
+  "name" : "变更分类信息-id不存在",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.exchangeClassify.test_exchangeClassify.Test_class#test_all",
+  "historyId" : "29c6587ce04ec3d262118610e7eda3d6",
+  "time" : {
+    "start" : 1601373352451,
+    "stop" : 1601373352572,
+    "duration" : 121
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b80c300b94271100",
+      "name" : "测试人员",
+      "source" : "b80c300b94271100.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "c1620dface289480",
+      "name" : "接口入参",
+      "source" : "c1620dface289480.attach",
+      "type" : "text/plain",
+      "size" : 34
+    }, {
+      "uid" : "8960f109b44f54ab",
+      "name" : "接口出参",
+      "source" : "8960f109b44f54ab.attach",
+      "type" : "text/plain",
+      "size" : 155
+    }, {
+      "uid" : "18bb37e04417e2e6",
+      "name" : "stdout",
+      "source" : "18bb37e04417e2e6.txt",
+      "type" : "text/plain",
+      "size" : 260
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "变更软件的分类信息-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "feature",
+    "value" : "变更软件的分类信息"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.exchangeClassify"
+  }, {
+    "name" : "suite",
+    "value" : "test_exchangeClassify"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.exchangeClassify.test_exchangeClassify"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'变更分类信息-id不存在'"
+  }, {
+    "name" : "description",
+    "value" : "'Id不存在，分类信息变更失败！'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'id': '5ecc6fa1c57a4300064e0000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '系统中不存在编号为[5ecc6fa1c57a4300064e0000]的实体'}}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 49,
+        "unknown" : 0,
+        "total" : 49
+      },
+      "items" : [ {
+        "uid" : "2e4fb80cd0418d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280505957,
+          "stop" : 1601280506104,
+          "duration" : 147
+        }
+      }, {
+        "uid" : "945d6e2efea0f07b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249244925,
+          "stop" : 1600249245060,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "75b44f7a3cad5e41",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236178432,
+          "stop" : 1600236178576,
+          "duration" : 144
+        }
+      }, {
+        "uid" : "be6ace36f5bf1d38",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821965029,
+          "stop" : 1599821965163,
+          "duration" : 134
+        }
+      }, {
+        "uid" : "b158b5e05b222122",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820140559,
+          "stop" : 1599820140717,
+          "duration" : 158
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ece05d90002512eb.json",
+  "parameterValues" : [ "'变更分类信息-id不存在'", "'Id不存在，分类信息变更失败！'", "{'query': {'id': '5ecc6fa1c57a4300064e0000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '系统中不存在编号为[5ecc6fa1c57a4300064e0000]的实体'}}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+}

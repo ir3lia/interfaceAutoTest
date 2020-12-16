@@ -1,0 +1,159 @@
+{
+  "uid" : "8890b1cecedd4d0d",
+  "name" : "新增web重定向策略-策略规则脚本不合法",
+  "fullName" : "testCase.SMP.authentication.RedirectPoliciesController.addwebRedirectPolicy.test_addwebRedirectPolicy.Test_class#test_all",
+  "historyId" : "ce5d3ca7c477540e0fc100ecfaae9b49",
+  "time" : {
+    "start" : 1601373344286,
+    "stop" : 1601373344377,
+    "duration" : 91
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4d665e60944e8677",
+      "name" : "测试人员",
+      "source" : "4d665e60944e8677.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "18ce3ca6cc8a58ef",
+      "name" : "接口入参",
+      "source" : "18ce3ca6cc8a58ef.attach",
+      "type" : "text/plain",
+      "size" : 10
+    }, {
+      "uid" : "c50cbe69677af54c",
+      "name" : "接口出参",
+      "source" : "c50cbe69677af54c.attach",
+      "type" : "text/plain",
+      "size" : 105
+    }, {
+      "uid" : "f802ce212e7c0fe6",
+      "name" : "stdout",
+      "source" : "f802ce212e7c0fe6.txt",
+      "type" : "text/plain",
+      "size" : 338
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Web重定向策略管理"
+  }, {
+    "name" : "story",
+    "value" : "Web重定向策略管理-测试用例"
+  }, {
+    "name" : "epic",
+    "value" : "RedirectPoliciesController"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addwebRedirectPolicy"
+  }, {
+    "name" : "suite",
+    "value" : "test_addwebRedirectPolicy"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.RedirectPoliciesController.addwebRedirectPolicy.test_addwebRedirectPolicy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'新增web重定向策略-策略规则脚本不合法'"
+  }, {
+    "name" : "description",
+    "value" : "'新增web重定向策略-策略规则脚本不合法'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': ['test02'], 'response': {'code': 0, 'message': 'application.session.webRedirectPolicy.filteringContent_is_illegal'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 50,
+        "unknown" : 0,
+        "total" : 51
+      },
+      "items" : [ {
+        "uid" : "74f48c4d5db47394",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280497381,
+          "stop" : 1601280497490,
+          "duration" : 109
+        }
+      }, {
+        "uid" : "8392e80fb17a0005",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249236898,
+          "stop" : 1600249237003,
+          "duration" : 105
+        }
+      }, {
+        "uid" : "fe875be464db9b74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236169718,
+          "stop" : 1600236169819,
+          "duration" : 101
+        }
+      }, {
+        "uid" : "235be60dbf5571bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821956555,
+          "stop" : 1599821956690,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "ab3e4e51bf948b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820132440,
+          "stop" : 1599820132554,
+          "duration" : 114
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8890b1cecedd4d0d.json",
+  "parameterValues" : [ "'新增web重定向策略-策略规则脚本不合法'", "'新增web重定向策略-策略规则脚本不合法'", "{'query': ['test02'], 'response': {'code': 0, 'message': 'application.session.webRedirectPolicy.filteringContent_is_illegal'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

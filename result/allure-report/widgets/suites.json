@@ -1,0 +1,114 @@
+{
+  "total" : 50,
+  "items" : [ {
+    "uid" : "9e4bc9eddb78c0e4b3cb2c1fe68d046a",
+    "name" : "testCase.SMP.authentication.AuthenticationPolicyController.addauthenticationRule",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "38c439c0d8aae86b6a48a5c2a281fd4c",
+    "name" : "testCase.SMP.authentication.RedirectPoliciesController.addRule",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "f6e44f6ca0e73eb6ee507d1d5a39d098",
+    "name" : "testCase.SMP.authentication.OAuthController.addSSO_redirectUri",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "bde4a3563980ac37ac376a53eb429823",
+    "name" : "testCase.SMP.authentication.SoftwareController.addSoftwareInfo",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 13
+    }
+  }, {
+    "uid" : "9ca6790f44fd96553c3ab68f9dea3156",
+    "name" : "testCase.SMP.authentication.SoftwareController.editSoftwareInfo",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 13
+    }
+  }, {
+    "uid" : "21530507160e903639c9505822590988",
+    "name" : "testCase.SMP.authentication.AuthenticationPolicyController.addPolicyAuthType",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "e16cfedb4e9c51fd89d2e66797792724",
+    "name" : "testCase.SMP.authentication.BlackListController.addblackLists",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "369af73ad583646d1153159a5e66b135",
+    "name" : "testCase.SMP.authentication.BlackListController.editCategory",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "8b4b0df95d7bb4c47abdf6afa9d817e5",
+    "name" : "testCase.SMP.authentication.AuthenticationPolicyController.addAuthenticationTypes",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "d74191362e000041f8446a84cca42d9c",
+    "name" : "testCase.SMP.authentication.AuthenticationPolicyController.batchDelauthenticationPolicies",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  } ]
+}

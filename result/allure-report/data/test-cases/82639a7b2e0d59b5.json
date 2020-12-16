@@ -1,0 +1,159 @@
+{
+  "uid" : "82639a7b2e0d59b5",
+  "name" : "修改软件厂商",
+  "fullName" : "testCase.SMP.authentication.SoftwareController.editSoftwareInfo.test_editsoftware.Test_class#test_all",
+  "historyId" : "92f6e95fba07a73d0a5c7197545c1016",
+  "time" : {
+    "start" : 1601373351111,
+    "stop" : 1601373351292,
+    "duration" : 181
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c230000abba04437",
+      "name" : "测试人员",
+      "source" : "c230000abba04437.attach",
+      "type" : "text/plain",
+      "size" : 11
+    }, {
+      "uid" : "f81765aa5ad7d2e2",
+      "name" : "接口入参",
+      "source" : "f81765aa5ad7d2e2.attach",
+      "type" : "text/plain",
+      "size" : 320
+    }, {
+      "uid" : "3b72f9f10da6cf49",
+      "name" : "接口出参",
+      "source" : "3b72f9f10da6cf49.attach",
+      "type" : "text/plain",
+      "size" : 388
+    }, {
+      "uid" : "17bcbabfe3f7eaf3",
+      "name" : "stdout",
+      "source" : "17bcbabfe3f7eaf3.txt",
+      "type" : "text/plain",
+      "size" : 396
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "修改软件信息"
+  }, {
+    "name" : "epic",
+    "value" : "SoftwareController"
+  }, {
+    "name" : "story",
+    "value" : "修改软件信息-测试用例"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.SMP.authentication.SoftwareController.editSoftwareInfo"
+  }, {
+    "name" : "suite",
+    "value" : "test_editsoftware"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_class"
+  }, {
+    "name" : "host",
+    "value" : "R11493"
+  }, {
+    "name" : "thread",
+    "value" : "12264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.SMP.authentication.SoftwareController.editSoftwareInfo.test_editsoftware"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'修改软件厂商'"
+  }, {
+    "name" : "description",
+    "value" : "'修改软件厂商'"
+  }, {
+    "name" : "httpParameters",
+    "value" : "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': 'TENCENT', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_06', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 56,
+        "unknown" : 0,
+        "total" : 56
+      },
+      "items" : [ {
+        "uid" : "c34e43ee25f1c6a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601280504569,
+          "stop" : 1601280504725,
+          "duration" : 156
+        }
+      }, {
+        "uid" : "9b1b2b3baf677a6d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600249243581,
+          "stop" : 1600249243709,
+          "duration" : 128
+        }
+      }, {
+        "uid" : "ce95428dfae655c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600236176950,
+          "stop" : 1600236177121,
+          "duration" : 171
+        }
+      }, {
+        "uid" : "af0d198c1316b078",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599821963603,
+          "stop" : 1599821963771,
+          "duration" : 168
+        }
+      }, {
+        "uid" : "7990e912f4d90e07",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599820139117,
+          "stop" : 1599820139256,
+          "duration" : 139
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "82639a7b2e0d59b5.json",
+  "parameterValues" : [ "'修改软件厂商'", "'修改软件厂商'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': 'TENCENT', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_06', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+}

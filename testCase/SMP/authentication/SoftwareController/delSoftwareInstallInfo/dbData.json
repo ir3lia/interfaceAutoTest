@@ -1,0 +1,58 @@
+{
+    "authentication":{
+        "dbName": "nodes",
+        "collectionData":[
+            {
+                "collection": "nodeSoftwareInstallInfo",
+                "findDatas": [
+                    {
+                        "isDeleted" : false,
+                        "name" : "datanodeforsoftware"
+                    }
+
+                ],
+                "deleteDatas":[
+                    {
+                        "name" : "datanodeforsoftware"
+                    }
+                ],
+                "isObjectId": true,
+                "insertDatas":[
+                    {
+                        "_id":"11cd2ec56fc345000793c4d1",
+                        "softwareId":"11a1f7056fc3450007db4e01",
+                        "nodeId":"11b2a25cecbcc400071a1177",
+                        "name":"datanodeforsoftware",
+                        "vendor":"ruijie",
+                        "userInfo":
+                        {
+                            "userObjectId":"11d499000afdce00075eed4c",
+                            "userId":"addbynoderidy",
+                            "username":"zztest",
+                            "userType":"普通用户",
+                            "department":"上海中心",
+                            "phoneNo":"17721603691"
+                        },
+                        "terminalInfo":
+                        {
+                            "ipv4":"1.168.54.91",
+                            "ipv6":[],
+                            "networkStatus":"online",
+                            "macAddr" : "109a4c4d98e2",
+                            "terminalClassify":
+                            [
+                                "shang海2"
+                            ],
+                            "osName":"",
+                            "terminalType":"其他"
+                        },
+                        "_version_":"0",
+                        "createTime":"2019-11-14 10:39:01.057",
+                        "lastModifiedTime":"2019-11-14 10:39:01.057",
+                        "_class":"com.ruijie.authentication.nodemanager.domain.program.NodeSoftwareInstallInfo"
+                    }
+                ]
+            }
+        ]
+    }
+}

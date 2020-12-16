@@ -1,0 +1,1 @@
+{'code': 200, 'message': 'OK', 'data': {'id': '5f7304a96d20440006de6ece', 'softwareTypeId': None, 'softwareName': 'QQ', 'softwareDesc': '测试', 'softwareVersion': '12.0.1', 'softwareVendor': '腾讯', 'softwareSize': None, 'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'typeBasis': 'auto', 'source': 'AUTO', 'lastModifiedTime': None, 'createTime': None}}

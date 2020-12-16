@@ -1,0 +1,46 @@
+{
+    "mainCaseData":[
+        {
+            "title": "删除web重定向策略-id存在",
+            "otherInfo":{
+                "description": "删除web重定向策略-id存在"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f3a3710893a2500068349a4"
+                },
+                "response": {
+                    "code" : 200,
+                    "message" : "OK",
+                    "data": null
+                    },
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        }
+    ],
+    "allCaseData":[
+        {
+            "title": "删除web重定向策略-id不存在",
+            "otherInfo":{
+                "description": "删除web重定向策略-id不存在"
+            },
+            "httpData": {
+                "query": {
+                    "id": "5f3a3710893a2500068349a4"
+                },
+                "response": {
+                    "code" : 200,
+                    "message": "OK",
+                    "data": null
+                    },
+                "isCheckDB": false,
+                "checkDBType": "exist",
+                "httpType" : "DELETE",
+                "paramType": "string"
+            }
+        }
+    ]
+}

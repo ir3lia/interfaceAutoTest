@@ -1,0 +1,2624 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "AuthenticationPolicyController",
+    "children" : [ {
+      "name" : "认证策略管理",
+      "children" : [ {
+        "name" : "认证策略管理-主流程",
+        "children" : [ {
+          "name" : "添加认证方式-认证方式为userNamePassword",
+          "uid" : "1dcbe4c028fd9b09",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373324890,
+            "stop" : 1601373325112,
+            "duration" : 222
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-认证方式为userNamePassword'", "'添加认证方式-认证方式为userNamePassword'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-添加多个，均不存在",
+          "uid" : "4979e7a669d57757",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373325244,
+            "stop" : 1601373325397,
+            "duration" : 153
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-添加多个，均不存在'", "'添加认证方式-添加多个，均不存在'", "{'query': ['userNamePassword', 'SMSAuth', 'OAuth'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加关联管理员-管理员id存在，添加成功",
+          "uid" : "72820bb2d63889d5",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373326199,
+            "stop" : 1601373326316,
+            "duration" : 117
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加关联管理员-管理员id存在，添加成功'", "'添加关联管理员-管理员id存在，添加成功'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加关联管理员-管理员id存在，添加成功",
+          "uid" : "792c0a9d332ebfc9",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373326790,
+            "stop" : 1601373326929,
+            "duration" : 139
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加关联管理员-管理员id存在，添加成功'", "'添加关联管理员-管理员id存在，添加成功'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量添加关联管理员-添加多个，全部为新",
+          "uid" : "6f211b4be178c922",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373327154,
+            "stop" : 1601373327276,
+            "duration" : 122
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量添加关联管理员-添加多个，全部为新'", "'批量添加关联管理员-添加多个，全部为新'", "{'query': ['5f5f4230f2c9e5000681e882', '5f5f4230f2c9e5000681e883'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量添加关联管理员-添加多个，全部为新",
+          "uid" : "ffb013fe85089675",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373327470,
+            "stop" : 1601373327593,
+            "duration" : 123
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量添加关联管理员-添加多个，全部为新'", "'批量添加关联管理员-添加多个，全部为新'", "{'query': ['5f5f4230f2c9e5000681e882', '5f5f4230f2c9e5000681e883'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-认证方式为userNamePassword",
+          "uid" : "fdfe1499a2fbb803",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373328025,
+            "stop" : 1601373328202,
+            "duration" : 177
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-认证方式为userNamePassword'", "'添加认证方式-认证方式为userNamePassword'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-添加多个，均不存在",
+          "uid" : "2413cf16828b7435",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373329424,
+            "stop" : 1601373329602,
+            "duration" : 178
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-添加多个，均不存在'", "'添加认证方式-添加多个，均不存在'", "{'query': ['userNamePassword', 'SMSAuth', 'OAuth'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略标签-标签为新",
+          "uid" : "92c3488336d98427",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373329772,
+            "stop" : 1601373329945,
+            "duration" : 173
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略标签-标签为新'", "'添加策略标签-标签为新'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01', 'string02', 'string03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略标签-标签为新",
+          "uid" : "ebfc59b5335b1223",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373330283,
+            "stop" : 1601373330493,
+            "duration" : 210
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略标签-标签为新'", "'添加策略标签-标签为新'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01', 'string02', 'string03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "新增认证策略-所有字段都不为空，策略标签有3个值",
+          "uid" : "6a525cc612363d9c",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373330736,
+            "stop" : 1601373330847,
+            "duration" : 111
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增认证策略-所有字段都不为空，策略标签有3个值'", "'新增认证策略-所有字段都不为空，策略标签有3个值'", "{'query': ['test01', 'test02', 'test03'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "新增认证策略-所有字段都不为空，策略标签有3个值",
+          "uid" : "afb9801a45c6d6fd",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373331260,
+            "stop" : 1601373331384,
+            "duration" : 124
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增认证策略-所有字段都不为空，策略标签有3个值'", "'新增认证策略-所有字段都不为空，策略标签有3个值'", "{'query': ['test01', 'test02', 'test03'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则标签为3个值",
+          "uid" : "81799539d1cc0bd5",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373331545,
+            "stop" : 1601373331739,
+            "duration" : 194
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则标签为3个值'", "'添加策略规则-规则标签为3个值'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01', 'string02', 'string03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则标签为3个值",
+          "uid" : "76e66825bcb90be0",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373332782,
+            "stop" : 1601373332962,
+            "duration" : 180
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则标签为3个值'", "'添加策略规则-规则标签为3个值'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01', 'string02', 'string03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量删除认证策略-全部ID均存在",
+          "uid" : "dedf45394d9401a3",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373333193,
+            "stop" : 1601373333382,
+            "duration" : 189
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除认证策略-全部ID均存在'", "'主流程用例-批量删除认证策略-全部ID均存在'", "{'query': ['5f475da0893a250006859b74', '5f475da0893a250006859b75'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "删除认证策略-id存在",
+          "uid" : "b6bafd2f1ee8c515",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373333906,
+            "stop" : 1601373333961,
+            "duration" : 55
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除认证策略-id存在'", "'删除认证策略-id存在'", "{'query': {'id': '5f4365f1893a25000684b3fd'}, 'response': {'code': 200, 'message': 'OK', 'data': None}, 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "删除策略规则-规则id存在",
+          "uid" : "22109ae5caec812e",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373334257,
+            "stop" : 1601373334309,
+            "duration" : 52
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除策略规则-规则id存在'", "'添加策略规则-规则id存在'", "{'query': {'id': '5f475da0893a250006859b74'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "删除策略规则-规则id存在",
+          "uid" : "4a1ef65de9dd39e3",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373334500,
+            "stop" : 1601373334548,
+            "duration" : 48
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除策略规则-规则id存在'", "'添加策略规则-规则id存在'", "{'query': {'id': '5f475da0893a250006859b74'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改策略描述-描述信息为新",
+          "uid" : "a0e2eb478339ab8d",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373334668,
+            "stop" : 1601373334877,
+            "duration" : 209
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改策略描述-描述信息为新'", "'修改策略描述-描述信息为新'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01', 'string02', 'string03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改策略描述-描述信息为新",
+          "uid" : "3a2bfb762c7a895d",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373335348,
+            "stop" : 1601373335492,
+            "duration" : 144
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改策略描述-描述信息为新'", "'修改策略描述-描述信息为新'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01', 'string02', 'string03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改终止低优先级策略标识-由false到true",
+          "uid" : "70f894712dceffbc",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373335608,
+            "stop" : 1601373335773,
+            "duration" : 165
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改终止低优先级策略标识-由false到true'", "'修改终止低优先级策略标识-由false到true'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01', 'string02', 'string03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改终止低优先级策略标识-由false到true",
+          "uid" : "f4224416fd0fb447",
+          "parentUid" : "b9c41059ab0234477bca53b8ba96bdbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373335931,
+            "stop" : 1601373336121,
+            "duration" : 190
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改终止低优先级策略标识-由false到true'", "'修改终止低优先级策略标识-由false到true'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01', 'string02', 'string03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "b9c41059ab0234477bca53b8ba96bdbb"
+      }, {
+        "name" : "认证策略管理-测试用例",
+        "children" : [ {
+          "name" : "添加认证方式-策略id不存在",
+          "uid" : "614b9e2744c9935c",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373325118,
+            "stop" : 1601373325237,
+            "duration" : 119
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-策略id不存在'", "'添加认证方式-策略id不存在'", "{'query': {'desc': '测试'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006851111]的认证策略'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-添加多个，部分存在",
+          "uid" : "3f77a733fec93cc5",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373325403,
+            "stop" : 1601373325550,
+            "duration" : 147
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-添加多个，部分存在'", "'添加认证方式-添加多个，部分存在'", "{'query': ['userNamePassword', 'macAfterAuth', 'OAuth'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-添加多个，全部存在",
+          "uid" : "75e37aeba6deb15b",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373325571,
+            "stop" : 1601373325730,
+            "duration" : 159
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-添加多个，全部存在'", "'添加认证方式-添加多个，全部存在'", "{'query': ['portalQrCodeAuth', 'macAfterAuth'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-添加全部",
+          "uid" : "89c05d7754bd3840",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373325737,
+            "stop" : 1601373325864,
+            "duration" : 127
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-添加全部'", "'添加认证方式-添加全部'", "{'query': ['userNamePassword', 'macAfterAuth', 'SMSAuth', 'macDumbNodeAuth', 'portalQrCodeAuth', 'OAuth'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-添加单个，方式存在",
+          "uid" : "49a574528d39755b",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373325869,
+            "stop" : 1601373326027,
+            "duration" : 158
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-添加单个，方式存在'", "'添加认证方式-添加单个，方式存在'", "{'query': ['macAfterAuth'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-添加单个，方式不存在",
+          "uid" : "641a2c109db5fcc1",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373326033,
+            "stop" : 1601373326189,
+            "duration" : 156
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-添加单个，方式不存在'", "'添加认证方式-添加单个，方式不存在'", "{'query': ['OAuth'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加关联管理员-管理员id不存在，添加成功",
+          "uid" : "c17f673918504ef",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373326322,
+            "stop" : 1601373326447,
+            "duration" : 125
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加关联管理员-管理员id不存在，添加成功'", "'添加关联管理员-管理员id不存在，添加成功'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加关联管理员-已存在管理员，添加新的",
+          "uid" : "324bd2e10e435a11",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373326455,
+            "stop" : 1601373326601,
+            "duration" : 146
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加关联管理员-已存在管理员，添加新的'", "'添加关联管理员-已存在管理员，添加新的'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加关联管理员-已存在管理员，添加重复的",
+          "uid" : "fd2447811296721a",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373326630,
+            "stop" : 1601373326773,
+            "duration" : 143
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加关联管理员-已存在管理员，添加重复的'", "'添加关联管理员-已存在管理员，添加重复的'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加关联管理员-策略id不存在",
+          "uid" : "8666945c09b21cde",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373326936,
+            "stop" : 1601373327148,
+            "duration" : 212
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加关联管理员-策略id不存在'", "'添加关联管理员-策略id不存在'", "{'query': {'desc': '测试'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006859111]的认证策略'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量添加关联管理员-策略id不存在",
+          "uid" : "3b21d653f774929a",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373327282,
+            "stop" : 1601373327462,
+            "duration" : 180
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量添加关联管理员-策略id不存在'", "'批量添加关联管理员-策略id不存在'", "{'query': ['5f5f4230f2c9e5000681e882', '5d301e8f9858bf3159b6be36'], 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006859111]的认证策略'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量添加关联管理员-添加多个，部分为新",
+          "uid" : "8042e4127e1f75e",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373327599,
+            "stop" : 1601373327750,
+            "duration" : 151
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量添加关联管理员-添加多个，部分为新'", "'批量添加关联管理员-添加多个，部分为新'", "{'query': ['5f5f4230f2c9e5000681e882', '5d301e8f9858bf3159b6be36'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量添加关联管理员-添加一个新的",
+          "uid" : "c5ccfe6f62610925",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373327756,
+            "stop" : 1601373327881,
+            "duration" : 125
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量添加关联管理员-添加一个新的'", "'批量添加关联管理员-添加一个新的'", "{'query': ['5f5f4230f2c9e5000681e881'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量添加关联管理员-添加一个重复的",
+          "uid" : "5e6f0fa8a6cfb9ae",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373327888,
+            "stop" : 1601373328019,
+            "duration" : 131
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量添加关联管理员-添加一个重复的'", "'批量添加关联管理员-添加一个重复的'", "{'query': ['5d301e8f9858bf3159b6be36'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-认证方式为macAfterAuth",
+          "uid" : "ce571def3ffcac25",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373328208,
+            "stop" : 1601373328373,
+            "duration" : 165
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-认证方式为macAfterAuth'", "'添加认证方式-认证方式为macAfterAuth'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-认证方式为SMSAuth",
+          "uid" : "c61cc4499360120",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373328380,
+            "stop" : 1601373328518,
+            "duration" : 138
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-认证方式为SMSAuth'", "'添加认证方式-认证方式为SMSAuth'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-认证方式为macDumbNodeAuth",
+          "uid" : "54de0bd547f525e5",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373328524,
+            "stop" : 1601373328688,
+            "duration" : 164
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-认证方式为macDumbNodeAuth'", "'添加认证方式-认证方式为macDumbNodeAuth'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-认证方式为portalQrCodeAuth",
+          "uid" : "2c319c157ad6b86a",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373328695,
+            "stop" : 1601373328831,
+            "duration" : 136
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-认证方式为portalQrCodeAuth'", "'添加认证方式-认证方式为portalQrCodeAuth'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-认证方式为OAuth",
+          "uid" : "2efb30d4e3e477fb",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373328837,
+            "stop" : 1601373328965,
+            "duration" : 128
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-认证方式为OAuth'", "'添加认证方式-认证方式为OAuth'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-认证方式已存在，添加新的认证方式",
+          "uid" : "817778b16a5f6cea",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373328995,
+            "stop" : 1601373329105,
+            "duration" : 110
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-认证方式已存在，添加新的认证方式'", "'添加认证方式-已存在，添加新的认证方式'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_06', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-认证方式已存在，添加重复的",
+          "uid" : "4ee935e0fd2907e0",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373329110,
+            "stop" : 1601373329255,
+            "duration" : 145
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-认证方式已存在，添加重复的'", "'添加认证方式-已存在，添加重复的'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_07', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-认证方式已存在，添加不在范围内的",
+          "uid" : "430d68b6c89e2b89",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373329262,
+            "stop" : 1601373329418,
+            "duration" : 156
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-认证方式已存在，添加不在范围内的'", "'添加认证方式-已存在，添加不在范围内的'", "{'query': {'desc': '测试'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_08', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加认证方式-id不存在",
+          "uid" : "8f9a626991a165c3",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373329608,
+            "stop" : 1601373329765,
+            "duration" : 157
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加认证方式-id不存在'", "'添加认证方式-id不存在'", "{'query': ['userNamePassword', 'macAfterAuth', 'OAuth'], 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006852222]的认证策略'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略标签-标签已存在",
+          "uid" : "3b771847de7c6d06",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373329951,
+            "stop" : 1601373330114,
+            "duration" : 163
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略标签-标签已存在'", "'添加策略标签-标签已存在'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略标签-标签为空",
+          "uid" : "d67459fade657311",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373330121,
+            "stop" : 1601373330276,
+            "duration" : 155
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略标签-标签为空'", "'添加策略标签-标签为空'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略标签-策略id不存在",
+          "uid" : "e2eb6ab44746eb44",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373330523,
+            "stop" : 1601373330729,
+            "duration" : 206
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略标签-策略id不存在'", "'添加策略标签-策略id不存在'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006859111]的认证策略'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "新增认证策略-所有字段都不为空，策略标签有1个值",
+          "uid" : "6acec2c2223cca96",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373330852,
+            "stop" : 1601373330956,
+            "duration" : 104
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增认证策略-所有字段都不为空，策略标签有1个值'", "'新增认证策略-所有字段都不为空，策略标签有1个值'", "{'query': ['test01'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "新增认证策略-policyName和policyTags不为空",
+          "uid" : "46f43c37b551dc60",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373330963,
+            "stop" : 1601373331060,
+            "duration" : 97
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增认证策略-policyName和policyTags不为空'", "'新增认证策略-policyName和policyTags不为空'", "{'query': ['test01'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "新增认证策略-policyName已存在",
+          "uid" : "23dbb738da09932c",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373331067,
+            "stop" : 1601373331254,
+            "duration" : 187
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增认证策略-policyName已存在'", "'新增认证策略-policyName已存在'", "{'query': ['test01'], 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorMessage': 'application.session.authenticationPolicy.name_already_exist'}}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "新增认证策略-规则脚本不合法",
+          "uid" : "4c070c6bfd53e985",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373331390,
+            "stop" : 1601373331539,
+            "duration" : 149
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增认证策略-规则脚本不合法'", "'新增认证策略-规则脚本不合法'", "{'query': ['test01'], 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 9990014, 'errorMessage': '策略配置异常！'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则标签为1个值",
+          "uid" : "fe10dc0159432994",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373331746,
+            "stop" : 1601373331959,
+            "duration" : 213
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则标签为1个值'", "'添加策略规则-规则标签为1个值'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-已存在规则-添加新规则",
+          "uid" : "f24f2c47ea0ce94f",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373331967,
+            "stop" : 1601373332164,
+            "duration" : 197
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-已存在规则-添加新规则'", "'添加策略规则-已存在规则-添加新规则'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则名称重复",
+          "uid" : "ae86089ad91bd2af",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373332170,
+            "stop" : 1601373332391,
+            "duration" : 221
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则名称重复'", "'添加策略规则-规则名称重复'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '标签', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'domain.session.authenticationPolicy.policy_already_has_the_same_rule'}}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则名称为空",
+          "uid" : "9bf85033dc835c1",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "failed",
+          "time" : {
+            "start" : 1601373332397,
+            "stop" : 1601373332488,
+            "duration" : 91
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则名称为空'", "'添加策略规则-规则名称为空'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'domain.session.authenticationPolicy.policy_already_has_the_same_rule'}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则脚本不合法",
+          "uid" : "1327c43af821648a",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373332550,
+            "stop" : 1601373332774,
+            "duration" : 224
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则脚本不合法'", "'添加策略规则-规则脚本不合法'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': 'ruke', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 9990016, 'errorMessage': '策略配置异常！'}}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则id不存在",
+          "uid" : "c501fd96074766e9",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373332967,
+            "stop" : 1601373333187,
+            "duration" : 220
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则id不存在'", "'添加策略规则-规则id不存在'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006851111]的认证策略'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量删除认证策略-部分ID均存在",
+          "uid" : "aa05956499c428c3",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373333388,
+            "stop" : 1601373333491,
+            "duration" : 103
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除认证策略-部分ID均存在'", "'批量删除认证策略-部分ID均存在'", "{'query': ['5f475da0893a250006859b74', '5f475da0893a250006859b77'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量删除认证策略-全部ID均不存在",
+          "uid" : "43b3025cfc8e68f9",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373333496,
+            "stop" : 1601373333600,
+            "duration" : 104
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除认证策略-全部ID均不存在'", "'批量删除认证策略-全部ID均不存在'", "{'query': ['5f475da0893a250006859b76', '5f475da0893a250006859b77'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量删除认证策略-单条，ID存在",
+          "uid" : "490e5930ecec044",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373333606,
+            "stop" : 1601373333686,
+            "duration" : 80
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除认证策略-单条，ID存在'", "'批量删除认证策略-单条，ID存在'", "{'query': ['5f475da0893a250006859b74'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量删除认证策略-单条，ID不存在",
+          "uid" : "db3dc6c41fea6b33",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373333692,
+            "stop" : 1601373333808,
+            "duration" : 116
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除认证策略-单条，ID不存在'", "'批量删除认证策略-单条，ID不存在'", "{'query': ['5f475da0893a250006859b77'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "删除认证策略-id不存在",
+          "uid" : "3e686dc0aec5ad64",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373334074,
+            "stop" : 1601373334137,
+            "duration" : 63
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除认证策略-id不存在'", "'删除认证策略-id不存在'", "{'query': {'id': '5f3a3710893a2500068349a4'}, 'response': {'code': 200, 'message': 'OK', 'data': None}, 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "删除策略规则-策略id不存在",
+          "uid" : "9c07ebc2773a8ab1",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373334368,
+            "stop" : 1601373334436,
+            "duration" : 68
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除策略规则-策略id不存在'", "'删除策略规则-策略id不存在'", "{'query': {'id': '5f475da0893a250006859b00'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006859b00]的认证策略'}}, 'caseNum': 'case01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "删除策略规则-规则id不存在",
+          "uid" : "7b3a3386493591eb",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373334602,
+            "stop" : 1601373334653,
+            "duration" : 51
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除策略规则-规则id不存在'", "'删除策略规则-规则id不存在'", "{'query': {'id': '5f475da0893a250006859b74'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改策略描述-描述信息为原来",
+          "uid" : "cdc0ccedf86f9364",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373334883,
+            "stop" : 1601373335024,
+            "duration" : 141
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改策略描述-描述信息为原来'", "'修改策略描述-描述信息为原来'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改策略描述-描述信息为空",
+          "uid" : "622028ee6bd48a21",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373335033,
+            "stop" : 1601373335181,
+            "duration" : 148
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改策略描述-描述信息为空'", "'修改策略描述-描述信息为空'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改策略描述-描述信息从有到无",
+          "uid" : "452ad4da77b61917",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373335187,
+            "stop" : 1601373335341,
+            "duration" : 154
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改策略描述-描述信息从有到无'", "'修改策略描述-描述信息从有到无'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改策略描述-策略id不存在",
+          "uid" : "4f4ef673c8c1f6d1",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373335499,
+            "stop" : 1601373335602,
+            "duration" : 103
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改策略描述-策略id不存在'", "'修改策略描述-策略id不存在'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006859111]的认证策略'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改终止低优先级策略标识-策略id不存在",
+          "uid" : "e9a8b19718858947",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373335782,
+            "stop" : 1601373335924,
+            "duration" : 142
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改终止低优先级策略标识-策略id不存在'", "'修改终止低优先级策略标识-策略id不存在'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 6031801, 'errorMessage': '系统中不存在ID为[5f475da0893a250006811111]的认证策略'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改终止低优先级策略标识-由true到false",
+          "uid" : "f4cabfbed3396ad5",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373336127,
+            "stop" : 1601373336285,
+            "duration" : 158
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改终止低优先级策略标识-由true到false'", "'修改终止低优先级策略标识-由true到false'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改终止低优先级策略标识-由true到true",
+          "uid" : "ca20e48f3e90fa74",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373336292,
+            "stop" : 1601373336431,
+            "duration" : 139
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改终止低优先级策略标识-由true到true'", "'修改终止低优先级策略标识-由true到true'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改终止低优先级策略标识-由false到false",
+          "uid" : "19206185d3ed4e68",
+          "parentUid" : "9c6761a2a6b90cc5566f36507edb764c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373336437,
+            "stop" : 1601373336563,
+            "duration" : 126
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改终止低优先级策略标识-由false到false'", "'修改终止低优先级策略标识-由false到false'", "{'query': {'desc': '测试', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['string01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "9c6761a2a6b90cc5566f36507edb764c"
+      } ],
+      "uid" : "9b2820854bdb02e69c83e61d3fb579f5"
+    } ],
+    "uid" : "e0c4a920e3e47a4bb4fe302f8b92c350"
+  }, {
+    "name" : "BlackListController",
+    "children" : [ {
+      "name" : "新增黑名单",
+      "children" : [ {
+        "name" : "新增黑名单-主流程",
+        "children" : [ {
+          "name" : "添加黑名单",
+          "uid" : "f98059cfe8cd85ce",
+          "parentUid" : "4c1d68cd3e1ef3c6a1285938e278a801",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373336571,
+            "stop" : 1601373336685,
+            "duration" : 114
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加黑名单'", "'添加用户名+MAC形式，指定失效时间的黑名单'", "{'query': {'blackListCategory': 'USER_MAC_SPECIFIC', 'createCategory': '2', 'createUser': 'admin', 'effectiveEndTime': '2019-10-28T10:33:59Z', 'infoMessage': '黑名单', 'isPermanent': False, 'nodeMac': '64-00-6A-7A-34-BF', 'userObjectId': '5f17e3486227f3000629a7a5'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "使黑名单失效-Id存在,更新人admin",
+          "uid" : "174ae120baa6a395",
+          "parentUid" : "4c1d68cd3e1ef3c6a1285938e278a801",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373339811,
+            "stop" : 1601373339919,
+            "duration" : 108
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'使黑名单失效-Id存在,更新人admin'", "'使黑名单失效-Id存在,更新人admin'", "{'query': {'blackListId': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "4c1d68cd3e1ef3c6a1285938e278a801"
+      }, {
+        "name" : "新增黑名单-测试用例",
+        "children" : [ {
+          "name" : "添加黑名单",
+          "uid" : "c81e681cc8578595",
+          "parentUid" : "1b3d7d4b5a79bce5486e91fc2a0dd03e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373336691,
+            "stop" : 1601373336816,
+            "duration" : 125
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加黑名单'", "'添加用户名形式，永久生效的黑名单'", "{'query': {'blackListCategory': 'USER_SPECIFIC', 'createCategory': '2', 'createUser': 'admin', 'effectiveEndTime': '2019-10-28T10:33:59Z', 'infoMessage': '黑名单', 'isPermanent': True, 'nodeMac': '', 'userObjectId': '5f17e3486227f3000629a7a5'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加黑名单",
+          "uid" : "59e1c41562a46af8",
+          "parentUid" : "1b3d7d4b5a79bce5486e91fc2a0dd03e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373336822,
+            "stop" : 1601373336915,
+            "duration" : 93
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加黑名单'", "'添加MAC形式，指定时间失效的黑名单'", "{'query': {'blackListCategory': 'MAC_SPECIFIC', 'createCategory': '2', 'createUser': 'admin', 'effectiveEndTime': '2019-10-28T10:33:59Z', 'infoMessage': '黑名单', 'isPermanent': False, 'nodeMac': '64-00-6A-7A-34-BF', 'userObjectId': ''}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加黑名单",
+          "uid" : "f3209efd98222b6c",
+          "parentUid" : "1b3d7d4b5a79bce5486e91fc2a0dd03e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373336921,
+            "stop" : 1601373337019,
+            "duration" : 98
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加黑名单'", "'添加用户+MAC形式，永久有效的黑名单'", "{'query': {'blackListCategory': 'USER_MAC_SPECIFIC', 'createCategory': '2', 'createUser': 'admin', 'effectiveEndTime': '2019-10-28T10:33:59Z', 'infoMessage': '黑名单', 'isPermanent': True, 'nodeMac': '64-00-6A-7A-34-BF', 'userObjectId': '5f17e3486227f3000629a7a5'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加黑名单",
+          "uid" : "bf55a65db7e7a1db",
+          "parentUid" : "1b3d7d4b5a79bce5486e91fc2a0dd03e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373337026,
+            "stop" : 1601373337136,
+            "duration" : 110
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加黑名单'", "'添加用户名形式，指定时间失效的黑名单'", "{'query': {'blackListCategory': 'USER_SPECIFIC', 'createCategory': '2', 'createUser': 'admin', 'effectiveEndTime': '2019-10-28T10:33:59Z', 'infoMessage': '黑名单', 'isPermanent': False, 'nodeMac': '', 'userObjectId': '5f17e3486227f3000629a7a5'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加黑名单",
+          "uid" : "7c43d613333f91c1",
+          "parentUid" : "1b3d7d4b5a79bce5486e91fc2a0dd03e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373337142,
+            "stop" : 1601373337264,
+            "duration" : 122
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加黑名单'", "'添加MAC形式，永久生效的黑名单'", "{'query': {'blackListCategory': 'MAC_SPECIFIC', 'createCategory': '2', 'createUser': 'admin', 'effectiveEndTime': '2019-10-28T10:33:59Z', 'infoMessage': '黑名单', 'isPermanent': True, 'nodeMac': '64-00-6A-7A-34-BF', 'userObjectId': ''}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加黑名单",
+          "uid" : "80bf33428232ddc4",
+          "parentUid" : "1b3d7d4b5a79bce5486e91fc2a0dd03e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373337270,
+            "stop" : 1601373337365,
+            "duration" : 95
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加黑名单'", "'添加黑名单,infoMessage为空'", "{'query': {'blackListCategory': 'MAC_SPECIFIC', 'createCategory': '2', 'createUser': 'admin', 'effectiveEndTime': '2019-10-28T10:33:59Z', 'infoMessage': '', 'isPermanent': True, 'nodeMac': '64-00-6A-7A-34-BF', 'userObjectId': ''}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_06', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "使黑名单失效-Id存在,更新人用户",
+          "uid" : "63e55979cde378c6",
+          "parentUid" : "1b3d7d4b5a79bce5486e91fc2a0dd03e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373339926,
+            "stop" : 1601373340021,
+            "duration" : 95
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'使黑名单失效-Id存在,更新人用户'", "'使黑名单失效-Id存在,更新人用户'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "使黑名单失效-Id存在,更新人不存在",
+          "uid" : "82bc22a8a7b999ac",
+          "parentUid" : "1b3d7d4b5a79bce5486e91fc2a0dd03e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373340028,
+            "stop" : 1601373340116,
+            "duration" : 88
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'使黑名单失效-Id存在,更新人不存在'", "'使黑名单失效-Id存在,更新人不存在'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "使黑名单失效-Id不存在",
+          "uid" : "10a80eb45b24c014",
+          "parentUid" : "1b3d7d4b5a79bce5486e91fc2a0dd03e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373340123,
+            "stop" : 1601373340277,
+            "duration" : 154
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'使黑名单失效-Id不存在'", "'使黑名单失效-Id不存在'", "{'query': {'id': '5f1fd825bf7a2d0006800000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '黑名单[5f1fd825bf7a2d0006800000]不存在！'}}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "1b3d7d4b5a79bce5486e91fc2a0dd03e"
+      } ],
+      "uid" : "4a3ac2a028874ce695589e849a114693"
+    }, {
+      "name" : "批量失效黑名单",
+      "children" : [ {
+        "name" : "批量失效黑名单-主流程",
+        "children" : [ {
+          "name" : "批量黑名单失效,有效Id+无效Id",
+          "uid" : "caf706a336c946f9",
+          "parentUid" : "4dc004e2017507db3c3473d236c4a065",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373337372,
+            "stop" : 1601373337478,
+            "duration" : 106
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量黑名单失效,有效Id+无效Id'", "'批量黑名单失效-有效Id+无效Id,更新人admin'", "{'query': ['5f1fd825bf7a2d0006820422', '5f1fd825bf7a2d0006820478'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "4dc004e2017507db3c3473d236c4a065"
+      }, {
+        "name" : "批量失效黑名单-测试用例",
+        "children" : [ {
+          "name" : "批量黑名单失效,有效Id",
+          "uid" : "574155a06d6ca94b",
+          "parentUid" : "1605d11e5b5894e7eaa8d422ae45f72b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373337485,
+            "stop" : 1601373337597,
+            "duration" : 112
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量黑名单失效,有效Id'", "'批量黑名单失效,有效Id,更新人用户'", "{'query': ['5f1fd825bf7a2d0006820422'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量黑名单失效,无效Id",
+          "uid" : "222b861cbf8dab06",
+          "parentUid" : "1605d11e5b5894e7eaa8d422ae45f72b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373337603,
+            "stop" : 1601373337693,
+            "duration" : 90
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量黑名单失效,无效Id'", "'批量黑名单失效,无效Id,更新人不存在'", "{'query': ['5f1fd825bf7a2d0006820478'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量黑名单失效,多个存在Id",
+          "uid" : "6e15194d7256fa7",
+          "parentUid" : "1605d11e5b5894e7eaa8d422ae45f72b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373337699,
+            "stop" : 1601373337932,
+            "duration" : 233
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量黑名单失效,多个存在Id'", "'批量黑名单失效,多个存在Id,更新人admin'", "{'query': ['5f1fd825bf7a2d0006820423', '5f1fd825bf7a2d0006820422'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量黑名单失效,Id为空",
+          "uid" : "113b1a06fa30b511",
+          "parentUid" : "1605d11e5b5894e7eaa8d422ae45f72b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373337941,
+            "stop" : 1601373338052,
+            "duration" : 111
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量黑名单失效,Id为空'", "'批量黑名单失效,Id为空,更新人用户'", "{'query': [], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "1605d11e5b5894e7eaa8d422ae45f72b"
+      } ],
+      "uid" : "a7874d471f8d400351df3476958bcf26"
+    }, {
+      "name" : "修改黑名单提示信息",
+      "children" : [ {
+        "name" : "修改黑名单提示信息-主流程",
+        "children" : [ {
+          "name" : "修改黑名单类型对象-USER-USER+MAC",
+          "uid" : "a8c89f4bfb6623b0",
+          "parentUid" : "7b7d95d7602d5324e2f3554e85236323",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373338059,
+            "stop" : 1601373338189,
+            "duration" : 130
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改黑名单类型对象-USER-USER+MAC'", "'USER_SPECIFIC类型-USER_MAC_SPECIFIC，修改userid和mac'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "指定时间修改有效时间",
+          "uid" : "b22066347f9c3131",
+          "parentUid" : "7b7d95d7602d5324e2f3554e85236323",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373338847,
+            "stop" : 1601373338946,
+            "duration" : 99
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'指定时间修改有效时间'", "'指定时间修改有效时间'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改提示信息，有到有，修改信息",
+          "uid" : "38e780d54e8cc46e",
+          "parentUid" : "7b7d95d7602d5324e2f3554e85236323",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373339297,
+            "stop" : 1601373339390,
+            "duration" : 93
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改提示信息，有到有，修改信息'", "'修改提示信息-有到有，修改信息,更新人admin'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "7b7d95d7602d5324e2f3554e85236323"
+      }, {
+        "name" : "修改黑名单提示信息-测试用例",
+        "children" : [ {
+          "name" : "修改黑名单类型对象-USER-MAC",
+          "uid" : "deaff5427135de6",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373338195,
+            "stop" : 1601373338298,
+            "duration" : 103
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改黑名单类型对象-USER-MAC'", "'USER_SPECIFIC类型-MAC_SPECIFIC'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改黑名单类型对象-MAC-USER_MAC",
+          "uid" : "36479626210d46d3",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373338303,
+            "stop" : 1601373338413,
+            "duration" : 110
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改黑名单类型对象-MAC-USER_MAC'", "'MAC_SPECIFIC类型-USER_MAC_SPECIFIC，修改userid和mac'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改黑名单类型对象-USER-修改userID",
+          "uid" : "886e5b48d0bbbdbb",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373338420,
+            "stop" : 1601373338514,
+            "duration" : 94
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改黑名单类型对象-USER-修改userID'", "'USER_SPECIFIC类型修改userid'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改黑名单类型对象-MAC_SPECIFIC类型修改mac",
+          "uid" : "785369466c51a40c",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373338520,
+            "stop" : 1601373338606,
+            "duration" : 86
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改黑名单类型对象-MAC_SPECIFIC类型修改mac'", "'MAC_SPECIFIC类型修改mac'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改黑名单类型对象-id不存在",
+          "uid" : "18dd9d213d325b50",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373338611,
+            "stop" : 1601373338713,
+            "duration" : 102
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改黑名单类型对象-id不存在'", "'id不存在'", "{'query': {'id': '5f1fd825bf7a2d0006820000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '黑名单[5f1fd825bf7a2d0006820000]不存在！'}}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改黑名单类型对象-USER+MAC修改userid和mac",
+          "uid" : "1201c9a35bb47f73",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373338719,
+            "stop" : 1601373338840,
+            "duration" : 121
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改黑名单类型对象-USER+MAC修改userid和mac'", "'USER_MAC_SPECIFIC，修改userid和mac'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_06', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "指定时间修改为永久有效",
+          "uid" : "1638a926af64b31d",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373338952,
+            "stop" : 1601373339072,
+            "duration" : 120
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'指定时间修改为永久有效'", "'指定时间修改为永久有效'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "永久有效修改为指定时间",
+          "uid" : "907e31590f812e4d",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373339078,
+            "stop" : 1601373339195,
+            "duration" : 117
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'永久有效修改为指定时间'", "'永久有效修改为指定时间'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "id不存在",
+          "uid" : "2f65c0931223676e",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373339201,
+            "stop" : 1601373339291,
+            "duration" : 90
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'id不存在'", "'id不存在'", "{'query': {'id': '5f1fd825bf7a2d0006820400'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '黑名单[5f1fd825bf7a2d0006820400]不存在！'}}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改提示信息，有到有，不修改信息",
+          "uid" : "8a960127465a753",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373339396,
+            "stop" : 1601373339490,
+            "duration" : 94
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改提示信息，有到有，不修改信息'", "'有到有，不修改信息,更新人用户'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改提示信息，无到有，更新人admin",
+          "uid" : "39ce7bd329d93ce9",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373339496,
+            "stop" : 1601373339597,
+            "duration" : 101
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改提示信息，无到有，更新人admin'", "'无到有，更新人admin'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改提示信息，有到无，更新人用户",
+          "uid" : "446a61d5be56378f",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373339603,
+            "stop" : 1601373339704,
+            "duration" : 101
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改提示信息，有到无，更新人用户'", "'有到无，更新人用户'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "修改提示信息，id不存在",
+          "uid" : "ffc78136435166f5",
+          "parentUid" : "69a929d918456dfee8506cf0916f6601",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373339711,
+            "stop" : 1601373339805,
+            "duration" : 94
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改提示信息，id不存在'", "'修改提示信息，id不存在'", "{'query': {'id': '5f1fd825bf7a2d0006820422'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '黑名单[5f1fd825bf7a2d0006820422]不存在！'}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "69a929d918456dfee8506cf0916f6601"
+      } ],
+      "uid" : "30740d0f1f3b16ee5d392cd9b8e3c044"
+    } ],
+    "uid" : "52871c2aeef24da9bc3dc78e1c969caa"
+  }, {
+    "name" : "OAuthController",
+    "children" : [ {
+      "name" : "添加SSO对接配置",
+      "children" : [ {
+        "name" : "添加SSO对接配置-主流程",
+        "children" : [ {
+          "name" : "添加SSO对接配置成功",
+          "uid" : "b48572ff26ca9c49",
+          "parentUid" : "80e27d7b186ff343fe1505d3cf54b94e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373340283,
+            "stop" : 1601373340388,
+            "duration" : 105
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加SSO对接配置成功'", "'SSO对接配置信息完整，保存成功！'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn/', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': 'string', 'source': 'zto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加SSO对接配置成功",
+          "uid" : "956ee1dcce5444f3",
+          "parentUid" : "80e27d7b186ff343fe1505d3cf54b94e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373340587,
+            "stop" : 1601373340691,
+            "duration" : 104
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加SSO对接配置成功'", "'SSO对接配置信息完整，保存成功！'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn/', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': 'string', 'source': 'zto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "查询所有SSO对接配置-主流程",
+          "uid" : "43b83aeb38aef8ac",
+          "parentUid" : "80e27d7b186ff343fe1505d3cf54b94e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373341086,
+            "stop" : 1601373341237,
+            "duration" : 151
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'查询所有SSO对接配置-主流程'", "'查询所有SSO对接配置，两条配置'", "{'query': {}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'GET', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "80e27d7b186ff343fe1505d3cf54b94e"
+      }, {
+        "name" : "添加SSO对接配置-测试用例",
+        "children" : [ {
+          "name" : "添加SSO对接配置-SSO已存在",
+          "uid" : "348c0f59d5879145",
+          "parentUid" : "3628b496795a3195ff0fe972f47f5ffa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373340393,
+            "stop" : 1601373340580,
+            "duration" : 187
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加SSO对接配置-SSO已存在'", "'添加SSO对接配置-SSO已存在'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': 'string', 'source': 'zto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'has exists enabled OAuth source'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加SSO对接配置-URL不合法",
+          "uid" : "145a842bec99a867",
+          "parentUid" : "3628b496795a3195ff0fe972f47f5ffa",
+          "status" : "failed",
+          "time" : {
+            "start" : 1601373340697,
+            "stop" : 1601373340722,
+            "duration" : 25
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加SSO对接配置-URL不合法'", "'添加SSO对接配置-URL不合法'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'id09.rghall.com.cn', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': 'string', 'source': 'zto'}, 'response': {'code': 412, 'message': 'Precondition Failed'}, 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "查询所有SSO对接配置-1条配置",
+          "uid" : "9042b75ebf1c7f5d",
+          "parentUid" : "3628b496795a3195ff0fe972f47f5ffa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373341244,
+            "stop" : 1601373341364,
+            "duration" : 120
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'查询所有SSO对接配置-1条配置'", "'查询所有SSO对接配置，两条配置'", "{'query': {}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'GET', 'paramType': 'json'}" ]
+        }, {
+          "name" : "查询所有SSO对接配置-无配置",
+          "uid" : "ef0f9c6c20be8aff",
+          "parentUid" : "3628b496795a3195ff0fe972f47f5ffa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373341371,
+            "stop" : 1601373341485,
+            "duration" : 114
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'查询所有SSO对接配置-无配置'", "'查询所有SSO对接配置，无配置'", "{'query': {}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'GET', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "3628b496795a3195ff0fe972f47f5ffa"
+      } ],
+      "uid" : "e3e91eba36f8cd1655ed7ce30d0b30f7"
+    }, {
+      "name" : "删除软件信息",
+      "children" : [ {
+        "name" : "删除软件信息-主流程",
+        "children" : [ {
+          "name" : "删除SSO对接配置-Id存在",
+          "uid" : "bc29ffb7af49aa2a",
+          "parentUid" : "578fe062cf1bda4832ffde06256a0c9f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373340787,
+            "stop" : 1601373340870,
+            "duration" : 83
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除SSO对接配置-Id存在'", "'Id存在，SSO对接配置删除成功！'", "{'query': {'id': '5ecf697f20449b1bd45ba833'}, 'response': {'code': 200, 'message': 'OK'}, 'isCheckDB': True, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "578fe062cf1bda4832ffde06256a0c9f"
+      }, {
+        "name" : "删除软件信息-测试用例",
+        "children" : [ {
+          "name" : "删除SSO对接配置-id不存在",
+          "uid" : "758a1221feb21ebe",
+          "parentUid" : "904c74ce269e291af6263c8d16a4eb60",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373340961,
+            "stop" : 1601373341040,
+            "duration" : 79
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除SSO对接配置-id不存在'", "'Id不存在，SSO对接配置删除失败！'", "{'query': {'id': '5ecc6fa1c57a4300064e0000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'OAuth id has not exists '}}, 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "904c74ce269e291af6263c8d16a4eb60"
+      } ],
+      "uid" : "414528ee81d84d88be9dbecfd69d295c"
+    }, {
+      "name" : "修改SSO对接配置",
+      "children" : [ {
+        "name" : "修改SSO对接配置-主流程",
+        "children" : [ {
+          "name" : "修改SSO对接配置",
+          "uid" : "a236d8654ab1463a",
+          "parentUid" : "fb1882951d3ab650f2b200480a762eac",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373341491,
+            "stop" : 1601373341638,
+            "duration" : 147
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改SSO对接配置'", "'主流程用例-修改SSO对接配置成功！'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-7ko', 'clientSecret': '88iE2uHBUYu7csxfDSmYng', 'redirectUri': 'http://id02.rghall.com.cn/', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': False, 'id': '5ecf697f20449b1bd45ba833', 'source': 'zto-test'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "fb1882951d3ab650f2b200480a762eac"
+      }, {
+        "name" : "修改SSO对接配置-测试用例",
+        "children" : [ {
+          "name" : "修改SSO对接配置-enable",
+          "uid" : "48dc11346b30f77a",
+          "parentUid" : "eafe0bc52b2107b6f20def090dde5251",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373341643,
+            "stop" : 1601373341795,
+            "duration" : 152
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改SSO对接配置-enable'", "'修改SSO对接配置-enable-true-false'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn/', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': False, 'id': '5ecf697f20449b1bd45ba833', 'source': 'zto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改SSO对接配置-enable-",
+          "uid" : "1cab4ed9d663f3a3",
+          "parentUid" : "eafe0bc52b2107b6f20def090dde5251",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373341804,
+            "stop" : 1601373341949,
+            "duration" : 145
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改SSO对接配置-enable-'", "'修改SSO对接配置-enable-false-true'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn/', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': '5ecf697f20449b1bd45ba833', 'source': 'zto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改SSO对接配置-id不存在",
+          "uid" : "4be72fb89e03cf3",
+          "parentUid" : "eafe0bc52b2107b6f20def090dde5251",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373341955,
+            "stop" : 1601373342095,
+            "duration" : 140
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改SSO对接配置-id不存在'", "'修改SSO对接配置-id不存在'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn/', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': '5ecf697f20449b1bd45ba844', 'source': 'zto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'OAuth id has not exists '}}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改SSO对接配置-source已存在",
+          "uid" : "7445a175321b0960",
+          "parentUid" : "eafe0bc52b2107b6f20def090dde5251",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373342102,
+            "stop" : 1601373342359,
+            "duration" : 257
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改SSO对接配置-source已存在'", "'修改SSO对接配置-source已存在'", "{'query': {'authConfig': {'agentId': 'string', 'alipayPublicKey': 'string', 'clientId': 'ztfwbTmYDEXj6pBhBwsf-0bw', 'clientSecret': '8CuUiuHBUYu7csxfDSmYng', 'redirectUri': 'http://id09.rghall.com.cn/', 'stackOverflowKey': 'string', 'unionId': True}, 'enable': True, 'id': '5ecf697f20449b1bd45ba833', 'source': 'zto-test'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'OAuth source has exists '}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "eafe0bc52b2107b6f20def090dde5251"
+      } ],
+      "uid" : "f8d92efd1f5d166e2a8f4cab6fc17cee"
+    } ],
+    "uid" : "799fd94e368a50dad17f05105c2cfef6"
+  }, {
+    "name" : "RedirectPoliciesController",
+    "children" : [ {
+      "name" : "Web重定向策略管理",
+      "children" : [ {
+        "name" : "Web重定向策略管理-主流程",
+        "children" : [ {
+          "name" : "新增web重定向策略",
+          "uid" : "c3a7ccd55e5c6501",
+          "parentUid" : "cb73bec8c7a7f167b5756b7cfec9ffe7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373342367,
+            "stop" : 1601373342492,
+            "duration" : 125
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增web重定向策略'", "'新增web重定向策略-isTerminateInferior为false，策略标签有3个值，所有信息齐全'", "{'query': ['test01', 'test02', 'test03'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则标签为3个值",
+          "uid" : "520f70723ddc7e23",
+          "parentUid" : "cb73bec8c7a7f167b5756b7cfec9ffe7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373342654,
+            "stop" : 1601373342820,
+            "duration" : 166
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则标签为3个值'", "'添加策略规则-规则标签为3个值'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['test01', 'test02', 'test03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则标签为3个值",
+          "uid" : "4f057819b61129bc",
+          "parentUid" : "cb73bec8c7a7f167b5756b7cfec9ffe7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373343437,
+            "stop" : 1601373343563,
+            "duration" : 126
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则标签为3个值'", "'添加策略规则-规则标签为3个值'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['test01', 'test02', 'test03'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "新增web重定向策略",
+          "uid" : "dc42cea257a33d13",
+          "parentUid" : "cb73bec8c7a7f167b5756b7cfec9ffe7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373343746,
+            "stop" : 1601373343865,
+            "duration" : 119
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增web重定向策略'", "'新增web重定向策略-isTerminateInferior为false，策略标签有3个值，所有信息齐全'", "{'query': ['test01', 'test02', 'test03'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "新增web重定向策略",
+          "uid" : "cd1d9dd8ed2b268f",
+          "parentUid" : "cb73bec8c7a7f167b5756b7cfec9ffe7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373344154,
+            "stop" : 1601373344279,
+            "duration" : 125
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增web重定向策略'", "'新增web重定向策略-isTerminateInferior为false，策略标签有3个值，所有信息齐全'", "{'query': ['test01', 'test02', 'test03'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "删除策略规则-策略id存在，规则id不存在",
+          "uid" : "e9b56f54dd9d2531",
+          "parentUid" : "cb73bec8c7a7f167b5756b7cfec9ffe7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373344465,
+            "stop" : 1601373344523,
+            "duration" : 58
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除策略规则-策略id存在，规则id不存在'", "'添加策略规则-策略id存在，规则id不存在'", "{'query': {'id': '5f3a3710893a2500068349a4'}, 'response': {'code': 200, 'message': 'OK'}, 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "删除策略规则-规则id存在",
+          "uid" : "b73474618a00736c",
+          "parentUid" : "cb73bec8c7a7f167b5756b7cfec9ffe7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373344599,
+            "stop" : 1601373344659,
+            "duration" : 60
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除策略规则-规则id存在'", "'添加策略规则-规则id存在'", "{'query': {'id': '5f3a3710893a2500068349a4'}, 'response': {'code': 200, 'message': 'OK'}, 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "删除web重定向策略-id存在",
+          "uid" : "213c0d6d7cfb8553",
+          "parentUid" : "cb73bec8c7a7f167b5756b7cfec9ffe7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373344880,
+            "stop" : 1601373344944,
+            "duration" : 64
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除web重定向策略-id存在'", "'删除web重定向策略-id存在'", "{'query': {'id': '5f3a3710893a2500068349a4'}, 'response': {'code': 200, 'message': 'OK', 'data': None}, 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "cb73bec8c7a7f167b5756b7cfec9ffe7"
+      }, {
+        "name" : "Web重定向策略管理-测试用例",
+        "children" : [ {
+          "name" : "新增web重定向策略-策略名称已存在",
+          "uid" : "12a638466d2a01ec",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373342498,
+            "stop" : 1601373342647,
+            "duration" : 149
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增web重定向策略-策略名称已存在'", "'新增web重定向策略-策略名称已存在'", "{'query': ['test01'], 'response': {'code': 0, 'message': '系统中已存在同名的策略！'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则标签为1个值",
+          "uid" : "9c34681ed968b454",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373342826,
+            "stop" : 1601373342960,
+            "duration" : 134
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则标签为1个值'", "'添加策略规则-规则标签为1个值'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则脚本不合法",
+          "uid" : "9dafa5d33dbe53e0",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373342969,
+            "stop" : 1601373343090,
+            "duration" : 121
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则脚本不合法'", "'添加策略规则-规则脚本不合法'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '111', 'ruleName': '测试', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 0, 'message': '策略配置异常！'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则名称为空",
+          "uid" : "ff17a914256d71f1",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "failed",
+          "time" : {
+            "start" : 1601373343097,
+            "stop" : 1601373343179,
+            "duration" : 82
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则名称为空'", "'添加策略规则-规则名称为空'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': '', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-规则名称已存在",
+          "uid" : "6466674a5fff51cf",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373343198,
+            "stop" : 1601373343328,
+            "duration" : 130
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-规则名称已存在'", "'添加策略规则-规则名称已存在'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': 'ces', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': 'domain.session.webRedirectPolicy.policy_already_has_the_same_rule'}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-已存在新添加",
+          "uid" : "326903d0c3233fc9",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373343335,
+            "stop" : 1601373343429,
+            "duration" : 94
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-已存在新添加'", "'添加策略规则-已存在新添加'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加策略规则-id不存在",
+          "uid" : "a48ca91dfef89fc5",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373343570,
+            "stop" : 1601373343738,
+            "duration" : 168
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加策略规则-id不存在'", "'添加策略规则-id不存在'", "{'query': {'desc': '测试添加', 'priority': 0, 'ruleContent': '', 'ruleName': '测试', 'ruleTags': ['test01'], 'supportCondition': {}, 'templateName': 'string'}, 'response': {'code': 0, 'message': 'application.session.webRedirectPolicy.not_exist'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "新增web重定向策略-test01",
+          "uid" : "e3fd6ce650377ba7",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373343871,
+            "stop" : 1601373344014,
+            "duration" : 143
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增web重定向策略-test01'", "'新增web重定向策略-isTerminateInferior为true，策略标签有1个值，所有信息齐全'", "{'query': ['test01'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "新增web重定向策略-test02",
+          "uid" : "f43a9de49d0cbd9d",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373344022,
+            "stop" : 1601373344143,
+            "duration" : 121
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增web重定向策略-test02'", "'policyName和policyTags非空，其他字段都为空'", "{'query': ['test02'], 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "新增web重定向策略-策略规则脚本不合法",
+          "uid" : "8890b1cecedd4d0d",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373344286,
+            "stop" : 1601373344377,
+            "duration" : 91
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'新增web重定向策略-策略规则脚本不合法'", "'新增web重定向策略-策略规则脚本不合法'", "{'query': ['test02'], 'response': {'code': 0, 'message': 'application.session.webRedirectPolicy.filteringContent_is_illegal'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "删除策略规则-规则id不存在",
+          "uid" : "40950277fcf81e0c",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373344724,
+            "stop" : 1601373344785,
+            "duration" : 61
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除策略规则-规则id不存在'", "'删除策略规则-规则id不存在'", "{'query': {'id': '5f3e3dc2893a25000681111'}, 'response': {'code': 0, 'message': 'application.session.webRedirectPolicy.not_exist'}, 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "删除web重定向策略-id不存在",
+          "uid" : "d279bd3a4736a65f",
+          "parentUid" : "8ed29d28a3a392784a9830aa31255051",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373345025,
+            "stop" : 1601373345086,
+            "duration" : 61
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除web重定向策略-id不存在'", "'删除web重定向策略-id不存在'", "{'query': {'id': '5f3a3710893a2500068349a4'}, 'response': {'code': 200, 'message': 'OK', 'data': None}, 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "8ed29d28a3a392784a9830aa31255051"
+      } ],
+      "uid" : "90b23ff5580ee4d5405bcc7988f3f754"
+    } ],
+    "uid" : "2196534cdb23f92bc30d22ae5e414f0d"
+  }, {
+    "name" : "SoftwareController",
+    "children" : [ {
+      "name" : "添加软件信息",
+      "children" : [ {
+        "name" : "添加软件信息-主流程",
+        "children" : [ {
+          "name" : "添加软件成功",
+          "uid" : "23e4dcf03ad888d6",
+          "parentUid" : "beb52019b6b12788260b2eed378158d0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373345123,
+            "stop" : 1601373345243,
+            "duration" : 120
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加软件成功'", "'主流程用例-添加软件成功！'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加软件成功",
+          "uid" : "eb5a86f6a60ce1ae",
+          "parentUid" : "beb52019b6b12788260b2eed378158d0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373346682,
+            "stop" : 1601373346784,
+            "duration" : 102
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加软件成功'", "'主流程用例-添加软件成功！'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "beb52019b6b12788260b2eed378158d0"
+      }, {
+        "name" : "添加软件信息-测试用例",
+        "children" : [ {
+          "name" : "软件名称为空",
+          "uid" : "5878436a8cdb4c10",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373345255,
+            "stop" : 1601373345397,
+            "duration" : 142
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'软件名称为空'", "'软件名称为空无法添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': '', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '实体名称不能为空'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "软件ICON为空",
+          "uid" : "a7deb759b6992033",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373345404,
+            "stop" : 1601373345524,
+            "duration" : 120
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'软件ICON为空'", "'软件ICON为空可完成添加'", "{'query': {'icon': '', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "软件描述为空",
+          "uid" : "34f77a7153c33fef",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373345530,
+            "stop" : 1601373345630,
+            "duration" : 100
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'软件描述为空'", "'软件描述为空可完成添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "软件类型为空",
+          "uid" : "3ff4607818d139b3",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373345638,
+            "stop" : 1601373345745,
+            "duration" : 107
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'软件类型为空'", "'软件类型为空可完成添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "软件厂商为空",
+          "uid" : "772adb7ba4a7c4b",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373345751,
+            "stop" : 1601373345857,
+            "duration" : 106
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'软件厂商为空'", "'软件厂商为空可完成添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "软件大小为空",
+          "uid" : "96f4ea68b556cd12",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373345863,
+            "stop" : 1601373345986,
+            "duration" : 123
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'软件大小为空'", "'软件大小为空可完成添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_06', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "source为MANAUL",
+          "uid" : "90971f8399b07ef",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373345992,
+            "stop" : 1601373346093,
+            "duration" : 101
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'source为MANAUL'", "'source为MANAUL可完成添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'MANAUL', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_07', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "typeBasis为undefined",
+          "uid" : "da6e067ea4fc3a0c",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373346099,
+            "stop" : 1601373346208,
+            "duration" : 109
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'typeBasis为undefined'", "'typeBasis为undefined可完成添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'undefined'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_08', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "软件id为空",
+          "uid" : "6fdfd6734eba4b0f",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373346213,
+            "stop" : 1601373346315,
+            "duration" : 102
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'软件id为空'", "'软件id为空可完成添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_09', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "typeBasis为auto",
+          "uid" : "d4a4413eb23d8ef2",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373346321,
+            "stop" : 1601373346423,
+            "duration" : 102
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'typeBasis为auto'", "'typeBasis为auto可完成添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_10', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "typeBasis为manual",
+          "uid" : "9b8d2710ae6af8dd",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373346429,
+            "stop" : 1601373346536,
+            "duration" : 107
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'typeBasis为manual'", "'typeBasis为manual可完成添加'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'MANUAL', 'typeBasis': 'manual'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_11', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "软件名称过长",
+          "uid" : "4db0cc0435994d6e",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373346543,
+            "stop" : 1601373346676,
+            "duration" : 133
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'软件名称过长'", "'软件名称过长'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'Q打的是多撒大所大声道撒多撒多撒多撒大所大所大所大所大所多撒大所大所大所大所大所多撒多撒多所多撒多撒多所大声道撒大大所大所多撒大所多13(⊙o⊙)…324324324324324324324234大声道撒大所大多撒大所大所大所大所大所大所大萨达所大所多撒多撒多撒多撒多撒多撒大所多撒大所大所多撒大所大所大所多撒多撒多撒多撒多所打的是多撒大所大声道撒多撒多撒多撒大所大所大所大所大所多撒大所大所大所大所大所多撒多撒多所多撒多撒多所大声道撒大大所大所多撒大所多13(⊙o⊙)…324324324324324324324234大声道撒大所大多撒大所大所大所大所大所大所大萨达所大所多撒多撒多撒多撒多撒多撒大所多撒大所大所多撒大所大所大所多撒多撒多撒多撒多所Q', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'MANUAL', 'typeBasis': 'manual'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '实体名称超过了最大允许长度'}}, 'caseNum': 'case_12', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "软件名称版本唯一性校验",
+          "uid" : "b06a7ec5be11d44b",
+          "parentUid" : "61efb95e546310c72298b6555530143a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373346790,
+            "stop" : 1601373346962,
+            "duration" : 172
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'软件名称版本唯一性校验'", "'软件名称版本唯一性校验'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': 'addbynode1', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '名称已存在,请更改'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "61efb95e546310c72298b6555530143a"
+      } ],
+      "uid" : "23abab5423dda0c48508f1b9190f0146"
+    }, {
+      "name" : "修改软件信息",
+      "children" : [ {
+        "name" : "修改软件信息-主流程",
+        "children" : [ {
+          "name" : "批量删除软件-存在有效与无效ID",
+          "uid" : "b39aede2d04cc85c",
+          "parentUid" : "3237f43486e16f1229834f4b0469a124",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373346968,
+            "stop" : 1601373347141,
+            "duration" : 173
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除软件-存在有效与无效ID'", "'主流程用例-批量删除软件-存在有效与无效ID'", "{'query': ['14d1f7056fc3450007db4e98', '14d1f7056fc3450007db4e77'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 1, 'fail': 1, 'sum': 0}}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改软件成功",
+          "uid" : "460f64563984f84",
+          "parentUid" : "3237f43486e16f1229834f4b0469a124",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373350064,
+            "stop" : 1601373350217,
+            "duration" : 153
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改软件成功'", "'主流程用例-修改软件信息成功！'", "{'query': {'icon': 'R0lGODlhFgAWAOZ', 'id': '14d1f7056fc3450007db4e98', 'softwareDesc': '修改测试信息', 'softwareName': 'QQ', 'softwareSize': 10240, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': 'TENCENT', 'softwareVersion': '12.0.2', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "3237f43486e16f1229834f4b0469a124"
+      }, {
+        "name" : "修改软件信息-测试用例",
+        "children" : [ {
+          "name" : "批量删除软件信息，ID为空",
+          "uid" : "c9adb62551816881",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373347146,
+            "stop" : 1601373347295,
+            "duration" : 149
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除软件信息，ID为空'", "'批量删除软件信息，ID为空'", "{'query': [], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 0, 'fail': 0, 'sum': 0}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量删除软件信息，ID值不存在",
+          "uid" : "5cd50f4d532cf47f",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373347301,
+            "stop" : 1601373347483,
+            "duration" : 182
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除软件信息，ID值不存在'", "'批量删除软件信息，ID值不存在'", "{'query': ['14d1f7056fc3450007db4e99'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 0, 'fail': 1, 'sum': 0}}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量删除软件信息，ID值存在",
+          "uid" : "245d3a46673cb881",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373347489,
+            "stop" : 1601373347654,
+            "duration" : 165
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除软件信息，ID值存在'", "'批量删除软件信息，ID值存在'", "{'query': ['14d1f7056fc3450007db4e98'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 1, 'fail': 0, 'sum': 0}}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量删除软件信息，ID多个，值存在",
+          "uid" : "3537b9bb3218f03c",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373347661,
+            "stop" : 1601373347855,
+            "duration" : 194
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除软件信息，ID多个，值存在'", "'批量删除软件信息，ID多个，值存在'", "{'query': ['14d1f7056fc3450007db4e98', '14d1f7056fc3450007db4e91'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 2, 'fail': 0, 'sum': 0}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "软件名称版本唯一性校验",
+          "uid" : "9c958d9208171af2",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373350224,
+            "stop" : 1601373350431,
+            "duration" : 207
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'软件名称版本唯一性校验'", "'软件名称版本唯一性校验'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '5ef189e573ec7d0006097745', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '系统中不存在编号为[5ef189e573ec7d0006097745]的实体'}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改后记录与已有记录重复",
+          "uid" : "7d6c414a2344e2b8",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373350438,
+            "stop" : 1601373350592,
+            "duration" : 154
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改后记录与已有记录重复'", "'修改后记录与已有记录重复'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试', 'softwareName': 'ces', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '2019', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '名称已存在,请更改'}}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改后软件名称为空",
+          "uid" : "c6110444a4df0a91",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373350597,
+            "stop" : 1601373350755,
+            "duration" : 158
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改后软件名称为空'", "'修改后软件名称为空'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试', 'softwareName': '', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '实体名称不能为空'}}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改后软件名称过长",
+          "uid" : "c4c26d61f5f7752e",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373350760,
+            "stop" : 1601373350959,
+            "duration" : 199
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改后软件名称过长'", "'修改后软件名称过长'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试', 'softwareName': '打的是多撒大所大声道撒多撒多撒多撒大所大所大所大所大所多撒大所大所大所大所大所多撒多撒多所多撒多撒多所大声道撒大大所大所多撒大所多13(⊙o⊙)…324324324324324324324234大声道撒大所大多撒大所大所大所大所大所大所大萨达所大所多撒多撒多撒多撒多撒多撒大所多撒大所大所多撒大所大所大所多撒多撒多撒多撒多所QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '实体名称超过了最大允许长度'}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改软件来源为自动获取",
+          "uid" : "8739319edf3cac56",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373350966,
+            "stop" : 1601373351105,
+            "duration" : 139
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改软件来源为自动获取'", "'修改软件来源为自动获取'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_05', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改软件厂商",
+          "uid" : "82639a7b2e0d59b5",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373351111,
+            "stop" : 1601373351292,
+            "duration" : 181
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改软件厂商'", "'修改软件厂商'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': 'TENCENT', 'softwareVersion': '12.0.1', 'source': 'AUTO', 'typeBasis': 'auto'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_06', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改软件描述",
+          "uid" : "89b9a6a1eb719510",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373351309,
+            "stop" : 1601373351507,
+            "duration" : 198
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改软件描述'", "'修改软件描述'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'MANUAL', 'typeBasis': 'manual'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_07', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改软件大小",
+          "uid" : "a08ffa4ed903d8d2",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373351516,
+            "stop" : 1601373351674,
+            "duration" : 158
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改软件大小'", "'修改软件大小'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'MANUAL', 'typeBasis': 'manual'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_08', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改软件名称",
+          "uid" : "df66e7d922be956a",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373351681,
+            "stop" : 1601373351811,
+            "duration" : 130
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改软件名称'", "'修改软件名称'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试测试', 'softwareName': 'wechat', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.0.1', 'source': 'MANUAL', 'typeBasis': 'manual'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_09', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "修改软件版本",
+          "uid" : "2582a18df578fa6",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373351819,
+            "stop" : 1601373351935,
+            "duration" : 116
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'修改软件版本'", "'修改软件版本'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.1.1', 'source': 'MANUAL', 'typeBasis': 'manual'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_10', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "添加软件描述和厂商",
+          "uid" : "c56df8114b6dcaa5",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373351941,
+            "stop" : 1601373352048,
+            "duration" : 107
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'添加软件描述和厂商'", "'添加软件描述和厂商'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试测试', 'softwareName': 'QQ', 'softwareSize': 12040, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '12.1.1', 'source': 'MANUAL', 'typeBasis': 'manual'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_11', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "去除软件版本和大小",
+          "uid" : "d5cc9684bf9eee56",
+          "parentUid" : "697ff906c1c5c7337e8f785bfe190f89",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373352054,
+            "stop" : 1601373352213,
+            "duration" : 159
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'去除软件版本和大小'", "'去除软件版本和大小'", "{'query': {'icon': 'R0lGODlhFgAWAOZ/AIpGJcmkifvkU/XRDevYp9+mKKhrFey7FMm0m8ymevvy', 'id': '14d1f7056fc3450007db4e99', 'softwareDesc': '测试测试', 'softwareName': 'QQ', 'softwareSize': 0, 'softwareTypeId': '5ef189e573ec7d0006097584', 'softwareVendor': '腾讯', 'softwareVersion': '', 'source': 'MANUAL', 'typeBasis': 'manual'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_12', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "697ff906c1c5c7337e8f785bfe190f89"
+      } ],
+      "uid" : "58282064c707f852022178db15970535"
+    }, {
+      "name" : "批量删除软件安装信息",
+      "children" : [ {
+        "name" : "批量删除软件安装信息-主流程",
+        "children" : [ {
+          "name" : "批量删除软件安装信息-存在有效与无效ID",
+          "uid" : "2e449721f4c8e08d",
+          "parentUid" : "dc6e269b83197978dcf50c2573cff4dc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373347861,
+            "stop" : 1601373348068,
+            "duration" : 207
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除软件安装信息-存在有效与无效ID'", "'主流程用例-批量删除软件安装信息-存在有效与无效ID'", "{'query': ['11cd2ec56fc345000793c4d1', '11cd2ec56fc345000793c4d2'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 1, 'fail': 1, 'sum': 0}}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "dc6e269b83197978dcf50c2573cff4dc"
+      }, {
+        "name" : "批量删除软件安装信息-测试用例",
+        "children" : [ {
+          "name" : "批量删除软件安装信息，ID为空",
+          "uid" : "fe731223cda34e0c",
+          "parentUid" : "63a150614d2f1d22781259321c0bebf6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373348074,
+            "stop" : 1601373348264,
+            "duration" : 190
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除软件安装信息，ID为空'", "'批量删除软件安装信息，ID为空'", "{'query': [], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 0, 'fail': 0, 'sum': 0}}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量删除软件安装信息，ID值不存在",
+          "uid" : "441dbad3d8880a40",
+          "parentUid" : "63a150614d2f1d22781259321c0bebf6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373348270,
+            "stop" : 1601373348464,
+            "duration" : 194
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除软件安装信息，ID值不存在'", "'批量删除软件安装信息，ID值不存在'", "{'query': ['14d1f7056fc3450007db4e99'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 0, 'fail': 1, 'sum': 0}}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量删除软件安装信息，ID值存在",
+          "uid" : "1ec26cf4fcce1d47",
+          "parentUid" : "63a150614d2f1d22781259321c0bebf6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373348471,
+            "stop" : 1601373348647,
+            "duration" : 176
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除软件安装信息，ID值存在'", "'批量删除软件安装信息，ID值存在'", "{'query': ['11cd2ec56fc345000793c4d1'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 1, 'fail': 0, 'sum': 0}}, 'caseNum': 'case_03', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        }, {
+          "name" : "批量删除软件安装信息，ID多个，值存在",
+          "uid" : "37ec89c50b4ab6dd",
+          "parentUid" : "63a150614d2f1d22781259321c0bebf6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373348653,
+            "stop" : 1601373348885,
+            "duration" : 232
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'批量删除软件安装信息，ID多个，值存在'", "'批量删除软件安装信息，ID多个，值存在'", "{'query': ['11cd2ec56fc345000793c4d1', '11cd2ec56fc345000793c4d2'], 'response': {'code': 200, 'message': 'OK', 'data': {'success': 2, 'fail': 0, 'sum': 0}}, 'caseNum': 'case_04', 'isCheckDB': False, 'checkDBType': 'exist', 'httpType': 'POST', 'paramType': 'json'}" ]
+        } ],
+        "uid" : "63a150614d2f1d22781259321c0bebf6"
+      } ],
+      "uid" : "607b6a359a7050ac00249d9451615472"
+    }, {
+      "name" : "清空单个软件的分类信息",
+      "children" : [ {
+        "name" : "清空单个软件的分类信息-主流程",
+        "children" : [ {
+          "name" : "清空单个软件的分类信息",
+          "uid" : "7a086a96653fca07",
+          "parentUid" : "4fd849f435aaa2860229e824cb6c21a5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373348891,
+            "stop" : 1601373348977,
+            "duration" : 86
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'清空单个软件的分类信息'", "'Id存在，分类存在，分类信息删除成功！'", "{'query': {'id': '5efc655ebf7a2d00064aec22'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "4fd849f435aaa2860229e824cb6c21a5"
+      }, {
+        "name" : "清空单个软件的分类信息-测试用例",
+        "children" : [ {
+          "name" : "清空单个软件的分类信息",
+          "uid" : "1ed5f25500c4dd77",
+          "parentUid" : "dd2eadf46bdae9a9bfefc6ba037714f1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373348983,
+            "stop" : 1601373349087,
+            "duration" : 104
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'清空单个软件的分类信息'", "'Id存在，分类不存在，分类信息删除成功！'", "{'query': {'id': '5efc655ebf7a2d00064aec22'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "清空分类信息-ID不存在",
+          "uid" : "b273f7ab4d701f59",
+          "parentUid" : "dd2eadf46bdae9a9bfefc6ba037714f1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373349093,
+            "stop" : 1601373349224,
+            "duration" : 131
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'清空分类信息-ID不存在'", "'Id存在，分类不存在，分类信息删除成功！'", "{'query': {'id': '5ecc6fa1c57a4300064e0000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '系统中不存在编号为[5ecc6fa1c57a4300064e0000]的实体'}}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "dd2eadf46bdae9a9bfefc6ba037714f1"
+      } ],
+      "uid" : "d754589123028704d11a54baace2a27f"
+    }, {
+      "name" : "删除软件信息",
+      "children" : [ {
+        "name" : "删除软件信息-主流程",
+        "children" : [ {
+          "name" : "删除软件信息",
+          "uid" : "419c875c8d2b4e7a",
+          "parentUid" : "358ea8fe8d5fe9aa2b9521de6f991784",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373349329,
+            "stop" : 1601373349410,
+            "duration" : 81
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除软件信息'", "'Id存在，软件信息删除成功！'", "{'query': {'id': '5efc655ebf7a2d00064aec22'}, 'response': {'code': 200, 'message': 'OK'}, 'isCheckDB': True, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "删除软件安装信息",
+          "uid" : "9a25042011fad1f5",
+          "parentUid" : "358ea8fe8d5fe9aa2b9521de6f991784",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373349760,
+            "stop" : 1601373349830,
+            "duration" : 70
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除软件安装信息'", "'Id存在，软件安装信息删除成功！'", "{'query': {'id': '11cd2ec56fc345000793c4d1'}, 'response': {'code': 200, 'message': 'OK'}, 'isCheckDB': True, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "358ea8fe8d5fe9aa2b9521de6f991784"
+      }, {
+        "name" : "删除软件信息-测试用例",
+        "children" : [ {
+          "name" : "删除软件信息失败-id不存在",
+          "uid" : "ca4ac4817456348a",
+          "parentUid" : "ae73a732b342a0709a88e4a86b7c1fb9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373349547,
+            "stop" : 1601373349628,
+            "duration" : 81
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除软件信息失败-id不存在'", "'Id不存在，软件信息删除失败！'", "{'query': {'id': '5ecc6fa1c57a4300064e0000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '系统中不存在编号为[5ecc6fa1c57a4300064e0000]的实体'}}, 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        }, {
+          "name" : "删除软件安装信息失败-id不存在",
+          "uid" : "cdff90a2017a9f57",
+          "parentUid" : "ae73a732b342a0709a88e4a86b7c1fb9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373349942,
+            "stop" : 1601373350010,
+            "duration" : 68
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'删除软件安装信息失败-id不存在'", "'Id不存在，软件安装信息删除失败！'", "{'query': {'id': '5ecc6fa1c57a4300064e0000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '系统中不存在编号为[5ecc6fa1c57a4300064e0000]的实体'}}, 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'DELETE', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "ae73a732b342a0709a88e4a86b7c1fb9"
+      } ],
+      "uid" : "a211c34addab41e56278f9086e9aa6be"
+    }, {
+      "name" : "变更软件的分类信息",
+      "children" : [ {
+        "name" : "变更软件的分类信息-主流程",
+        "children" : [ {
+          "name" : "变更软件分类信息",
+          "uid" : "e925fa406b3bb0fa",
+          "parentUid" : "cb238cf8fc76025a843b745382eb9632",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373352221,
+            "stop" : 1601373352343,
+            "duration" : 122
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'变更软件分类信息'", "'Id存在，分类存在，分类信息变更成功！'", "{'query': {'id': '5efc655ebf7a2d00064aec22'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'mainCase', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "cb238cf8fc76025a843b745382eb9632"
+      }, {
+        "name" : "变更软件的分类信息-测试用例",
+        "children" : [ {
+          "name" : "变更分类信息-分类不存在",
+          "uid" : "4300b0893fb49259",
+          "parentUid" : "f629bf254cd6ad49d305daedb0d35347",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373352350,
+            "stop" : 1601373352445,
+            "duration" : 95
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'变更分类信息-分类不存在'", "'Id存在，分类不存在，分类信息变更成功！'", "{'query': {'id': '5efc655ebf7a2d00064aec22'}, 'response': {'code': 200, 'message': 'OK'}, 'caseNum': 'case_01', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        }, {
+          "name" : "变更分类信息-id不存在",
+          "uid" : "ece05d90002512eb",
+          "parentUid" : "f629bf254cd6ad49d305daedb0d35347",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601373352451,
+            "stop" : 1601373352572,
+            "duration" : 121
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'变更分类信息-id不存在'", "'Id不存在，分类信息变更失败！'", "{'query': {'id': '5ecc6fa1c57a4300064e0000'}, 'response': {'code': 412, 'message': 'Precondition Failed', 'data': {'errorCode': 0, 'errorMessage': '系统中不存在编号为[5ecc6fa1c57a4300064e0000]的实体'}}, 'caseNum': 'case_02', 'isCheckDB': False, 'checkDBType': 'non-exist', 'httpType': 'POST', 'paramType': 'string'}" ]
+        } ],
+        "uid" : "f629bf254cd6ad49d305daedb0d35347"
+      } ],
+      "uid" : "7c7f2ee07cfc2a326cc3e0403654f73f"
+    } ],
+    "uid" : "131528052650e1b52931ce61ef47522c"
+  } ]
+}
